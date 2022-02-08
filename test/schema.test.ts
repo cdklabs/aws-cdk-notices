@@ -1,8 +1,8 @@
 import { promises as fs } from 'fs';
 import { IncomingMessage } from 'http';
+import https from 'https';
 import * as path from 'path';
-import { Notice, validateNotices } from '../lib/notice';
-const https = require('https');
+import { Notice, validateNotices } from '../src/notice';
 
 describe('Notices file is valid', () => {
   let notices: Notice[];

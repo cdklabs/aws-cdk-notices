@@ -12,7 +12,7 @@ import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import { Construct } from 'constructs';
 
 export interface WebsiteStackProps extends StackProps {
-  domainName: string,
+  domainName: string;
 }
 
 export class WebsiteStack extends Stack {
@@ -27,8 +27,8 @@ export class WebsiteStack extends Stack {
 }
 
 export interface StaticWebsiteProps {
-  domainName: string,
-  sources: s3deploy.ISource[],
+  domainName: string;
+  sources: s3deploy.ISource[];
 }
 
 /**
