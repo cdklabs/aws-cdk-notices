@@ -18,7 +18,7 @@ describe('Notices file is valid', () => {
 
   test('Issue exists', () => {
     for (const notice of notices) {
-      const url = `https://github.com/cdklabs/aws-cdk-notices/issues/${notice.issueNumber}`;
+      const url = `https://github.com/aws/aws-cdk/issues/${notice.issueNumber}`;
       https.get(url, (res: IncomingMessage) => {
         if (res.statusCode !== 200) {
           fail(`Couldn't find issue ${url}`);

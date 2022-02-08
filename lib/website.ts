@@ -2,6 +2,8 @@ import { Stack, StackProps } from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
+import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
+import { TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import { RecordTarget } from 'aws-cdk-lib/aws-route53';
 import * as targets from 'aws-cdk-lib/aws-route53-targets';
@@ -47,6 +49,13 @@ class StaticWebsite extends Construct {
     const certificate = new acm.DnsValidatedCertificate(this, 'certificate', {
       domainName,
       hostedZone,
+    });
+
+    certificate.metricDaysToExpiry().createAlarm(this, 'Alarm', {
+      treatMissingData: TreatMissingData.BREACHING,
+      comparisonOperator: cloudwatch.ComparisonOperator.LESS_THAN_THRESHOLD,
+      evaluationPeriods: 1,
+      threshold: 45, // Automatic rotation happens between 60 and 45 days before expiry
     });
 
     const distribution = new cloudfront.Distribution(this, 'distribution', {
