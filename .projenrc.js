@@ -4,6 +4,9 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   defaultReleaseBranch: 'main',
   name: 'aws-cdk-notices',
 
+  authorName: 'Amazon Web Services',
+  authorUrl: 'https://aws.amazon.com/',
+
   deps: [
     'semver',
     'cdk-pipelines-github',
