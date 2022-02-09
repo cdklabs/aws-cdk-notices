@@ -23,7 +23,6 @@ export class PipelineStack extends Stack {
           'npx cdk synth NoticesPipelineStack --verbose',
         ],
       }),
-      workflowPath: '.github/workflows/deploy.yml',
     });
   
     pipeline.addStage(this.websiteStage('prod', {

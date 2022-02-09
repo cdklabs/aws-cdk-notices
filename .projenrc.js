@@ -15,7 +15,6 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   devDeps: [
     '@types/semver',
   ],
-  packageName: 'aws-cdk-notices',
 });
 
 project.synth();
