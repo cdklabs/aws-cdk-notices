@@ -51,13 +51,6 @@ class StaticWebsite extends Construct {
       hostedZone,
     });
 
-    certificate.metricDaysToExpiry().createAlarm(this, 'Alarm', {
-      treatMissingData: TreatMissingData.BREACHING,
-      comparisonOperator: cloudwatch.ComparisonOperator.LESS_THAN_THRESHOLD,
-      evaluationPeriods: 1,
-      threshold: 45, // Automatic rotation happens between 60 and 45 days before expiry
-    });
-
     const distribution = new cloudfront.Distribution(this, 'distribution', {
       defaultBehavior: { origin: new origins.S3Origin(bucket) },
       certificate,
