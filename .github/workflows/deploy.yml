@@ -18,9 +18,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         run: |-
-          npm ci
-          npm run build
-          npm test
+          yarn install
+          yarn build
           npx cdk synth NoticesPipelineStack --verbose
       - name: Upload cdk.out
         uses: actions/upload-artifact@v2.1.1

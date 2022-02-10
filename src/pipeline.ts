@@ -19,10 +19,8 @@ export class PipelineStack extends Stack {
     const pipeline = new GitHubWorkflow(this, 'Pipeline', {
       synth: new pipelines.ShellStep('Synth', {
         commands: [
-          'npm ci',
-          'npm run build',
-          'npm test',
-          'npx cdk synth NoticesPipelineStack --verbose',
+          'yarn install',
+          'yarn build',
         ],
       }),
       gitHubActionRoleArn: `arn:aws:iam::${BACKEND_ENV.account}:role/GitHubActionRole`,
