@@ -27,7 +27,7 @@ export class PipelineStack extends Stack {
       }),
       gitHubActionRoleArn: `arn:aws:iam::${BACKEND_ENV.account}:role/GitHubActionRole`,
     });
-  
+
     pipeline.addStage(this.websiteStage('prod', {
       env: BACKEND_ENV,
       domainName: DOMAIN_NAME,
