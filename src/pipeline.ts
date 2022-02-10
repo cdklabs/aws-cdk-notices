@@ -4,8 +4,9 @@ import { GitHubWorkflow } from 'cdk-pipelines-github';
 import { Construct } from 'constructs';
 import { WebsiteStack, WebsiteStackProps } from './website';
 
+const GITHUB_AWS_ACCOUNT_ID = '${{ secrets.AWS_ACCOUNT_ID }}';
 export const BACKEND_ENV = {
-  account: '458101988253', // prod
+  account: process.env.AWS_ACCOUNT_ID ?? GITHUB_AWS_ACCOUNT_ID, // prod
   region: 'us-east-1',
 };
 const DOMAIN_NAME = 'cli.cdk.dev-tools.aws.dev';
@@ -20,8 +21,11 @@ export class PipelineStack extends Stack {
           'yarn install',
           'yarn build',
         ],
+        env: {
+          AWS_ACCOUNT_ID: GITHUB_AWS_ACCOUNT_ID,
+        },
       }),
-      gitHubActionRoleArn: `arn:aws:iam::${BACKEND_ENV.account}:role/GitHubActionRole`,
+      gitHubActionRoleArn: `arn:aws:iam::${GITHUB_AWS_ACCOUNT_ID}:role/GitHubActionRole`,
     });
 
     pipeline.addStage(this.websiteStage('prod', {
