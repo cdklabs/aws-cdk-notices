@@ -2,8 +2,6 @@ import { Stack, StackProps } from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
-import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
-import { TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import { RecordTarget } from 'aws-cdk-lib/aws-route53';
 import * as targets from 'aws-cdk-lib/aws-route53-targets';

@@ -5,10 +5,12 @@ import { Construct } from 'constructs';
 import { WebsiteStack, WebsiteStackProps } from './website';
 
 export const BACKEND_ENV = {
-  account: '458101988253',
+  // account: '458101988253', // prod
+  account: '280619947791', // personal
   region: 'us-east-1',
 };
-const DOMAIN_NAME = 'cli.cdk.dev-tools.aws.dev';
+// const DOMAIN_NAME = 'cli.cdk.dev-tools.aws.dev';
+const DOMAIN_NAME = 'dev-otaviom.cdk.dev-tools.aws.dev';
 
 export class PipelineStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -23,6 +25,7 @@ export class PipelineStack extends Stack {
           'npx cdk synth NoticesPipelineStack --verbose',
         ],
       }),
+      gitHubActionRoleArn: `arn:aws:iam::${BACKEND_ENV.account}:role/GitHubActionRole`,
     });
   
     pipeline.addStage(this.websiteStage('prod', {

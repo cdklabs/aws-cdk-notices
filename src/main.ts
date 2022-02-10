@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
+import { GitHubActionRoleStack } from './action-role';
 import { BACKEND_ENV, PipelineStack } from './pipeline';
 import { WebsiteStack } from './website';
 
@@ -22,3 +23,5 @@ new WebsiteStack(app, 'DevNoticesWebsiteStack', {
     region: process.env.CDK_DEPLOY_REGION || process.env.CDK_DEFAULT_REGION,
   },
 });
+
+new GitHubActionRoleStack(app, 'GitHubActionRoleStack');
