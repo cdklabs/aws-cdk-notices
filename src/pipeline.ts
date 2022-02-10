@@ -5,12 +5,10 @@ import { Construct } from 'constructs';
 import { WebsiteStack, WebsiteStackProps } from './website';
 
 export const BACKEND_ENV = {
-  // account: '458101988253', // prod
-  account: '280619947791', // personal
+  account: '458101988253', // prod
   region: 'us-east-1',
 };
-// const DOMAIN_NAME = 'cli.cdk.dev-tools.aws.dev';
-const DOMAIN_NAME = 'dev-otaviom.cdk.dev-tools.aws.dev';
+const DOMAIN_NAME = 'cli.cdk.dev-tools.aws.dev';
 
 export class PipelineStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {

@@ -20,7 +20,6 @@ jobs:
         run: |-
           yarn install
           yarn build
-          npx cdk synth NoticesPipelineStack --verbose
       - name: Upload cdk.out
         uses: actions/upload-artifact@v2.1.1
         with:

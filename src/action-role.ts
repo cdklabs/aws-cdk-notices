@@ -7,8 +7,7 @@ export class GitHubActionRoleStack extends Stack {
     super(scope, id);
 
     new GitHubActionRole(this, 'role', {
-      // repos: ['cdklabs/aws-cdk-notices'],
-      repos: ['otaviomacedo/aws-cdk-notices'],
+      repos: ['cdklabs/aws-cdk-notices'],
     });
   }
 }
