@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=458101988253:domainName=cli.cdk.dev-tools.aws.dev:region=us-east-1": {
+    "Id": "/hostedzone/Z01663253G2LXOXDK5BE3",
+    "Name": "cli.cdk.dev-tools.aws.dev."
+  },
+  "hosted-zone:account=280619947791:domainName=dev-otaviom.cdk.dev-tools.aws.dev:region=us-east-1": {
+    "Id": "/hostedzone/Z10230931F1H33FXLZ1BA",
+    "Name": "dev-otaviom.cdk.dev-tools.aws.dev."
+  }
+}
