@@ -52,6 +52,19 @@ test('rejects invalid schema version range', () => {
   })).toThrow(/is not a valid semver range/);
 });
 
+test('accepts alpha version ranges', () => {
+  expect(() => validateNotice({
+    title: 'Toggling off auto_delete_objects for Bucket empties the bucket',
+    issueNumber: 16603,
+    overview: 'If a stack is deployed with an S3 bucket with auto_delete_objects=True, and then re-deployed with auto_delete_objects=False, all the objects in the bucket will be deleted.',
+    components: [{
+      name: 'cli',
+      version: '>= 2.1.0-alpha',
+    }],
+    schemaVersion: '1',
+  })).not.toThrow();
+});
+
 test('accepts empty notice array', () => {
   expect(() => validateNotices([])).not.toThrow();
 });
