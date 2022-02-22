@@ -65,6 +65,16 @@ test('accepts alpha version ranges', () => {
   })).not.toThrow();
 });
 
+test('rejects notices with empty component arrays', () => {
+  expect(() => validateNotice({
+    title: 'Toggling off auto_delete_objects for Bucket empties the bucket',
+    issueNumber: 16603,
+    overview: 'If a stack is deployed with an S3 bucket with auto_delete_objects=True, and then re-deployed with auto_delete_objects=False, all the objects in the bucket will be deleted.',
+    components: [],
+    schemaVersion: '1',
+  })).toThrow(/Notices should specify at least one affected component/);
+});
+
 test('accepts empty notice array', () => {
   expect(() => validateNotices([])).not.toThrow();
 });
