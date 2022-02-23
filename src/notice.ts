@@ -30,6 +30,10 @@ export function validateNotice(notice: Notice): void {
     throw new Error(`Maximum allowed title length is ${MAX_TITLE_LENGTH}. Title ${notice.title} is ${notice.title.length} characters long`);
   }
 
+  if (notice.components.length === 0) {
+    throw new Error('Notices should specify at least one affected component');
+  }
+
   for (const component of notice.components) {
     if (!isValidSemverRange(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);
