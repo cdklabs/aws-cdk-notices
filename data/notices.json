@@ -1,3 +1,20 @@
 {
-  "notices": []
+  "notices": [
+    {
+      "title": "(aws-eks): Regression in installing Helm charts from assets",
+      "issueNumber": 19179,
+      "overview": "Helm charts fail to install when provided as an asset. This issue does not affect charts installed from a repository.",
+      "components": [
+        {
+          "name": "framework",
+          "version": "2.14.0"
+        },
+        {
+          "name": "framework",
+          "version": "1.146.0"
+        }
+      ],
+      "schemaVersion": "1"
+    }
+  ]
 }
