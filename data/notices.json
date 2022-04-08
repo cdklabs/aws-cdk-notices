@@ -23,11 +23,11 @@
       "components": [
         {
           "name": "framework",
-          "version": "1.x"
+          "version": "1.*"
         },
         {
           "name": "cli",
-          "version": "1.x"
+          "version": "1.*"
         }
       ]
     }
