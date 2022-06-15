@@ -19,7 +19,7 @@
     {
       "title": "AWS CDK v1 has entered maintenance mode",
       "issueNumber": 19836,
-      "overview": "AWS CDK v1 has entered maintenance mode on June 1, 2022. Migrate to AWS CDK v2 to continue to get the latest features and fixes!.\n\n See https://docs.aws.amazon.com/cdk/v2/guide/migrating-v2.html",
+      "overview": "AWS CDK v1 has entered maintenance mode on June 1, 2022. Migrate to AWS CDK v2 to continue to get the latest features and fixes!\n\n See https://docs.aws.amazon.com/cdk/v2/guide/migrating-v2.html",
       "components": [
         {
           "name": "framework",
