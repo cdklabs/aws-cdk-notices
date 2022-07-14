@@ -33,9 +33,9 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(aws-ec2): VPCs with SubnetType.PRIVATE leads to resource destruction on upgrading to v1.162.0",
+      "title": "(aws-ec2): VPCs with SubnetType.PRIVATE leads to resource destruction on upgrading to versions >=v1.162.0 & <=1.163.2",
       "issueNumber": 21138,
-      "overview": "On upgrading to v1.162.0 and using SubnetType.PRIVATE in a VPC subnetConfiguration, some of the VPC resources will be destroyed.",
+      "overview": "On upgrading to versions >=v1.162.0 & <=1.163.2 and using SubnetType.PRIVATE in a VPC subnetConfiguration, some of the VPC resources will be destroyed.",
       "components": [
         {
           "name": "framework",
