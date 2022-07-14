@@ -34,11 +34,11 @@
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "@types/node": "^12",
-    "@types/semver": "^7.3.9",
+    "@types/semver": "^7.3.10",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
     "aws-cdk": "^2.10.0",
-    "esbuild": "^0.14.39",
+    "esbuild": "^0.14.49",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.7.1",
@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.10.0",
-    "cdk-pipelines-github": "^0.2.68",
+    "cdk-pipelines-github": "^0.2.126",
     "constructs": "^10.0.5",
     "semver": "^7.3.7"
   },
