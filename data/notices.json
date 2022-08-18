@@ -1,6 +1,22 @@
 {
   "notices": [
     {
+      "title": "(aws-cloudfront): The `--exclusively` (`-e`) flag is ignored",
+      "issueNumber": 21661,
+      "overview": "Deploying with the `--exclusively` flag no longer works past the synthesize stage.",
+      "components": [
+        {
+          "name": "framework",
+          "version": "2.38.0"
+        },
+        {
+          "name": "framework",
+          "version": "1.169.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "(aws-eks): Regression in installing Helm charts from assets",
       "issueNumber": 19179,
       "overview": "Helm charts fail to install when provided as an asset. This issue does not affect charts installed from a repository.",
