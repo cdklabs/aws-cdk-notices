@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "cli: no stacks are deployed if the `--exclusively` (`-e`) flag is used",
+      "issueNumber": 21661,
+      "overview": "When the `--exclusively` flag is used to select stacks with dependencies, instead no stacks are deployed at all and the deployment silently no-ops.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.38.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "(aws-eks): Regression in installing Helm charts from assets",
       "issueNumber": 19179,
       "overview": "Helm charts fail to install when provided as an asset. This issue does not affect charts installed from a repository.",
