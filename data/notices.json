@@ -6,7 +6,7 @@
       "overview": "When the `--exclusively` flag is used to select stacks with dependencies, instead no stacks are deployed at all and the deployment silently no-ops.",
       "components": [
         {
-          "name": "framework",
+          "name": "cli",
           "version": "2.38.0"
         }
       ],
