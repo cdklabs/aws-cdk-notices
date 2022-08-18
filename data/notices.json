@@ -1,7 +1,7 @@
 {
   "notices": [
     {
-      "title": "(aws-cloudfront): The `--exclusively` (`-e`) flag is ignored",
+      "title": "cli: no stacks are deployed if the `--exclusively` (`-e`) flag is used",
       "issueNumber": 21661,
       "overview": "Deploying with the `--exclusively` flag no longer works past the synthesize stage.",
       "components": [
