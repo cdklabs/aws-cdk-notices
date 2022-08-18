@@ -8,10 +8,6 @@
         {
           "name": "framework",
           "version": "2.38.0"
-        },
-        {
-          "name": "framework",
-          "version": "1.169.0"
         }
       ],
       "schemaVersion": "1"
