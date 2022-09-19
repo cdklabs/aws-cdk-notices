@@ -3,7 +3,7 @@
     {
       "title": "cli: cdk init produces EACCES: permission denied and does not fill the directory",
       "issueNumber": 22090,
-      "overview": "Unable to initialize new apps when cdk is installed globally in a directory owned by root",
+      "overview": "The CLI is unable to initialize new apps if CDK is installed globally in a directory owned by root",
       "components": [
         {
           "name": "cli",
