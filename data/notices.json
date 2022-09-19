@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "cli: cdk init produces EACCES: permission denied and does not fill the directory",
+      "issueNumber": 22090,
+      "overview": "The CLI is unable to initialize new apps if CDK is installed globally in a directory owned by root",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.42.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "cli: no stacks are deployed if the `--exclusively` (`-e`) flag is used",
       "issueNumber": 21661,
       "overview": "When the `--exclusively` flag is used to select stacks with dependencies, instead no stacks are deployed at all and the deployment silently no-ops.",
