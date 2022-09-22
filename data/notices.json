@@ -1,6 +1,22 @@
 {
   "notices": [
     {
+      "title": "apigateway: Unable to serialize value as aws-cdk-lib.aws_apigateway.IModel",
+      "issueNumber": 21902,
+      "overview": "Users of CDK in any language other than TS/JS cannot use values that return an instance of a deprecated class.",
+      "components": [
+        {
+          "name": "framework",
+          "version": ">=2.41.0"
+        },
+        {
+          "name": "framework",
+          "version": ">=1.172.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },    
+    {
       "title": "cli: cdk init produces EACCES: permission denied and does not fill the directory",
       "issueNumber": 22090,
       "overview": "The CLI is unable to initialize new apps if CDK is installed globally in a directory owned by root",
