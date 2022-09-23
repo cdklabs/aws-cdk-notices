@@ -1,4 +1,4 @@
-import { validateNotice, validateNotices } from '../src/notice';
+import { validateNotice } from '../src/notice';
 
 test('accepts valid notice', () => {
   expect(() => validateNotice({
@@ -74,8 +74,3 @@ test('rejects notices with empty component arrays', () => {
     schemaVersion: '1',
   })).toThrow(/Notices should specify at least one affected component/);
 });
-
-test('accepts empty notice array', () => {
-  expect(() => validateNotices([])).not.toThrow();
-});
-
