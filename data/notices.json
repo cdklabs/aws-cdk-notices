@@ -7,11 +7,11 @@
       "components": [
         {
           "name": "framework",
-          "version": ">=2.41.0"
+          "version": "2.41.0"
         },
         {
           "name": "framework",
-          "version": ">=1.172.0"
+          "version": "1.172.0"
         }
       ],
       "schemaVersion": "1"
