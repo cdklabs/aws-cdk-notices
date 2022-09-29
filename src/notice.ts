@@ -15,10 +15,6 @@ export interface Notice {
   schemaVersion: string;
 }
 
-export function validateNotices(notices: Notice[]): void {
-  notices.forEach(validateNotice);
-}
-
 /**
  * Validate the notice structure. Constraints:
  *   - Maximum title lenght: 100
