@@ -79,6 +79,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(lambda-layer-awscli): WARNING! ACTION REQUIRED! Your CDK application is using AwsCliLayer and this construct may experience a breaking change in a future release.",
+      "issueNumber": 99999999,
+      "overview": "Your app is using the AwsCliLayer construct in an environment where npm is inaccessible. In a future release, this construct will have a breaking change to extract large dependency files from the aws-cdk-lib package.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.lambda_layer_awscli.Notice",
+          "version": ">=2.x.y"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
