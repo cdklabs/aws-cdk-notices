@@ -83,7 +83,7 @@
     {
       "title": "(lambda-layer-awscli): [ACTION REQUIRED] Your CDK application is using AwsCliLayer",
       "issueNumber": 22470,
-      "overview": "Your app is using the AwsCliLayer construct in an environment where npm is inaccessible. Add a dependency on @aws-cdk/asset-awscli-v1 or the equivalent in your language, to remove this notice.",
+      "overview": "Your app is using the AwsCliLayer construct in an environment where npm is inaccessible. Add a dependency on @aws-cdk/asset-awscli-v1, or the equivalent in your language, to remove this notice.",
       "components": [
         {
           "name": "aws-cdk-lib.lambda_layer_awscli.Notice",
