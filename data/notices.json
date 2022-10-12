@@ -19,7 +19,7 @@
       "components": [
         {
           "name": "cli",
-          "version": "2.x.y"
+          "version": "2.42.0"
         }
       ],
       "schemaVersion": "1"
@@ -87,7 +87,7 @@
       "components": [
         {
           "name": "aws-cdk-lib.lambda_layer_awscli.Notice",
-          "version": "^2.42.0"
+          "version": "^2.x.y"
         }
       ],
       "schemaVersion": "1"
