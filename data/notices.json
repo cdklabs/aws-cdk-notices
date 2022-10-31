@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "aws-iam: IAM OIDC provider used with EKS retrieves expiring certificate",
+      "issueNumber": 8607,
+      "overview": "The IAM OIDC provider used with EKS retrieves leaf certificate instead of root certificate which has a longer expiration date",
+      "components": [
+        {
+          "name": "framework",
+          "version": "<=2.49.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "apigateway: Unable to serialize value as aws-cdk-lib.aws_apigateway.IModel",
       "issueNumber": 21902,
       "overview": "Users of CDK in any language other than TS/JS cannot use values that return an instance of a deprecated class.",
