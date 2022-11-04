@@ -3,11 +3,11 @@
     {
       "title": "aws-iam: IAM OIDC provider used with EKS retrieves expiring certificate",
       "issueNumber": 8607,
-      "overview": "The IAM OIDC provider used with EKS retrieves leaf certificate instead of root certificate which has a longer expiration date",
+      "overview": "An issue in the `aws-iam` module's `OpenIdConnectProvider` may break your application by the end of the year. Please see the issue thread for a workaround if you cannot upgrade when the fix is released.",
       "components": [
         {
           "name": "framework",
-          "version": "<=2.49.0"
+          "version": "<=2.50.0"
         }
       ],
       "schemaVersion": "1"
