@@ -1,13 +1,17 @@
 {
   "notices": [
     {
-      "title": "aws-iam: IAM OIDC provider used with EKS retrieves expiring certificate",
+      "title": "aws-iam: IAM OIDC provider configures the wrong certificate thumbprint",
       "issueNumber": 8607,
-      "overview": "An issue in the `aws-iam` module's `OpenIdConnectProvider` may break your application by the end of the year. Please see the issue thread for a workaround if you cannot upgrade when the fix is released.",
+      "overview": "Your application is using the iam.OpenIDConnectProvider resource, which currently configures the thumbprint of the leaf certificate instead of the root. Since leaf certificates are rotated more frequently, you are in danger of application errors while trying to use the provider to authenticate against AWS services. See the attached issue for mitigation steps and apply them as soon as possible.",
       "components": [
         {
-          "name": "framework",
-          "version": "<=2.50.0"
+          "name": "iam.OpenIdConnectProvider",
+          "version": "<=2.51.0"
+        },
+        {
+          "name": "iam.OpenIdConnectProvider",
+          "version": "<=1.181.0"
         }
       ],
       "schemaVersion": "1"
