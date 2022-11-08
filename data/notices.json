@@ -6,12 +6,12 @@
       "overview": "Your application is using the iam.OpenIDConnectProvider resource, which currently configures the thumbprint of the leaf certificate instead of the root. Since leaf certificates are rotated more frequently, you are in danger of application errors while trying to use the provider to authenticate against AWS services. See the attached issue for mitigation steps and apply them as soon as possible.",
       "components": [
         {
-          "name": "iam.OpenIdConnectProvider",
-          "version": "<=2.51.0"
+          "name": "aws-cdk-lib.aws-iam.OpenIdConnectProvider",
+          "version": "^2.0.0"
         },
         {
-          "name": "iam.OpenIdConnectProvider",
-          "version": "<=1.181.0"
+          "name": "@aws-cdk/aws-iam.OpenIdConnectProvider",
+          "version": "^1.0.0"
         }
       ],
       "schemaVersion": "1"
