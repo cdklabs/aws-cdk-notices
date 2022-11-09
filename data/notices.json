@@ -1,6 +1,22 @@
 {
   "notices": [
     {
+      "title": "aws-iam: IAM OIDC provider configures the wrong certificate thumbprint",
+      "issueNumber": 8607,
+      "overview": "Your application is using the iam.OpenIDConnectProvider resource, which currently configures the thumbprint of the leaf certificate instead of the root. Since leaf certificates are rotated more frequently, you are in danger of application errors next time those certificates get rotated. See the attached issue for mitigation steps and apply them as soon as possible.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_iam.OpenIdConnectProvider",
+          "version": "^2.0.0"
+        },
+        {
+          "name": "@aws-cdk/aws-iam.OpenIdConnectProvider",
+          "version": "^1.0.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "apigateway: Unable to serialize value as aws-cdk-lib.aws_apigateway.IModel",
       "issueNumber": 21902,
       "overview": "Users of CDK in any language other than TS/JS cannot use values that return an instance of a deprecated class.",
