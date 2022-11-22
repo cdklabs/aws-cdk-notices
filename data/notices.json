@@ -7,11 +7,11 @@
       "components": [
         {
           "name": "aws-cdk-lib.aws_iam.OpenIdConnectProvider",
-          "version": "<2.51.0"
+          "version": "^2.0.0"
         },
         {
           "name": "@aws-cdk/aws-iam.OpenIdConnectProvider",
-          "version": "<1.181.0"
+          "version": "^1.0.0"
         }
       ],
       "schemaVersion": "1"
