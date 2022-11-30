@@ -1,6 +1,22 @@
 {
   "notices": [
     {
+      "title": "cli: TypeScript apps created with `cdk init` could fail to compile",
+      "issueNumber": 23126,
+      "overview": "Projects using TypeScript <4.2 (like the ones created with `cdk init`) are failing to compile due to a transitive dependency introducing a breaking change. This issue does not affect you if you are using a recent TypeScript version.",
+      "components": [
+        {
+          "name": "cli",
+          "version": ">=2.0.0 <=2.52.0"
+        },
+        {
+          "name": "cli",
+          "version": ">=1.0.0 <=1.181.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "aws-iam: IAM OIDC provider configures the wrong certificate thumbprint",
       "issueNumber": 8607,
       "overview": "Your application is using the iam.OpenIDConnectProvider resource, which currently configures the thumbprint of the leaf certificate instead of the root. Since leaf certificates are rotated more frequently, you are in danger of application errors next time those certificates get rotated. See the attached issue for mitigation steps and apply them as soon as possible.",
@@ -27,7 +43,7 @@
         }
       ],
       "schemaVersion": "1"
-    },    
+    },
     {
       "title": "cli: cdk init produces EACCES: permission denied and does not fill the directory",
       "issueNumber": 22090,
