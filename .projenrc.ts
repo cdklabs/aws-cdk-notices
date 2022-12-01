@@ -9,6 +9,12 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   authorName: 'Amazon Web Services',
   authorUrl: 'https://aws.amazon.com/',
 
+  autoApproveUpgrades: true,
+  autoApproveOptions: {
+    allowedUsernames: ['cdklabs-automation'],
+    secret: 'GITHUB_TOKEN',
+  },
+
   deps: [
     'semver',
     'cdk-pipelines-github',
