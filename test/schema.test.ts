@@ -32,7 +32,17 @@ describe('Notices file is valid', () => {
         for (const component of notice.components) {
           const range = new semver.Range(component.version);
           if (range.test('100.0.0')) {
-            throw new Error(`${component.version} should contain an upper bound, use <,<=,~ or similar to bound this range`);
+            throw new Error(`${component.version} should contain an upper bound (version should look like "^2.3.4 <2.5.6")`);
+          }
+        }
+      });
+
+      test('v2 version ranges must be bounded at the bottom', () => {
+        for (const component of notice.components) {
+          if (component.version === '1.*') { continue; } // Special range that we allow
+          const range = new semver.Range(component.version);
+          if (range.test('1.999.0')) {
+            throw new Error(`${component.version} should have an upper bound in v1 range, or a lower bound in v2 range (version should look like "^2.3.4 <2.5.6")`);
           }
         }
       });
