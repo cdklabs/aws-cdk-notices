@@ -38,7 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
     "aws-cdk": "^2.51.0",
-    "esbuild": "^0.16.1",
+    "esbuild": "^0.16.3",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.7.1",
@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.51.0",
-    "cdk-pipelines-github": "^0.3.59",
+    "cdk-pipelines-github": "^0.3.62",
     "constructs": "^10.0.5",
     "semver": "^7.3.8"
   },
