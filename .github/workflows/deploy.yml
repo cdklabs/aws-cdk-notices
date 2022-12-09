@@ -18,13 +18,13 @@ jobs:
     env: {}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Build
         run: |-
           yarn install
           yarn build
       - name: Upload cdk.out
-        uses: actions/upload-artifact@v2.1.1
+        uses: actions/upload-artifact@v3
         with:
           name: cdk.out
           path: cdk.out
@@ -40,14 +40,14 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: cdk.out
           path: cdk.out
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -68,14 +68,14 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: cdk.out
           path: cdk.out
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -96,14 +96,14 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: cdk.out
           path: cdk.out
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -124,14 +124,14 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: cdk.out
           path: cdk.out
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -152,14 +152,14 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: cdk.out
           path: cdk.out
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -183,14 +183,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-region: us-east-1
           role-duration-seconds: 1800
           role-skip-session-tagging: true
           role-to-assume: arn:aws:iam::458101988253:role/GitHubActionRole
       - name: Assume CDK Deploy Role
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           aws-region: us-east-1
           role-duration-seconds: 1800
@@ -201,7 +201,7 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/cdk-hnb659fds-deploy-role-458101988253-us-east-1
           role-external-id: Pipeline
       - id: Deploy
-        uses: aws-actions/aws-cloudformation-github-deploy@v1
+        uses: aws-actions/aws-cloudformation-github-deploy@v1.1.0
         with:
           name: prod-WebsiteStack
           template: https://cdk-hnb659fds-assets-458101988253-us-east-1.s3.us-east-1.amazonaws.com/${{
