@@ -1548,10 +1548,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.3.68:
-  version "0.3.68"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.68.tgz#e83b50081898fc755e954e50fcd4bff5a307c171"
-  integrity sha512-jDcvydUYPdhQXngqNiOMBreh0OyFyNGq6biS4owwY+MXSPWN3+6fPkgzJ5tFBnWB4pHfSAWdkUkoUtoOQdyzPA==
+cdk-pipelines-github@^0.3.69:
+  version "0.3.69"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.69.tgz#6ea2d477167575fa34f5368923ccf16254bd2b3e"
+  integrity sha512-d/8e/6d2iPY1KIXXPxMm/rP169QvA0kA7rMqNyx67gVr4jHT6NJAWszkM0d82dHJvPTs+YZCnKFRkWWlq2F5YQ==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1743,9 +1743,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.189"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.189.tgz#a701517dbb0070098e94e822567c4fe7d694fdf5"
-  integrity sha512-xBwsjkgzZVqND1qHH6JQcROtJSlJsdYYHv4Spmipf2KVGXk4v70OGfvT2vTSWXvIoivxhnzPhEPKnMmFDheCmA==
+  version "10.1.190"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.190.tgz#a3c5a497bff4c4a835738137b51967ff07bc97c1"
+  integrity sha512-wGMEBsIKp/tP+b2q3XEtIh/KJPZ2uk7G2XyEbGVEatOo6OQHFhXfBi9BCk8725zuWYP/gZUQJfAvd7KZ+lY5Yw==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
