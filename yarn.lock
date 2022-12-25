@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.30":
-  version "2.2.38"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.38.tgz#993b14c061eca1b7d7e258ee4d8e4fca9d57eb23"
-  integrity sha512-GUnGjY7+krgLrzqnmxOntX8tSMnuvoBKLiuQKFT9tFuGCOKO/rFFvg6dOl83dxH5rANOv5yk1iTkQe3IAGFMSA==
+  version "2.2.39"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.39.tgz#bbea03debcf16ab57fee8639d3b0cb881d3561c0"
+  integrity sha512-H+g33pOw2mp3xZ9btQ2u6xnJwo09VTkTNW0fSA1kNoHCXGPRlhDmo0yOzoubSDJlzFOrWCD7WoQOcgzUVzaYpQ==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -1549,10 +1549,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.3.77:
-  version "0.3.77"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.77.tgz#edf7337cd1d7f16e7261dedf7b0a960344b21cad"
-  integrity sha512-HITU/p6BuXx4m0baqiKs0+SI7Wkia6bjgWMr0gL6rciD/7/rgaW7RAEyONJs+tPTovsA3wHaC2HA5lThwapi+A==
+cdk-pipelines-github@^0.3.78:
+  version "0.3.78"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.78.tgz#0d66b90601f2ad79c6555ce17d11e8aabb9d4436"
+  integrity sha512-GCT8RMGq6O09rmjfdKAaNyV4kuT+Wja2V+SPZXY6fUOvs4xuzONz61ezp12IxhIX4xVGq68KzQLLlPG6osKX3g==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1744,9 +1744,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.198"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.198.tgz#f16cc995bd70f8ae1c0e06d4912ae4fb170b6c57"
-  integrity sha512-1WJdJdjoi/GUwvt9hYbPAec4RCq5oylVxmccIZuU2aFPiJjL6xDJbg+2tpZw6kJ+CNwxPGehESL+A7VJ74NGDQ==
+  version "10.1.199"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.199.tgz#153b2ab7952fbaea590e07c8fa7ccdda0ed71409"
+  integrity sha512-wil0CGK+fTRDM5zlMjthaAVtUEPFzpOlVdj7h7mPLKHDc22J5bKyhoa31uSOxInnKxnTLGgmNKOBqtK4w5gSPw==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
