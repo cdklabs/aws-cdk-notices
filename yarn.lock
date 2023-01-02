@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.30":
-  version "2.2.46"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.46.tgz#39497e3ce330bbaf33b8d9ccdcbbee6928dd4887"
-  integrity sha512-Z7fPZjRaFAuaAC9ywrDJtbfOgAb8kBmbMcs8shlG8erBluhhf7xyf0nQ7BGEyETy7Iy/vJoJ1fvMAIN2q9K5LA==
+  version "2.2.47"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.47.tgz#4c512c96d462876408a3f93b8d784b44f7aefe80"
+  integrity sha512-cjLeevt9tVwc5/2nGrxREIEKeTmWKEPSASSrWz8XkLUAT53jcu8ugP0+or0km8twe1ifnSwinUjlLCymyNEDOA==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -1549,10 +1549,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.3.85:
-  version "0.3.85"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.85.tgz#1337d16048f4360a8ca5155773707a08f0d5808b"
-  integrity sha512-avbRxTNM+c4pTiTmXVmoBUDf3f3TsGPvE/8JTJQ3+1rsCUDbnpa/XDmX3Cj7UzoQZtkbnq94BgE7My1ixB5XuQ==
+cdk-pipelines-github@^0.3.86:
+  version "0.3.86"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.86.tgz#23dd67f7cce4f00fa79765bbe682fd02b0accc70"
+  integrity sha512-8qolXl6aVVNGmpdXOh16Hmqg7Ytk8Lvn7j+VyTtxpWYCn0mKwDauQmGfYZ3s3ju0tqUCU2tuHdneNTB9L2r0Ag==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1744,9 +1744,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.205"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.205.tgz#1f18d8d1cb6566b979578d4991ced27e91c6c513"
-  integrity sha512-7C8nFI1WyHu5pkiPa7suHCmBdkB+N6ilUd1WoMSh09XBsdxQmz+RU/mCjzr0ifFjD90v1F9L2FawAsNoqOEhrA==
+  version "10.1.206"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.206.tgz#221d56b9eb1b180d0bc651de8dbe163cc5b08ff2"
+  integrity sha512-jjeA7reb3+GsyR49Yb8X+KmzkYVi6074Lbn3GZVSj4Xy9mELcooQGFO41OvxkQ2FM/hZ42sfAF1Y7kcwXw8Vcg==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -2440,9 +2440,9 @@ fast-memoize@^2.5.2:
   integrity sha512-Ue0LwpDYErFbmNnZSF0UH6eImUwDmogUO1jyE+JbN2gsQz/jICm1Ve7t9QT0rNSsfJt+Hs4/S3GnsDVjL4HVrw==
 
 fastq@^1.6.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.14.0.tgz#107f69d7295b11e0fccc264e1fc6389f623731ce"
-  integrity sha512-eR2D+V9/ExcbF9ls441yIuN6TI2ED1Y2ZcA5BmMtJsOkWOFRJQ0Jt0g1UwqXJJVAb+V+umH5Dfr8oh4EVP7VVg==
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.15.0.tgz#d04d07c6a2a68fe4599fea8d2e103a937fae6b3a"
+  integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
   dependencies:
     reusify "^1.0.4"
 
