@@ -1548,9 +1548,9 @@ camelcase@^6.0.0, camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001400:
-  version "1.0.30001443"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001443.tgz#8fc85f912d5471c9821acacf9e715c421ca0dd1f"
-  integrity sha512-jUo8svymO8+Mkj3qbUbVjR8zv8LUGpGkUM/jKvc9SO2BvjCI980dp9fQbf/dyLs6RascPzgR4nhAKFA4OHeSaA==
+  version "1.0.30001444"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001444.tgz#c0a530776eb44d933b493de1d05346f2527b30fc"
+  integrity sha512-ecER9xgJQVMqcrxThKptsW0pPxSae8R2RB87LNa+ivW9ppNWRHEplXcDzkCOP4LYWGj8hunXLqaiC41iBATNyg==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -1564,10 +1564,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.3.97:
-  version "0.3.97"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.97.tgz#2e65c9d0a56057838780cd9dd6c90ddb85fa3091"
-  integrity sha512-kUCM37PGB/I/li9jjStbE6oXTEbiwI4F94mo2NigvVpZCnyT3QXgwevSkKwaj9HlsLTm/muwMg+GoHDYgFjgtw==
+cdk-pipelines-github@^0.3.98:
+  version "0.3.98"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.98.tgz#209cf8f4187499326406b02c3bd0d08b47271098"
+  integrity sha512-S/oi8JbE52yYoT47uRIlAcVaPNnVxjC52KBSB/az+aHyjYtJo+pwR6gPGgUEE6yEVBtrM+TmBBkemm/SUJmD+Q==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1759,9 +1759,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.217"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.217.tgz#f1ffce0294146dae6908f89d8fb4975df61dbc69"
-  integrity sha512-+XeQSGaotq5Y+Y39xbHzt1c8ZmYC2CMwxWGX9drk9TcZeuMe1/mIZUeqyY7LX4Ac/HDSYV21irq/rLGZ71QKtw==
+  version "10.1.218"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.218.tgz#d36ef6fee6d54bc4c0d62d9029b0383e69e98b33"
+  integrity sha512-XTRRbPHw9wyTrRZ5j9OE61KgoW9B3gBkcVJz+FB9qH4xnXh94rJzoipcaCzTMMdtWe/LLGLEsjx25rOld9tosA==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
