@@ -1,6 +1,22 @@
 {
   "notices": [
     {
+      "title": "triggers: Deployment of trigger functions fails with a type error",
+      "issueNumber": 23407,
+      "overview": "Users of Triggers and TriggerFunctions will receive deployment errors from CloudFormation when upgrading.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.triggers.Trigger",
+          "version": "^2.56.0 <2.61.1"
+        },
+        {
+          "name": "aws-cdk-lib.triggers.TriggerFunction",
+          "version": "^2.56.0 <2.61.1"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "aws-iam: IAM OIDC provider configures the wrong certificate thumbprint",
       "issueNumber": 8607,
       "overview": "Your application is using the iam.OpenIDConnectProvider resource, which currently configures the thumbprint of the leaf certificate instead of the root. Since leaf certificates are rotated more frequently, you are in danger of application errors next time those certificates get rotated. See the attached issue for mitigation steps and apply them as soon as possible.",
