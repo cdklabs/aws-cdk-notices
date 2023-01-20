@@ -3,7 +3,7 @@
     {
       "title": "triggers: Deployment of trigger functions fails with a type error",
       "issueNumber": 23407,
-      "overview": "Users of Triggers and TriggerFunctions will receive deployment errors from CloudFormation when upgrading.",
+      "overview": "The Trigger and TriggerFunction constructs fail to deploy when upgrading.",
       "components": [
         {
           "name": "aws-cdk-lib.triggers.Trigger",
