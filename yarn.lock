@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.52":
-  version "2.2.54"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.54.tgz#729a9df1a04abdc548e4a5c16c01b990ed7c50e3"
-  integrity sha512-jzJ761ZvdoJa+VCM6bgll6zqVOqhf/xZxao1KMMABeVEv7T/o817RK0sAI+j2HlqrZFhyATCGbojgOavrxT2jw==
+  version "2.2.55"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.55.tgz#e75787e8d90f186b05e8ea5bccff7fdf301d4d67"
+  integrity sha512-bgDMmo9t1blYqvEAP7enPLfaWo2mBZMrxy5li/0zUlNLHW4FDNlBofuiJWhJp0cdEgeP5D4D1akCtov6ECrZag==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -21,9 +21,9 @@
   integrity sha512-U1ntiX8XiMRRRH5J1IdC+1t5CE89015cwyt5U63Cpk0GnMlN5+h9WsWMlKlPXZR4rdq/m806JRlBMRpBUB2Dhw==
 
 "@aws-cdk/asset-node-proxy-agent-v5@^2.0.42":
-  version "2.0.42"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.42.tgz#e0833c219ba866eb2232a63dfc96c2a6db2f7394"
-  integrity sha512-PxvP1UU2xa4k3Ea78DxAYY8ADvwWZ/nPu+xsjQLsT+MP+aB3RZ3pGc/fNlH7Rg56Zyb/j3GSdihAy4Oi5xa+TQ==
+  version "2.0.44"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.44.tgz#d5000d044edef3a6a9964d3aed313a50fbf1bddb"
+  integrity sha512-Tcad2Bb/FX/r+IblNsmDaSEiivn9JCeM42CM1OHBUiSB4PfZ3gvP5lUosxMYPu7X/UGGR6pjwkWTSUMthcVHVQ==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.18.6":
   version "7.18.6"
@@ -172,9 +172,9 @@
     js-tokens "^4.0.0"
 
 "@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.13", "@babel/parser@^7.20.7":
-  version "7.20.13"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.13.tgz#ddf1eb5a813588d2fb1692b70c6fce75b945c088"
-  integrity sha512-gFDLKMfpiXCsjt4za2JA9oTMn70CeseCehb11kRZgvd7+F67Hih3OHOK24cRrWECJ/ljfPGac6ygXAs/C8kIvw==
+  version "7.20.15"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.15.tgz#eec9f36d8eaf0948bb88c87a46784b5ee9fd0c89"
+  integrity sha512-DI4a1oZuf8wC+oAJA9RW6ga3Zbe8RZFt7kD9i4qAspz3I/yHet1VvC3DiSy/fsUvv5pvJuNPh0LPOdCcqinDPg==
 
 "@babel/plugin-syntax-async-generators@^7.8.4":
   version "7.8.4"
@@ -1565,10 +1565,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.3.119:
-  version "0.3.119"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.119.tgz#a4bdbced817d2e0a7b8488a6043f899b416cf91e"
-  integrity sha512-p2al6qaydUpbdfWIYIcrASLU2bBVY3YCl9Of9M0qM0uNaPisHwypse3PkUaKKsb3zXq3TN5L37iypao+ZvLrYw==
+cdk-pipelines-github@^0.3.120:
+  version "0.3.120"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.120.tgz#b31dbedb410ff4defe7ff9797aa901db920e31c6"
+  integrity sha512-3HjYBL34FhjhpMa68Fce/SMzrjGYmvzGRIiE5HI6G1u1J2Pe6ndD59xz2MhVyG6kWy2Ge8VSWV+up8wSRM13vQ==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1760,9 +1760,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.237"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.237.tgz#cec68cbd8726c6463298566a11a5e84d50e098ca"
-  integrity sha512-Y8HH/d5opBmp97C0BM8Ib24wIbA1nP6xzewnMlRilth/B1p29tvI+bR/o981z7gdgwLdVgs6kBrUXCHg+OQ/tQ==
+  version "10.1.238"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.238.tgz#51b5921a6f91fea9797729b0e1044d133af9c884"
+  integrity sha512-cpVVLEYUbLF9K0vwpbbHJA2mpkDbtpKmU/c6WadgBbwqvxR6ntim5xtZmrx9rckeL3t/lBp5Tcfd6gbhCRep7A==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
