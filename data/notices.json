@@ -85,9 +85,9 @@
       "schemaVersion": "1"
     },
     {
-      "title": "AWS CDK v1 has entered maintenance mode",
+      "title": "AWS CDK v1 End-of-Support June 1, 2023",
       "issueNumber": 19836,
-      "overview": "AWS CDK v1 has entered maintenance mode on June 1, 2022. Migrate to AWS CDK v2 to continue to get the latest features and fixes!",
+      "overview": "AWS CDK v1 is currently in maintenance mode. Support for AWS CDK v1 will end entirely on June 1, 2023. Migrate to AWS CDK v2 to continue to get the latest features and fixes!",
       "components": [
         {
           "name": "framework",
