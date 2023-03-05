@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.85":
-  version "2.2.91"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.91.tgz#2b2705561f664b24618230f1e4e87ab5e00df8fd"
-  integrity sha512-a66YsYr8csu9LBBpm+kQQlJL7PnC4KcfjSfSWA86VeQZfAkBF/QRlL0XghUO4WUV55UPx93jm86z4eNwthyAsg==
+  version "2.2.92"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.92.tgz#71b2852d0457829106a9c7b139fb881ae4e7d7e3"
+  integrity sha512-v4zKuXzFcV8XqWBb4k6EBiIuqpDV8ORZ1GfGCDz4AaZt4nMgcZaoxMrCQr+cpDF9YTvodTKc/vX+KxSJIjF/PQ==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -21,9 +21,9 @@
   integrity sha512-U1ntiX8XiMRRRH5J1IdC+1t5CE89015cwyt5U63Cpk0GnMlN5+h9WsWMlKlPXZR4rdq/m806JRlBMRpBUB2Dhw==
 
 "@aws-cdk/asset-node-proxy-agent-v5@^2.0.71":
-  version "2.0.73"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.73.tgz#32d061c80d06b2da2fa87a77462f1a70967986df"
-  integrity sha512-6HK9q8TEV0g9WopnKwK62qDBUTVdswfw6K1jXzJrQsDUEB7+OvgQjfR5vrEtc++MEbc625Xc5hzfxv3gGmc6DQ==
+  version "2.0.74"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.74.tgz#054ba3b97dfc09a98bf69ac7cfd5fbadfc2df13e"
+  integrity sha512-y33xXniA9hJs861JWSc+DP9FDDDrbPOUwihhmnzceCnpSpLYpIhAwf/6+aDhnlrhtQ36LrIYqQSZQN1fDDMtoA==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.18.6":
   version "7.18.6"
@@ -1571,10 +1571,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.3.141:
-  version "0.3.141"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.141.tgz#847d360b1514a3eb77dbce24388edec639ac729a"
-  integrity sha512-sdJs+CKn6ryVLl8+VIrYxOKyTw1rhh1TwHKXc7Il7YZE3DNBoGfzVoq4xMZwIMvxjnv/uthQ4LoHq7ax1E8xLg==
+cdk-pipelines-github@^0.3.142:
+  version "0.3.142"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.3.142.tgz#2f7f78df02ee23c601b7d8bed60bfac237bd2259"
+  integrity sha512-E724aOsyvgLIzdQKjmPGMr/R+hAlVK4uMsFB6/NnEG/C/u6cQPg9jMZYj8qVtqfpBbG/+yUlgDy1oqcJAsVCcw==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1766,9 +1766,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.266"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.266.tgz#b7a84a6c2d5b2c53d6fb120b05dcdec98e76de98"
-  integrity sha512-6rNXyszNbalWuyJBvMuyaaCFNLNr77mYNzq7dB0MFh2Qa909XkTA+5mPXFAho+IzP5wY1SVYUDrB/QFSnfMtMQ==
+  version "10.1.267"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.267.tgz#42cef18360e7f8ec070849fe314376fadeca4452"
+  integrity sha512-trA5DrdmXaLXeYzGcmAA1IAyYRB80CdzM1Yn6oXmBVQl4SOX3BSeFdD7sBfpszVW/VuFNB7Y5OnQBcJ62fTeaw==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
