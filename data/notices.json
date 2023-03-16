@@ -111,6 +111,30 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(ecs-patterns) NLB-fronted services may cause target groups to be replaced on upgrade",
+      "issueNumber": 24642,
+      "overview": "Upgrading to versions >=1.141.0 or >=2.9.0 may cause target groups to be replaced when using NetworkLoadBalancedFargateService or NetworkLoadBalancedEc2Service.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_ecs_patterns.NetworkLoadBalancedFargateService",
+          "version": ">=2.0.0 <2.9.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws_ecs_patterns.NetworkLoadBalancedEc2Service",
+          "version": ">=2.0.0 <2.9.0"
+        },
+        {
+          "name": "@aws-cdk/aws-ecs-patterns.NetworkLoadBalancedFargateService",
+          "version": "<1.141.0"
+        },
+        {
+          "name": "@aws-cdk/aws-ecs-patterns.NetworkLoadBalancedEc2Service",
+          "version": "<1.141.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
