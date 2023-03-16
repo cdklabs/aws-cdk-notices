@@ -119,19 +119,19 @@
       "components": [
         {
           "name": "aws-cdk-lib.aws_ecs_patterns.NetworkLoadBalancedFargateService",
-          "version": ">=2.9.0 <3.0.0"
+          "version": ">=2.0.0 <2.9.0"
         },
         {
           "name": "aws-cdk-lib.aws_ecs_patterns.NetworkLoadBalancedEc2Service",
-          "version": ">=2.9.0 <3.0.0"
+          "version": ">=2.0.0 <2.9.0"
         },
         {
           "name": "@aws-cdk/aws-ecs-patterns.NetworkLoadBalancedFargateService",
-          "version": ">=1.141.0 <2.0.0"
+          "version": "<1.141.0"
         },
         {
           "name": "@aws-cdk/aws-ecs-patterns.NetworkLoadBalancedEc2Service",
-          "version": ">=1.141.0 <2.0.0"
+          "version": "<1.141.0"
         }
       ],
       "schemaVersion": "1"
