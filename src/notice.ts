@@ -17,7 +17,7 @@ export interface Notice {
 
 /**
  * Validate the notice structure. Constraints:
- *   - Maximum title lenght: 100
+ *   - Maximum title length: 100
  *   - Valid component names: 'cli', 'framework'
  *   - Versions comply with the semver format
  */
@@ -31,21 +31,12 @@ export function validateNotice(notice: Notice): void {
   }
 
   for (const component of notice.components) {
-    if (!isValidSemverRange(component.version)) {
+    if (!semver.validRange(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);
     }
   }
 
-  if (!isValidSemverRange(notice.schemaVersion)) {
+  if (!semver.validRange(notice.schemaVersion)) {
     throw new Error(`Schema version ${notice.schemaVersion} is not a valid semver range`);
-  }
-}
-
-function isValidSemverRange(range: string): boolean {
-  try {
-    new semver.Range(range);
-    return true;
-  } catch (_) {
-    return false;
   }
 }
