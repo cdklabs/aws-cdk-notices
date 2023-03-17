@@ -1,9 +1,9 @@
 {
   "notices": [
     {
-      "title": "aws-wafv2: Reverted the naming pattern change where some structs changed from Foo to FooAction",
+      "title": "aws-wafv2: The structs naming pattern changes from FooAction to Foo",
       "issueNumber": 24668,
-      "overview": "Reverted the naming pattern where Allow, Block, Captcha, Challenge and Count struct changed to AllowAction, BlockAction, CaptchaAction, ChallengeAction and CountAction in CloudFormation specification release v109.0.0.",
+      "overview": "The structs naming pattern changes from AllowAction, BlockAction, CaptchaAction, ChallengeAction and CountAction to Allow, Block, Captcha, Challenge and Count respectively.",
       "components": [
         {
           "name": "aws-cdk-lib.aws_wafv2.CfnRuleGroup",
