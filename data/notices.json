@@ -1,6 +1,22 @@
 {
   "notices": [
     {
+      "title": "aws-wafv2: Reverted the naming pattern change where some structs changed from Foo to FooAction",
+      "issueNumber": 24668,
+      "overview": "Reverted the naming pattern where Allow, Block, Captcha, Challenge and Count struct changed to AllowAction, BlockAction, CaptchaAction, ChallengeAction and CountAction in CloudFormation specification release v109.0.0.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_wafv2.CfnRuleGroup",
+          "version": ">=v2.63.0 <v2.70.0"
+        },
+        {
+          "name": "@aws-cdk/aws-wafv2.CfnRuleGroup",
+          "version": ">=v1.192.0 <v1.198.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "triggers: Deployment of trigger functions fails with a type error",
       "issueNumber": 23407,
       "overview": "The Trigger and TriggerFunction constructs fail to deploy when upgrading.",
