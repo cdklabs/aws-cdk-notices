@@ -31,7 +31,7 @@ describe('Notices file is valid', () => {
       test('all version ranges must be bounded at the top', () => {
         for (const component of notice.components) {
           const range = new semver.Range(component.version);
-          if (range.test('100.0.0')) {
+          if (!isBoundedFromAbove(range)) {
             throw new Error(`${component.version} should contain an upper bound (version should look like "^2.3.4 <2.5.6")`);
           }
         }
@@ -40,8 +40,7 @@ describe('Notices file is valid', () => {
       test('v2 version ranges must be bounded at the bottom', () => {
         for (const component of notice.components) {
           if (component.version === '1.*') { continue; } // Special range that we allow
-          const range = new semver.Range(component.version);
-          if (range.test('1.999.0') && range.test('2.0.0')) {
+          if (semver.intersects(component.version, '2') && !semver.subset(component.version, '2')) {
             throw new Error(`${component.version} should have an upper bound in v1 range, or a lower bound in v2 range (version should look like "^2.3.4 <2.5.6")`);
           }
         }
@@ -50,3 +49,8 @@ describe('Notices file is valid', () => {
   });
 });
 
+function isBoundedFromAbove(range: semver.Range) {
+  const comparators = range.set.flat();
+  return comparators.some(c => c.operator === '<' || c.operator === '<=')
+    || comparators.every(c => c.operator !== '>' && c.operator !== '>=');
+}
