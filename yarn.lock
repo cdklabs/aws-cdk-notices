@@ -11,9 +11,9 @@
     "@jridgewell/trace-mapping" "^0.3.9"
 
 "@aws-cdk/asset-awscli-v1@^2.2.97":
-  version "2.2.131"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.131.tgz#1b6f4f760a66696af8bd7f9daaeb1e515c8acace"
-  integrity sha512-rqArQWbEoBRU2jU61EaLxnMEu74bebflnhDyWoQtwI65PiqIKTb0f/laaKvpjm3WJ2pITssE6TstZD7L2eA7lQ==
+  version "2.2.132"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.132.tgz#5cd28946049b2072b02cb472f1acedbff611be3b"
+  integrity sha512-TIhdwrp8uxxZDAY/oB7tPKtDJJPNO14hzdm436WGm68LKne2Q4d0t+ZDP0DcNM9+ppWP0NNjtcICLiy6UqM5KQ==
 
 "@aws-cdk/asset-kubectl-v20@^2.1.1":
   version "2.1.1"
@@ -21,9 +21,9 @@
   integrity sha512-U1ntiX8XiMRRRH5J1IdC+1t5CE89015cwyt5U63Cpk0GnMlN5+h9WsWMlKlPXZR4rdq/m806JRlBMRpBUB2Dhw==
 
 "@aws-cdk/asset-node-proxy-agent-v5@^2.0.77":
-  version "2.0.107"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.107.tgz#0de91f12c9c143498122b820e078787f4eb8b525"
-  integrity sha512-4UbI4+bH7+R+3R9S1td2Csrzrh6/swaEHNy2/2PSGPyleZZWsu7jCH57ZCdUSVQ1j0QR8S0XHrfjv6jsYMvrxQ==
+  version "2.0.108"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v5/-/asset-node-proxy-agent-v5-2.0.108.tgz#c618f34003b6d5338bd362341a826c0f43e4ed7e"
+  integrity sha512-RR9M5LveGoOTqkzqhNTNe5Zb9XEIdyhOHS033V/rellvBRtnAcdwj4OxOVbLfojzwFeFjKwa1DA2+6r8zJroUg==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.18.6", "@babel/code-frame@^7.21.4":
   version "7.21.4"
@@ -1588,9 +1588,9 @@ camelcase@^6.0.0, camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001449:
-  version "1.0.30001475"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001475.tgz#1cf0a3003eddc6986f79b54c804981423ce127e3"
-  integrity sha512-6xvTuQbEjQvvdknKCA/B6w6edEG9OMrkTY3M2sre8Iau/5f9stnJA3RfnzUMZlVhcsp1Lyl2KsM8T2R8B3P0Kg==
+  version "1.0.30001476"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001476.tgz#759906c53eae17133217d75b482f9dc5c02f7898"
+  integrity sha512-JmpktFppVSvyUN4gsLS0bShY2L9ZUslHLE72vgemBkS43JD2fOvKTKs+GtRwuxrtRGnwJFW0ye7kWRRlLJS9vQ==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -1604,10 +1604,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.4.23:
-  version "0.4.23"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.23.tgz#7209746386a4660c587a875eaa7fe3434633dfc5"
-  integrity sha512-zg/WrtSatPQt/pep5ppd8NDhozLFiOHx+edsa+7JiW024DE3uAlBXNQ8rCsNfsWyVoANS3uD3jzC0GRkZKgKVA==
+cdk-pipelines-github@^0.4.24:
+  version "0.4.24"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.24.tgz#f6cb637f136bd8940f5d897b3472db4798332e32"
+  integrity sha512-HPAetR2U+NqvwyeNgQAEkqLRLgp7tjvegqiNIv5ZU7m0odLjlB/JwATwGfeMay1uv7pa75M06yTf15igC8m0nA==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1799,9 +1799,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.1.304"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.304.tgz#b9ba53e14a2f68a482ddfd7c921bc285527e6aa4"
-  integrity sha512-mYzFQ+nOCW5oOYM4OFEa66bJBfWUo+jTYUlTQm8UxSrT5RgN5dKyPOgxd3dY76MdV1BRaKXX+TiIo21LW9ORnw==
+  version "10.1.305"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.305.tgz#b76aa967689869e4d9830f645520016f1f367f17"
+  integrity sha512-Dlv6/pAevgTRAiHB7z77dZD3523+FNKX2Qg65FIcNrAakllcgA69dql+j9X4Y3+JXUhQlfliys72kVAk+Ah3KA==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
