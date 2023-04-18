@@ -54,9 +54,9 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.51.0",
-    "cdk-pipelines-github": "^0.4.31",
+    "cdk-pipelines-github": "^0.4.32",
     "constructs": "^10.0.5",
-    "semver": "^7.4.0"
+    "semver": "^7.5.0"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",
