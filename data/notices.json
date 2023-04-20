@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "core: Names of deployed stacks change, requiring redeployment",
+      "issueNumber": 25130,
+      "overview": "The names of stacks that contain special characters (such as '-') are incorrectly sanitized. This is a breaking change to the names of stacks that have already been deployed.",
+      "components": [
+        {
+          "name": "aws-cdk-lib/core.Stack",
+          "version": ">=v2.74.0 <v2.75.1"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "aws-wafv2: The structs naming pattern changes from FooAction to Foo",
       "issueNumber": 24668,
       "overview": "The structs naming pattern changes from AllowAction, BlockAction, CaptchaAction, ChallengeAction and CountAction to Allow, Block, Captcha, Challenge and Count respectively.",
