@@ -1,7 +1,7 @@
 {
   "notices": [
     {
-      "title": "custom-resources: `INACTIVE` custom resource provider lambda throws `State functionActiveV2 is not found`",
+      "title": "custom-resources: `INACTIVE` custom resource provider lambda throws `functionActiveV2 is not found`",
       "issueNumber": 24358,
       "overview": "If the custom resource provider Lambda becomes `INACTIVE`, the custom resource provider framework attempts to call `functionActiveV2()` to wait for the function to become active. This throws the error because the SDK installed by Lambda is at version 2.1055.0, but `functionActiveV2` does not exist until 2.1080.0.",
       "components": [
