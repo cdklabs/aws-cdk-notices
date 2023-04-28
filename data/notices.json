@@ -175,6 +175,22 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(pipelines) CDK Pipelines role has overly permissive trust policy",
+      "issueNumber": 25356,
+      "overview": "A Role that is intended to be used only by the Pipeline can be assumed from other Roles in the same account.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.pipelines.CodePipeline",
+          "version": ">=2.26.0 <2.77.0"
+        },
+        {
+          "name": "@aws-cdk/pipelines.CodePipeline",
+          "version": ">=1.158.0 <1.200.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
