@@ -199,11 +199,11 @@
       "components": [
         {
           "name": "aws-cdk-lib.s3.Bucket",
-          "version": "<2.60.0"
+          "version": "^2.0.0 <2.60.0"
         },
         {
           "name": "@aws-cdk/s3.Bucket",
-          "version": "<2.60.0"
+          "version": "^1.0.0"
         }
       ],
       "schemaVersion": "1"
