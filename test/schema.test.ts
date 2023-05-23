@@ -38,7 +38,7 @@ describe('Notices file is valid', () => {
       });
 
       test('v2 version ranges must be bounded at the bottom', () => {
-        const v2Range = '>=2.0.0-rc.1';
+        const v2Range = '>=2.0.0-rc.1 <3.0.0';
         for (const component of notice.components) {
           if (component.version === '1.*') { continue; } // Special range that we allow
           if (semver.intersects(component.version, v2Range) && !semver.subset(component.version, v2Range)) {
