@@ -207,6 +207,46 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(eks) eks overly permissive trust policies",
+      "issueNumber": 25674,
+      "overview": "The default MastersRole allows any identity in the account with the appropriate sts:AssumeRole permissions to assume it.",
+      "components": [
+        {
+          "name": "@aws-cdk/aws-eks.Cluster",
+          "version": ">=1.57.0 <1.62.0"
+        },
+        {
+          "name": "@aws-cdk/aws-eks.FargateCluster",
+          "version": ">=1.57.0 <1.62.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "(eks) eks overly permissive trust policies",
+      "issueNumber": 25674,
+      "overview": "Cluster CreationRole and default MastersRole allows any identity in the account with the appropriate sts:AssumeRole permissions to assume it.",
+      "components": [
+        {
+          "name": "@aws-cdk/aws-eks.Cluster",
+          "version": ">=1.62.0 <1.202.0"
+        },
+        {
+          "name": "@aws-cdk/aws-eks.FargateCluster",
+          "version": ">=1.62.0 <1.202.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws_eks.Cluster",
+          "version": ">=2.0.0-rc.1 <2.80.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws_eks.FargateCluster",
+          "version": ">=2.0.0-rc.1 <2.80.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
