@@ -251,7 +251,7 @@
     {
       "title": "(cli) cdk deploy fails when stacks share assets",
       "issueNumber": 25714,
-      "overview": "Shared assets causes a dependency cycle in the WorkGraph that governs cdk deploy",
+      "overview": "A single asset used in two stacks that depend on each other causes 'cdk deploy' to exit early.",
       "components": [
         {
           "name": "cli",
