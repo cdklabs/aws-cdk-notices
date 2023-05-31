@@ -1588,9 +1588,9 @@ camelcase@^6.0.0, camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001489:
-  version "1.0.30001489"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001489.tgz#ca82ee2d4e4dbf2bd2589c9360d3fcc2c7ba3bd8"
-  integrity sha512-x1mgZEXK8jHIfAxm+xgdpHpk50IN3z3q3zP261/WS+uvePxW8izXuCu6AHz0lkuYTlATDehiZ/tNyYBdSQsOUQ==
+  version "1.0.30001491"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001491.tgz#eab0e0f392de6f7411751d148de9b5bd6b203e46"
+  integrity sha512-17EYIi4TLnPiTzVKMveIxU5ETlxbSO3B6iPvMbprqnKh4qJsQGk5Nh1Lp4jIMAE0XfrujsJuWZAM3oJdMHaKBA==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -1604,10 +1604,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.4.70:
-  version "0.4.70"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.70.tgz#4f441193262c30c5e86f1a81f624602fe6f4d73b"
-  integrity sha512-tFVb5IQZxcwmUkkyA9OW9tsmDWQ5B18WiSMv0wVSzPEtn3o+nkuPKipdEDhImbz33/wKm09KlEI306Mlr2/OkA==
+cdk-pipelines-github@^0.4.71:
+  version "0.4.71"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.71.tgz#9b77331386396372a7574a63dc6d821322dd7f02"
+  integrity sha512-9EnEk4CIdtpQ9SAplD2PswTNeDxoqzz4QtVQqOE4jFM9x/3Jbc/4kg6aHxlfCKCqPIhs/SIx7SNu1/Bl+1U5xw==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1799,9 +1799,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.2.36"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.36.tgz#7c4315c73a2005353bcd3904159681b610dc1c7f"
-  integrity sha512-7zFxt2ngpm76eqNqvnD5X1RC7/nlZ7NhpRHNJIzNj1MNZH3NSGe6iwHgIZSoK4pjdZktnZELdBZsVo/yqAvv2Q==
+  version "10.2.37"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.37.tgz#231a873ed881446801850409f502974bd0ffd492"
+  integrity sha512-YDBKuvloPUHCmny84qcJQDzij/YL/0w4D8JbTBJTNY15Q9QhYlCOSkPSqq0y5q/TiqrqmcXHrRMPqUD2DETj/w==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -2043,9 +2043,9 @@ duplexer3@^0.1.4:
   integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
 electron-to-chromium@^1.4.411:
-  version "1.4.413"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.413.tgz#0067c3122946ae234cbefb9401ecefde851cdcf2"
-  integrity sha512-Gd+/OAhRca06dkVxIQo/W7dr6Nmk9cx6lQdZ19GvFp51k5B/lUAokm6SJfNkdV8kFLsC3Z4sLTyEHWCnB1Efbw==
+  version "1.4.414"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.414.tgz#f9eedb6fb01b50439d8228d8ee3a6fa5e0108437"
+  integrity sha512-RRuCvP6ekngVh2SAJaOKT/hxqc9JAsK+Pe0hP5tGQIfonU2Zy9gMGdJ+mBdyl/vNucMG6gkXYtuM4H/1giws5w==
 
 emittery@^0.7.1:
   version "0.7.2"
