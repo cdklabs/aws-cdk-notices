@@ -2,7 +2,7 @@ import { awscdk } from 'projen';
 
 const project = new awscdk.AwsCdkTypeScriptApp({
   projenrcTs: true,
-  cdkVersion: '2.51.0',
+  cdkVersion: '2.82.0',
   defaultReleaseBranch: 'main',
   name: 'aws-cdk-notices',
 
