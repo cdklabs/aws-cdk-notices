@@ -1314,7 +1314,7 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-cdk-lib@^2.51.0:
+aws-cdk-lib@^2.82.0:
   version "2.82.0"
   resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.82.0.tgz#4d6f62798ce41a2bb2e67acb34882a7028748a18"
   integrity sha512-icLhHvoxxo5mu9z8oplSHF+A7scbRiXYoRp2hyFkYSCoY9H+eBeIVXKA2S5YPpJfJO4SeORbCQnsyXBbz31XXw==
@@ -1333,7 +1333,7 @@ aws-cdk-lib@^2.51.0:
     table "^6.8.1"
     yaml "1.10.2"
 
-aws-cdk@^2.51.0:
+aws-cdk@^2.82.0:
   version "2.82.0"
   resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.82.0.tgz#7e1bc0715b4f5a59f4d19595701f1206496b571a"
   integrity sha512-4uAhKN8HMdxxM10Th8aMQJLSINO6evYV9UKTPL0hbVQ6dh6+i5LbSejcvDRw0HfBoP6qV1LNV8P8XGLYIC3tyQ==
@@ -1604,10 +1604,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.4.76:
-  version "0.4.76"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.76.tgz#6261fd3804480383ef783a7d5bde04d76358d6e1"
-  integrity sha512-h+R473sXcsWGy7qJljfiEwzOCXt4RBh8YT6XrCaEeo8b7zCNeTjdxpUib+b7Mn4AhvJX2cb63j2umzpJ/iAxTw==
+cdk-pipelines-github@^0.4.77:
+  version "0.4.77"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.77.tgz#972368cbb8f0f4eb66bd6c7eeca0a77f596d461f"
+  integrity sha512-votoqGvwti/pH5uPaMsUUOpvrQlHZX+dLqTyI+EbFHARUcd95s3fTDLx3AUxJxvCOr5ieTIwayxHHTuRHfFxcg==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1799,9 +1799,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.5:
-  version "10.2.42"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.42.tgz#881d1746dbb747586adb702b70d8c502b5c796da"
-  integrity sha512-QTy50blEmjrHexraR4JmxJtA7YCQ2p/IaDXiXNfy8lYNYnWQbp5YbAhDG1BSYvoRRgru/kB9CTlGtiLd9x3aUQ==
+  version "10.2.43"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.43.tgz#81bbc7718d7535f26e6286dc711c1c1288ead6c8"
+  integrity sha512-i/Bo08YGBNGYUau9st+qghNfbdAnSeplSuoYcwI0Ixwh2je3u1ZqIv6KfmB/515QzO8mK5/WQ3hxu4N18er0MA==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
