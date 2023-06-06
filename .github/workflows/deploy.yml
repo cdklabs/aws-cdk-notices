@@ -201,7 +201,7 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/cdk-hnb659fds-deploy-role-458101988253-us-east-1
           role-external-id: Pipeline
       - id: Deploy
-        uses: aws-actions/aws-cloudformation-github-deploy@v1.1.0
+        uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
         with:
           name: prod-WebsiteStack
           template: https://cdk-hnb659fds-assets-458101988253-us-east-1.s3.us-east-1.amazonaws.com/${{
