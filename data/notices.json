@@ -249,13 +249,13 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(cli) cdk deploy fails when stacks share assets",
+      "title": "(cli) cdk deploy fails when stacks or stages share assets",
       "issueNumber": 25714,
-      "overview": "A single asset used in two stacks that depend on each other causes 'cdk deploy' to exit early.",
+      "overview": "A single asset used in two stacks or stages that depend on each other causes 'cdk deploy' to exit early.",
       "components": [
         {
           "name": "cli",
-          "version": "2.80.0"
+          "version": ">=2.80.0 <2.83.1"
         }
       ],
       "schemaVersion": "1"
