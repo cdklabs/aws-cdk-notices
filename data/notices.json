@@ -1,12 +1,12 @@
 {
   "notices": [
     {
-      "title": "deployment failures in custom resources",
+      "title": "custom resources: provisioning failures",
       "issueNumber": 26325,
       "overview": "Custom resources may fail to deploy / destroy ",
       "components": [
         {
-          "name": "aws-cdk-lib",
+          "name": "aws-cdk-lib.core.CustomResource",
           "version": ">=v2.87.0 <v2.88.0"
         }
       ],
