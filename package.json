@@ -40,11 +40,11 @@
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.7",
     "eslint-import-resolver-typescript": "^2.7.1",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.28.0",
     "jest": "^26.6.3",
     "jest-junit": "^15",
     "npm-check-updates": "^16",
-    "projen": "^0.71.153",
+    "projen": "^0.71.154",
     "ts-jest": "^26.5.6",
     "ts-node": "^9",
     "typescript": "~3.9.10"
