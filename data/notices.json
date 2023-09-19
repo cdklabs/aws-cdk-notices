@@ -11,7 +11,7 @@
         }
       ],
       "schemaVersion": "1"
-    },    
+    },
     {
       "title": "custom-resources: `INACTIVE` custom resource provider lambda throws `functionActiveV2 is not found`",
       "issueNumber": 24358,
@@ -268,6 +268,18 @@
         {
           "name": "cli",
           "version": ">=2.80.0 <2.83.1"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "cdk deploy fails on regions ap-southeast-4 and il-central-1",
+      "issueNumber": 27189,
+      "overview": "These regions don't have the AWS::CDK::Metadata resource type available yet, leading to a deployment failure. Workaround: use the --no-version-reporting flag",
+      "components": [
+        {
+          "name": "framework",
+          "version": "2.94.0"
         }
       ],
       "schemaVersion": "1"
