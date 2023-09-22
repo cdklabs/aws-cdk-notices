@@ -287,7 +287,7 @@
     {
       "title": "Unexpected keyword argument 'tag' when calling ContainerImage.fromEcrRepository",
       "issueNumber": 27240,
-      "overview": "Renaming a prop in ContainerImage.fromEcrRepository function introduces a breaking change, not for typescript users, but for other languages that require specifying the property name when calling the function.",
+      "overview": "Renaming the 'tag' prop  to 'tagOrDigest' in ContainerImage.fromEcrRepository function introduces a breaking change in Python when using keyword parameters.",
       "components": [
         {
           "name": "aws-cdk-lib.aws-ecs.ContainerImage",
