@@ -285,7 +285,7 @@
       "schemaVersion": "1"
     },
     {
-      "title": "ecs breaking change renaming prop in ContainerImage.fromEcrRepository",
+      "title": "Unexpected keyword argument 'tag' when calling ContainerImage.fromEcrRepository",
       "issueNumber": 27240,
       "overview": "Renaming a prop in ContainerImage.fromEcrRepository function introduces a breaking change, not for typescript users, but for other languages that require specifying the property name when calling the function.",
       "components": [
