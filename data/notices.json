@@ -290,7 +290,7 @@
       "overview": "Renaming a prop in ContainerImage.fromEcrRepository function introduces a breaking change, not for typescript users, but for other languages that require specifying the property name when calling the function.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-ecs.ContainerImage.fromEcrRepository",
+          "name": "aws-cdk-lib.aws-ecs.ContainerImage",
           "version": "2.96.0"
         }
       ],
