@@ -295,6 +295,36 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "Python users using Schedule class get synth-time TypeError for mismatched types",
+      "issueNumber": 27259
+      "overview": "Using the 'Schedule' class in aws-events, aws-autoscaling, aws-applicationautoscaling, aws-backup, aws-scheduler-alpha, aws-synthetics-alpha causes a TypeError for Python users.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-events.Schedule",
+          "version": "2.97.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws-backup.Schedule",
+          "version": "2.97.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws-autoscaling.Schedule",
+          "version": "2.97.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws-applicationautoscaling.Schedule",
+          "verion": "2.97.0"
+        },
+        {
+          "name": "@aws-cdk/aws-synthetics-alpha.Schedule",
+          "version": "2.97.0-alpha.0"
+        },
+        {
+          "name": "@aws-cdk/aws-scheduler-alpha.ScheduleExpression",
+          "version": "2.97.0-alpha.0"
+        }
     }
   ]
 }
