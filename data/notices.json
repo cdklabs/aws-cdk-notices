@@ -335,7 +335,7 @@
       "components": [
         {
           "name": "aws-cdk-lib/aws-s3.Bucket",
-          "version": "2.101.0",
+          "version": "2.101.0"
         }
       ],
       "schemaVersion": "1",
