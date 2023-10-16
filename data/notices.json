@@ -327,6 +327,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "Incorrect action in policy of Bucket `grantRead` method",
+      "issueNumber": 27547,
+      "overview": "Using the `grantRead` method on `aws-cdk-lib/aws-s3.Bucket` results in an invalid action attached to the resource policy which can cause unexpected failures when interacting with the bucket.",
+      "components": [
+        {
+          "name": "aws-cdk-lib/aws-s3.Bucket",
+          "version": "2.101.0",
+        }
+      ],
+      "schemaVersion": "1",
     }
   ]
 }
