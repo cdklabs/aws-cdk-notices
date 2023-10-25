@@ -341,12 +341,12 @@
       "schemaVersion": "1"
     },
     {
-      "title": "Kinesis Firehose CIDR block support issue for few regions",
+      "title": "Kinesis Firehose CIDR block support issue for ap-south-2, eu-central-2 and eu-south-2",
       "issueNumber": 27656,
-      "overview": "Deploying or trying to synth the specific regions resulted in `Mapping doesn't contain top-level key` for the `@aws-cdk/aws-kinesisfirehose-alpha` module",
+      "overview": "Deploying or trying to synth the specific regions result in `Mapping doesn't contain top-level key` for the `@aws-cdk/aws-kinesisfirehose-alpha` module",
       "components": [
         {
-          "name": "@aws-cdk/aws-kinesisfirehose-alpha",
+          "name": "@aws-cdk/aws-kinesisfirehose-alpha.deliveryStream",
           "version": "2.102.0"
         }
       ],
