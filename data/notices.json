@@ -1,6 +1,26 @@
 {
   "notices": [
     {
+      "title": "pipelines: step id cannot be unresolved during synthesis",
+      "issueNumber": 27701,
+      "overview": "A change was made to S3Source, CodeStarConnectionSource, and CodeCommitSource to differentiate between sources of the same repository by appending the branch name onto the node id and input/output artifacts. However, if the branch name is a token a synth time error will occur stating, 'Step id cannot be unresolved'.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.pipelines.S3Source",
+          "version": "2.103.0"
+        },
+        {
+          "name": "aws-cdk-lib.pipelines.CodeStarConnectionSource",
+          "version": "2.103.0"
+        },
+        {
+          "name": "aws-cdk-lib.pipelines.CodeCommitSource",
+          "version": "2.103.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "custom resources: provisioning failures",
       "issueNumber": 26325,
       "overview": "Custom resources may fail to deploy / destroy ",
