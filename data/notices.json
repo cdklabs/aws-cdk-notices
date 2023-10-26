@@ -351,6 +351,26 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(pipelines) step id cannot be unresolved during synthesis",
+      "issueNumber": 27701,
+      "overview": "Using S3Source, CodeStarConnectionSource, or CodeCommitSource with a tokenized repository name or branch name will result in a synth time error stating, 'Step id cannot be unresolved'.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.pipelines.S3Source",
+          "version": "2.103.0"
+        },
+        {
+          "name": "aws-cdk-lib.pipelines.CodeStarConnectionSource",
+          "version": "2.103.0"
+        },
+        {
+          "name": "aws-cdk-lib.pipelines.CodeCommitSource",
+          "version": "2.103.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
