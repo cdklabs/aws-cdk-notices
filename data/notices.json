@@ -371,6 +371,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli) bootstrap template can result in public access for bootstrap buckets",
+      "issueNumber": 27964,
+      "overview": "The legacy AccessControl property was removed from the bootstrap template in aws-cdk v2.106.0. Users who remove the public access block using the public-access-block-configuration CLI flag will see bootstrapped buckets are created with public access and ACLs enabled by default.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.106.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
