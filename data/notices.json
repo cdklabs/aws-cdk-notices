@@ -385,9 +385,9 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(elasticloadbalancingv2) applicationLoadBalancer fails with \"RuntimeError: TypeError: Cannot read properties of undefined\"",
+      "title": "(elasticloadbalancingv2) applicationLoadBalancer fails with \"RuntimeError: TypeError: Cannot read properties of undefined\" on imported buckets",
       "issueNumber": 27928,
-      "overview": "",
+      "overview": "A dependency on the bucket policy when using access logs was added to fix a circular dependency issue, but the bucket policy does not exist for imported buckets resulting in synth-time error (bucket.node.defaultChild is undefined).",
       "components": [
         {
           "name": "aws-cdk-lib.aws-elasticloadbalancingv2.ApplicationLoadBalancer",
