@@ -383,6 +383,17 @@
         }
       ],
       "schemaVersion": "1"
-    }
+    },
+    {
+      "title": "(elasticloadbalancingv2) applicationLoadBalancer fails with \"RuntimeError: TypeError: Cannot read properties of undefined\"",
+      "issueNumber": 27928,
+      "overview": "",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-elasticloadbalancingv2.ApplicationLoadBalancer",
+          "version": ">=2.106.0 <=2.108.0",
+        }
+      ],
+      "schemaVersion": "1"
   ]
 }
