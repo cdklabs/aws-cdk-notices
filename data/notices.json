@@ -397,7 +397,7 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(route53) `CrossAccountZoneDelegationRecord` does not delete old NS record when the `zoneName` changes",
+      "title": "(route53) `CrossAccountZoneDelegationRecord` does not delete ols NS record on `zoneName` changed",
       "issueNumber": 21249,
       "overview": "When changing the zoneName value of the PublicHostedZone the old NS entries in the delegated zone are not removed..",
       "components": [
