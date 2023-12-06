@@ -395,6 +395,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(route53) `CrossAccountZoneDelegationRecord` does not delete ols NS record on `zoneName` changed",
+      "issueNumber": 21249,
+      "overview": "When changing the zoneName value of the PublicHostedZone the old NS entries in the delegated zone are not removed.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-route53.CrossAccountZoneDelegationRecord",
+          "version": ">=2.0.0 <=2.114.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
