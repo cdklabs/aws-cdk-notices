@@ -415,7 +415,7 @@
     {
       "title": "(aws-events-targets): Using an imported DLQ with an event rule target throws an error",
       "issueNumber": 28165,
-      "overview": "All users of `aws-events-targets` who created an `events.Rule` with the `SqsQueue` target and passed an imported (eg, `fromQueueArn` or `fromQueueName`) queue to the `deadLetterQueue` prop would receive an error similar to:  ```Error: Cannot assign Dead Letter Queue in region ${Token[TOKEN.35]} to the rule XYZEventRule89558AAC in region eu-west-1. Both the queue and the rule must be in the same region.```. This only affects you if you use those constructs from versions 2.110.0 through 2.115.0.",
+      "overview": "All users of `aws-events-targets` who created an `events.Rule` with the `SqsQueue` target and passed an imported (eg, `fromQueueArn` or `fromQueueName`) queue to the `deadLetterQueue` prop would receive an error similar to:  ```Error: Cannot assign Dead Letter Queue in region ${Token[TOKEN.35]} to the rule XYZEventRule89558AAC in region eu-west-1. Both the queue and the rule must be in the same region.```.",
       "components": [
         {
           "name": "aws-cdk-lib/aws-events-targets.SqsQueue",
