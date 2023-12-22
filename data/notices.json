@@ -3,7 +3,7 @@
     {
       "title": "core: Stack crossRegionReferences and CfnJson fail with 'Error: Cannot find module '../dist/core/<file>.generated'",
       "issueNumber": 28465,
-      "overview": "Enabling the experimental crossRegionReferences on a Stack or using the core.CfnJson construct causes app synthesis to fail 'Error: Cannot find module '../dist/core/<file>.generated' because the files are missing from the faulty release.",
+      "overview": "Enabling the experimental crossRegionReferences on a Stack or using the core.CfnJson construct causes app synthesis to fail 'Error: Cannot find module '../dist/core/<file>.generated' because the files are missing from the faulty release. If you are not using either of the two features, you will not be affected by this.",
       "components": [
         {
           "name": "aws-cdk-lib.CfnJson",
