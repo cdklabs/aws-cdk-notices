@@ -1,13 +1,17 @@
 {
   "notices": [
     {
-      "title": "custom resources: provisioning failures",
-      "issueNumber": 26325,
-      "overview": "Custom resources may fail to deploy / destroy ",
+      "title": "core: Stack crossRegionReferences and CfnJson fail with 'Error: Cannot find module'",
+      "issueNumber": 28465,
+      "overview": "Enabling the experimental crossRegionReferences on a Stack or using the core.CfnJson construct causes app synthesis to fail with \"Error: Cannot find module '../dist/core/<file>.generated'\" because the files are missing from the faulty release. If you are not using either of the two features, you will not be affected by this.",
       "components": [
         {
-          "name": "aws-cdk-lib.core.CustomResource",
-          "version": ">=v2.87.0 <v2.88.0"
+          "name": "aws-cdk-lib.CfnJson",
+          "version": "2.116.0"
+        },
+        {
+          "name": "aws-cdk-lib.CustomResourceProvider",
+          "version": "2.116.0"
         }
       ],
       "schemaVersion": "1"
