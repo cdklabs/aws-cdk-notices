@@ -1227,9 +1227,9 @@ available-typed-arrays@^1.0.5:
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
 aws-cdk-lib@^2.82.0:
-  version "2.116.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.116.1.tgz#4810ae231b1b87332a158b0b15a7d85dd5bc9b02"
-  integrity sha512-3j9kUHZFp/Jl79utnsBB2xW2u+sNfjpliQtTPQlW0i7J12oxjD2rHU4AJV741cKMxnA9VrHnRyJF9NTryji8yw==
+  version "2.117.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.117.0.tgz#9079e256c334108add9252a89c22cf46e7c2e542"
+  integrity sha512-My5T4hn34H6+tnZxKK2VlcvGI2N5SjqGt9lXWADcahdobuUcNizYrls7h/vcQ3BfwcZ5/tHTKtivkNyL8I1LDg==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.201"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -1246,9 +1246,9 @@ aws-cdk-lib@^2.82.0:
     yaml "1.10.2"
 
 aws-cdk@^2.82.0:
-  version "2.116.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.116.1.tgz#6790227e6e5015a18efe5fab859a235093a1de7a"
-  integrity sha512-NBEoLPHHnQxu7QKFf4DlAy737v1Jnsvy6ueM1r8jc/GGr3h0Mm9yD2t4cs3KlcHYM0qNESfQW0SVUMJ5aDCARQ==
+  version "2.117.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.117.0.tgz#e0013d6183d43c52e94b86267fbfc385b5d70665"
+  integrity sha512-uuWT646vSRXZ/6don+wfK4kelV1aL4WOTduaihltRlXw4etHoMV3wJYBO30E6e8hAU+0HkLT7Fv58po50b12Sg==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1443,9 +1443,9 @@ camelcase@^6.0.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001565:
-  version "1.0.30001571"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001571.tgz#4182e93d696ff42930f4af7eba515ddeb57917ac"
-  integrity sha512-tYq/6MoXhdezDLFZuCO/TKboTzuQ/xR5cFdgXPfDtM7/kchBO3b4VWghE/OAi/DV7tTdhmLjZiZBZi1fA/GheQ==
+  version "1.0.30001572"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001572.tgz#1ccf7dc92d2ee2f92ed3a54e11b7b4a3041acfa0"
+  integrity sha512-1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -4084,10 +4084,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-projen@^0.78.2:
-  version "0.78.2"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.78.2.tgz#53a3bf9a7ae9f0cb02dbb3cf717866d2aa657245"
-  integrity sha512-A4y0pLAEHdGJMydbBY44GRruPV5tBwXm18XmDHSS94XIexZOuWdRrxptl+vKTmiDrkDXqa1pNCt7u8YBbIVDtA==
+projen@^0.78.3:
+  version "0.78.3"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.78.3.tgz#acbe5222fda6cea0e7b81a1ebd950f2d03610bae"
+  integrity sha512-QkHuynNspKg5KpGa4uZdnf2yL0VbBBfguYgU7VZWlM/G1z/zAcGfblrjqO6NebIXCYwL/k33+cRgW8MDZUjnvA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
