@@ -4084,10 +4084,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-projen@^0.78.3:
-  version "0.78.3"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.78.3.tgz#acbe5222fda6cea0e7b81a1ebd950f2d03610bae"
-  integrity sha512-QkHuynNspKg5KpGa4uZdnf2yL0VbBBfguYgU7VZWlM/G1z/zAcGfblrjqO6NebIXCYwL/k33+cRgW8MDZUjnvA==
+projen@^0.78.4:
+  version "0.78.4"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.78.4.tgz#47ab90c449d63a1393af93104796099eb2f55f89"
+  integrity sha512-lj8U6OC6Ac5ToObt8HwcPsWd6o81yM2Vdkj/hK9lS0EpwDq1YcIxeSnM0udVpg4YwxF3Bw3+W96HL1KuEE0UMg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
