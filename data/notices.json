@@ -425,13 +425,13 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(aws-events): EventBus fails because of change to logical id without modifiying the statement id",
+      "title": "(aws-events): Upgrading to v2.116.0-v2.117.0 breaks existing EventBus resources with an attached EventBusPolicy.",
       "issueNumber": 28520,
-      "overview": "#27340 introduced the ability to create multiple event bus policies on a single event bus. To facilitate this, the logical Id was changed from \"Policy\" to the statementId. This triggers a replacement, which fails in CloudFormation because the statement ID does not change.",
+      "overview": "v2.116.0 introduced the ability to create multiple event bus policies on a single event bus. To facilitate this, the logical Id was changed from \"Policy\" to the statementId. This triggers a replacement, which fails in CloudFormation because the statement ID does not change.",
       "components": [
         {
           "name": "aws-cdk-lib/aws-events.EventBus",
-          "version": "2.117.0"
+          "version": ">=2.116.0 <=2.117.0"
         }
       ],
       "schemaVersion": "1"
