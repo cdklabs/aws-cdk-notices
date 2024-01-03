@@ -430,7 +430,7 @@
       "overview": "#27340 introduced the ability to create multiple event bus policies on a single event bus. To facilitate this, the logical Id was changed from \"Policy\" to the statementId. This triggers a replacement, which fails in CloudFormation because the statement ID does not change.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws-event.EventBus",
+          "name": "aws-cdk-lib/aws-events.EventBus",
           "version": "2.117.0"
         }
       ],
