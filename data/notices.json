@@ -435,6 +435,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(custom-resources): Upgrading to v2.116.0 causes deploy failure with Invalid Log Configuration",
+      "issueNumber": 28577,
+      "overview": "v2.116.0 introduced the ability to setup logging for a state machine created by the custom resource provider framework. This can lead to a deploy failure because the log group resource policy size can be exceeded.",
+      "components": [
+        {
+          "name": "aws-cdk-lib/custom-resources.Provider",
+          "version": ">=2.116.0 <=2.121.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
