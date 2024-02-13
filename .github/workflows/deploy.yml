@@ -55,7 +55,8 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/GitHubActionRole
       - id: Publish
         name: Publish Assets-FileAsset1
-        run: /bin/bash ./cdk.out/publish-Assets-FileAsset1-step.sh
+        run: /bin/bash
+          ./cdk.out/assembly-NoticesPipelineStack-prod/publish-Assets-FileAsset1-step.sh
   Assets-FileAsset2:
     name: Publish Assets Assets-FileAsset2
     needs:
@@ -83,7 +84,8 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/GitHubActionRole
       - id: Publish
         name: Publish Assets-FileAsset2
-        run: /bin/bash ./cdk.out/publish-Assets-FileAsset2-step.sh
+        run: /bin/bash
+          ./cdk.out/assembly-NoticesPipelineStack-prod/publish-Assets-FileAsset2-step.sh
   Assets-FileAsset3:
     name: Publish Assets Assets-FileAsset3
     needs:
@@ -111,7 +113,8 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/GitHubActionRole
       - id: Publish
         name: Publish Assets-FileAsset3
-        run: /bin/bash ./cdk.out/publish-Assets-FileAsset3-step.sh
+        run: /bin/bash
+          ./cdk.out/assembly-NoticesPipelineStack-prod/publish-Assets-FileAsset3-step.sh
   Assets-FileAsset4:
     name: Publish Assets Assets-FileAsset4
     needs:
@@ -139,7 +142,8 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/GitHubActionRole
       - id: Publish
         name: Publish Assets-FileAsset4
-        run: /bin/bash ./cdk.out/publish-Assets-FileAsset4-step.sh
+        run: /bin/bash
+          ./cdk.out/assembly-NoticesPipelineStack-prod/publish-Assets-FileAsset4-step.sh
   Assets-FileAsset5:
     name: Publish Assets Assets-FileAsset5
     needs:
@@ -167,7 +171,8 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/GitHubActionRole
       - id: Publish
         name: Publish Assets-FileAsset5
-        run: /bin/bash ./cdk.out/publish-Assets-FileAsset5-step.sh
+        run: /bin/bash
+          ./cdk.out/assembly-NoticesPipelineStack-prod/publish-Assets-FileAsset5-step.sh
   prod-WebsiteStack-Deploy:
     name: Deploy NoticesPipelineStackprodWebsiteStack87D4686F
     permissions:
