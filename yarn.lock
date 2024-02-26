@@ -1476,14 +1476,14 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.4.111:
-  version "0.4.111"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.111.tgz#de7599d5989c8f3a763f1a479fbb5ac11ae505af"
-  integrity sha512-2gMFPMKDbHL3UX+pKhwu96aDmuuhfp8tbbzmzDei87mUrAsZ/mMyvbo0U5AkWKA7r2PaiL5xrHiZrVUeSMxUCA==
+cdk-pipelines-github@^0.4.112:
+  version "0.4.112"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.112.tgz#63438efb49d5c476f519fb8ce039c4b7b5e9c6ef"
+  integrity sha512-RAT7jkR9k3jIhIapiuNELpcLIrVOVnPTO9AouMmXF4HV2mKcm3f5BZyddqEJgoEplWK6c+wBU76BpbTC38fQDA==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
-    yaml "^2.3.4"
+    yaml "^2.4.0"
 
 chalk@^2.4.2:
   version "2.4.2"
@@ -5251,10 +5251,10 @@ yaml@1.10.2:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
-yaml@^2.2.2, yaml@^2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.3.4.tgz#53fc1d514be80aabf386dc6001eb29bf3b7523b2"
-  integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
+yaml@^2.2.2, yaml@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.4.0.tgz#2376db1083d157f4b3a452995803dbcf43b08140"
+  integrity sha512-j9iR8g+/t0lArF4V6NE/QCfT+CO7iLqrXAHZbJdo+LfjqP1vR8Fg5bSiaq6Q2lOD1AUEVrEVIgABvBFYojJVYQ==
 
 yargs-parser@20.x:
   version "20.2.9"
