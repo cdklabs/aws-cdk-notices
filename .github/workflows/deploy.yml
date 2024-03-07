@@ -18,13 +18,13 @@ jobs:
     env: {}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Build
         run: |-
           yarn install
           yarn build
       - name: Upload cdk.out
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cdk.out
           path: cdk.out
@@ -40,7 +40,7 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: cdk.out
           path: cdk.out
@@ -69,7 +69,7 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: cdk.out
           path: cdk.out
@@ -98,7 +98,7 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: cdk.out
           path: cdk.out
@@ -127,7 +127,7 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: cdk.out
           path: cdk.out
@@ -156,7 +156,7 @@ jobs:
       asset-hash: ${{ steps.Publish.outputs.asset-hash }}
     steps:
       - name: Download cdk.out
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: cdk.out
           path: cdk.out
@@ -206,7 +206,7 @@ jobs:
           role-to-assume: arn:aws:iam::458101988253:role/cdk-hnb659fds-deploy-role-458101988253-us-east-1
           role-external-id: Pipeline
       - id: Deploy
-        uses: aws-actions/aws-cloudformation-github-deploy@v1.2.0
+        uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: prod-WebsiteStack
           template: https://cdk-hnb659fds-assets-458101988253-us-east-1.s3.us-east-1.amazonaws.com/${{
