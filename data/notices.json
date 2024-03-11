@@ -447,6 +447,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "List stack output change issue.",
+      "issueNumber": 29420,
+      "overview": "Expected behavior while running cdk list on dependent stacks maintaining dependency through addDependency is altered",
+      "components": [
+        {
+          "name": "aws-cdk/lib/list-stacks",
+          "version": "2.132.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
