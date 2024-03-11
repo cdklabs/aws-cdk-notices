@@ -454,7 +454,7 @@
       "overview": "Expected behavior while running cdk list on dependent stacks maintaining dependency through addDependency is altered",
       "components": [
         {
-          "name": "aws-cdk/lib/list-stacks",
+          "name": "cli",
           "version": "2.132.0"
         }
       ],
