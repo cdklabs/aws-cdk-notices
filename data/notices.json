@@ -449,7 +449,7 @@
       "schemaVersion": "1"
     },
     {
-      "title": "List stack output change issue.",
+      "title": "(cli) List stack output change issue.",
       "issueNumber": 29420,
       "overview": "Expected behavior while running cdk list on dependent stacks maintaining dependency through addDependency is altered",
       "components": [
