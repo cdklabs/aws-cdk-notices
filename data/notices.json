@@ -447,6 +447,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): List stack output change issue.",
+      "issueNumber": 29420,
+      "overview": "v2.132.0 introduced functionality to the cdk list command to display stack dependencies. This feature introduced a change that displays stack ids over displayName altering the existing list functionality",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.132.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
