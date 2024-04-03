@@ -475,7 +475,7 @@
     {
       "title": "(events-targets): Hardcoded AWS Partition in ECS task resource ARN",
       "issueNumber": 29610,
-      "overview": "Partition in policy statement for `ecs:TagResource` action in `EcsTask` was hardcoded to `aws` instead of being resolved dynamically in v2.132.0, resulting in failure to deploy in any partition escept AWS with an IAM validation failure on the partition arn.",
+      "overview": "Partition in policy statement for `ecs:TagResource` action in `EcsTask` was hardcoded to `aws` instead of being resolved dynamically in v2.132.0, resulting in failure to deploy in any partition except AWS with an IAM validation failure on the partition arn.",
       "components": [
         {
           "name": "aws-cdk-lib/aws-events-targets.EcsTask",
