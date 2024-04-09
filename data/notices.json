@@ -483,6 +483,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(ec2): new `WindowsVersion` enum values give error on deployment, working values wrongly deprecated",
+      "issueNumber": 29736,
+      "overview": "The new enums suffixed with dates (i.e. `WINDOWS_SERVER_2022_ENGLISH_FULL_BASE_2024_02_14`) are not found when used in constructs that extend `GenericSSMParameterImage`, such as `WindowsImage`. The working enums were mistakenly deprecated (i.e. `WINDOWS_SERVER_2022_ENGLISH_FULL_BASE`).",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-ec2.WindowsVersion",
+          "version": "2.135.0 - 2.136.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
