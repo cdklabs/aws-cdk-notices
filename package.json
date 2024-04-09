@@ -42,14 +42,14 @@
     "eslint-plugin-import": "^2.29.1",
     "jest": "^26.6.3",
     "jest-junit": "^15",
-    "projen": "^0.80.19",
+    "projen": "^0.80.20",
     "ts-jest": "^26.5.6",
     "ts-node": "^9",
     "typescript": "~5.0.4"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.82.0",
-    "cdk-pipelines-github": "^0.4.115",
+    "cdk-pipelines-github": "^0.4.116",
     "constructs": "^10.0.5",
     "semver": "^7.6.0"
   },

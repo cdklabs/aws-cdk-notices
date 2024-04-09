@@ -1452,9 +1452,9 @@ camelcase@^6.0.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001587:
-  version "1.0.30001606"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001606.tgz#b4d5f67ab0746a3b8b5b6d1f06e39c51beb39a9e"
-  integrity sha512-LPbwnW4vfpJId225pwjZJOgX1m9sGfbw/RKJvw/t0QhYOOaTXHvkjVGFGPpvwEzufrjvTlsULnVTxdy4/6cqkg==
+  version "1.0.30001607"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001607.tgz#b91e8e033f6bca4e13d3d45388d87fa88931d9a5"
+  integrity sha512-WcvhVRjXLKFB/kmOFVwELtMxyhq3iM/MvmXcyCe2PNf166c39mptscOc/45TTS96n2gpNV2z7+NakArTWZCQ3w==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -1468,10 +1468,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.4.115:
-  version "0.4.115"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.115.tgz#fbd023003a03c00a1656c1010c343568bffd117e"
-  integrity sha512-0f7WBG59W4yTbF4MFEAZs9Lkmgzza2vZcUmNWHGRLOYi3G4rMYaU750Icnp4TWct66ltqK1aJMUhxpROY6FjSQ==
+cdk-pipelines-github@^0.4.116:
+  version "0.4.116"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.116.tgz#ab96a0b3b071692bbd4a3fdf8ecd1809fc44830d"
+  integrity sha512-hWcDQSBru1DZLSXo+Yf/HRc4gLnMyiirDw9VqVffDEdP9KdO+3lX859XJ04+9pHaoo2nDBnGcj7Wm8/qyP9q2Q==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1855,9 +1855,9 @@ domexception@^2.0.1:
     webidl-conversions "^5.0.0"
 
 electron-to-chromium@^1.4.668:
-  version "1.4.729"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.729.tgz#8477d21e2a50993781950885b2731d92ad532c00"
-  integrity sha512-bx7+5Saea/qu14kmPTDHQxkp2UnziG3iajUQu3BxFvCOnpAJdDbMV4rSl+EqFDkkpNNVUFlR1kDfpL59xfy1HA==
+  version "1.4.730"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.730.tgz#5e382c83085b50b9c63cb08692e8fcd875c1b9eb"
+  integrity sha512-oJRPo82XEqtQAobHpJIR3zW5YO3sSRRkPz2an4yxi1UvqhsGm54vR/wzTFV74a3soDOJ8CKW7ajOOX5ESzddwg==
 
 emittery@^0.7.1:
   version "0.7.2"
@@ -4159,10 +4159,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-projen@^0.80.19:
-  version "0.80.19"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.80.19.tgz#902b43510d5977e58327661e7cb0e8479383b47a"
-  integrity sha512-icZyUZlfk/cc5HcAmm+aunSYzOjF1e+ZdTB/9K/++KktKrkqQJHD6y/EBkvU7rKsfQlntuX5ESt2xsXNgVBJzg==
+projen@^0.80.20:
+  version "0.80.20"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.80.20.tgz#ad4af6c42d1eeb1edb6675476425271a67ff0272"
+  integrity sha512-XVQBMdBilS/x0KmFyUH3xBIE3ZDXInAErPIAg56dGYQ0epl21kbuCYvsWdPwPQ8wdNi+D/gQUEaf/uenidH5kg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
