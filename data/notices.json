@@ -495,6 +495,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(lambda): importing a `Function` with `fromFunctionArn` strips version or alias from ARN",
+      "issueNumber": 30008,
+      "overview": "Logic was added to the static `fromFunctionArn` method that removes any trailing version or alias from the specified function ARN. As a result, the `functionArn` property for `Functions` imported with `fromFunctionArn` will no longer include their version or alias.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-lambda.Function",
+          "version": "2.138.0 - 2.139.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
