@@ -36,7 +36,7 @@
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
     "aws-cdk": "^2.82.0",
-    "esbuild": "^0.20.2",
+    "esbuild": "^0.21.1",
     "eslint": "^8",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.29.1",
@@ -51,7 +51,7 @@
     "aws-cdk-lib": "^2.82.0",
     "cdk-pipelines-github": "^0.4.117",
     "constructs": "^10.0.5",
-    "semver": "^7.6.0"
+    "semver": "^7.6.1"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",
