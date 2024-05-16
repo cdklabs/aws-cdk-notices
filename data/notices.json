@@ -507,6 +507,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): Upgrading to v2.142.0 errors out on cdk diff with `Cannot read properties of undefined`",
+      "issueNumber": 30241,
+      "overview": "The `change.resourceType` is typed as being a string, but with this change in v2.142.0 there are cases when `change.resourceType` can be undefined.",
+      "components": [
+        {
+          "name": "@aws-cdk/cloudformation-diff.diff-template",
+          "version": "2.142.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
