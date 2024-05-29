@@ -521,7 +521,7 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(ses-actions): S3 ReceiptRule cannot be created, errors out with `Could not write to bucket InvalidS3Configuration`",
+      "title": "(ses-actions): S3 ReceiptRule cannot be created, errors out with `Could not write to bucket`",
       "issueNumber": 30143,
       "overview": "A change was made in CDK v2.139.0 to reduce overly broad permissions allocated to SES for the S3 receipt rule action. This resulted in deployment failure where SES is unable to write to s3 bucket",
       "components": [
