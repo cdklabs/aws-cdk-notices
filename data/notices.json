@@ -535,7 +535,7 @@
     {
       "title": "(custom-resources): logApiResponseData property for AwsCustomResource is forcing unwanted updates",
       "issueNumber": 29949,
-      "overview": "A new Logging class was added for AwsCustomResource in CDK v2.138.0. The logging property defaults to Logging.all() which adds logApiResponseData as true by default to the custom resource properties. As a result, an update is triggered automatically which returns an empty data object if no SDK call was configured. If you are on a CDK version >=2.138.0 <=2.144.0 and upgrading to a CDK version >2.144.0 you will need to set the @aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault feature flag to true to keep logApiResponseData as true by default and prevent an update event from being triggered.",
+      "overview": "A new Logging class was added for AwsCustomResource in CDK v2.138.0. The logging property defaults to Logging.all() which adds logApiResponseData as true by default to the custom resource properties. As a result, an update is triggered automatically which returns an empty data object if no SDK call was configured. If you are on a CDK version >=2.138.0 or <=2.144.0 and upgrading to a CDK version >=2.145.0 you will need to set the @aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault feature flag to true to keep logApiResponseData as true by default and prevent an update event from being triggered; otherwise, you may encounter a deployment failure when upgrading",
       "components": [
         {
           "name": "aws-cdk-lib.custom-resources",
