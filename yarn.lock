@@ -1456,10 +1456,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.4.121:
-  version "0.4.121"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.121.tgz#36e121f8a4e90d78a9f755fd02d04d1ad32aa656"
-  integrity sha512-Z5CwBwA8DH2ttKjVllebsN/SH9QJrmCgpqgNJIRu9jVniPEPpJil7iD9CQA8bjw9OXkboHwDuajWhQyl9KTWBA==
+cdk-pipelines-github@^0.4.122:
+  version "0.4.122"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.122.tgz#99b70dd9e879ec8b529fbc43c5396bf4cd99917f"
+  integrity sha512-TEHcuEiEamHiQNgcAx08gffQygw/WO1azbH54J8z9nXOqvNrJI5IueFrCYoQISiI48r1Kxmak2RvgmI2b52hyg==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -1843,9 +1843,9 @@ domexception@^2.0.1:
     webidl-conversions "^5.0.0"
 
 electron-to-chromium@^1.4.796:
-  version "1.4.799"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.799.tgz#271c56654ab4dc703037e47a5af4fc8945160611"
-  integrity sha512-3D3DwWkRTzrdEpntY0hMLYwj7SeBk1138CkPE8sBDSj3WzrzOiG2rHm3luw8jucpf+WiyLBCZyU9lMHyQI9M9Q==
+  version "1.4.800"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.800.tgz#8044d38c05b0b2014cd6747523ebfca4203177c7"
+  integrity sha512-G8yyAReBP8m0XaW9BBH5NOJe4ZGYDDsPYkgLCG8xU6HwGKzrT0Jj51uAHkt1D+9ZxHPoGFSSZqqSN7HxAiP+0g==
 
 emittery@^0.7.1:
   version "0.7.2"
