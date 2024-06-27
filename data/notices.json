@@ -543,6 +543,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cloudformation-include): overrideLogicalId validation causing CfnInclude errors on Condition Ids",
+      "issueNumber": 30669,
+      "overview": "New validation on CloudFormation Resourses also extended to Conditions. This has caused an issue with cloudformation-include when trying to cfnInclude a cloudformation template that has defined Conditions using non-alphanumeric characters, e.g. snake case my_condition",
+      "components": [
+        {
+          "name": "aws-cdk-lib.cloudformation-include",
+          "version": "2.147.0 - 2.147.1"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
