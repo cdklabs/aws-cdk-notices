@@ -559,7 +559,7 @@
     {
       "title": "(lambda-nodejs): breaking change in esbuild causes import module error",
       "issueNumber": 30717,
-      "overview": "Use lamda-nodejs module will cause Runtime.ImportModuleError: Cannot find module 'module'. It is from a breaking change ESBuild introduced which changed the default bundling method. This is affecting CDK V2 versions before v2.147.2 and V1 versions later than 1.175.0",
+      "overview": "ESBuild released a breaking change on version 0.22.0 that changed the default bundling behavior. `lambda-nodejs`'s `NodeJsFunction` now to fails to synthesize with the error message `Runtime.ImportModuleError: Cannot find module 'module'`. This issue exists on all CDK versions up to and including `2.147.2`. The workaround is either pin the esbuild version to ~0.21 or add `--packages=bundle` to `bundling.esbuildArgs` property (this option only works for esbuild version >= `0.22.0`).",
       "components": [
         {
           "name": "aws-cdk-lib.lambda-nodejs",
