@@ -575,7 +575,7 @@
       "components": [
         {
           "name": "aws-cdk-lib.aws-apigateway",
-          "version": ">=2.141.0 <= 2.148.1"
+          "version": ">=2.142.0 <= 2.148.1"
         }
       ],
       "schemaVersion": "1"
