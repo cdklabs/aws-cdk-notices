@@ -569,7 +569,7 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(apigateway): breaking change in RestApi construct causing Authorization scopes to be null for CognitoUserPoolsAuthorizer",
+      "title": "(apigateway): breaking change in RestApi instances with CognitoUserPoolsAuthorizer",
       "issueNumber": 30444,
       "overview": "A change was added to the ApiGateway Method construct to only allow authorization scopes for cognito authorization type, this change broke the way to set the authorization scopes to the default scopes if the customer does not provide one. This issue introduced in CDK version `2.142.0`. The workaround is to either pin the `aws-cdk-lib` to version `2.141.0` or, to update the `RestApi` construct initialization to explicitly set the authorizationType in `defaultMethodOptions` property to COGNITO.",
       "components": [
