@@ -579,6 +579,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(ecs): cpu/memory validation for fargate compatible task failed when using token",
+      "issueNumber": 31106,
+      "overview": "A validation was added to check if the cpu/memory combination is fargate compatible task. The validation doesn't let the tokenized value to pass through. Therefore, when using tokenized values (e.g. CfnParameter) to create Fargate compatible ECS task, the validation will fail with error message `Invalid CPU and memory combinations for FARGATE compatible task definition`. The workaound is pin CDK to an older version 2.150 or before.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-ecs",
+          "version": "2.151.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
