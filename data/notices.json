@@ -591,6 +591,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": " (bedrock): AWS::Bedrock::DataSource L1 construct is missing DataSourceConfiguration property in latest version 2.154.0",
+      "issueNumber": 31183,
+      "overview": "An automated CloudFormation schema change was added to Bedrock DataSet L1 Construct and caused DataSourceConfiguration to be removed from the L1 Construct.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-bedrock",
+          "version": "2.154.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
