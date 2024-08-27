@@ -26,9 +26,9 @@
   integrity sha512-twhuEG+JPOYCYPx/xy5uH2+VUsIEhPTzDY0F1KuB+ocjWWB/KEDiOVL19nHvbPCB6fhWnkykXEMJ4HHcKvjtvg==
 
 "@aws-cdk/cloud-assembly-schema@^36.0.5":
-  version "36.0.16"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-36.0.16.tgz#6a768356aa433810807a9b7cb33a5b2eb271f9bc"
-  integrity sha512-CJjlb47SSbFKNQ10JYHWY+eYx4VoR/swu+/aG1rWoDsLMNoPIFc52PhckXcF3Xoo0JQWSUWYDJXihozpUqqcMw==
+  version "36.0.17"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-36.0.17.tgz#9f550601efbff7bd200abf5f62d6ddd1baa3aede"
+  integrity sha512-qZeSDHZCWSigPN9kXAYVHaYMECVNYWpv7I9W9ZDXux0kCmR/JUnj6bmWNG0b8boTn9bxMr4O4cdOKIhDmK6iag==
   dependencies:
     jsonschema "^1.4.1"
     semver "^7.6.3"
@@ -857,9 +857,9 @@
     undici-types "~6.19.2"
 
 "@types/node@^18":
-  version "18.19.45"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.45.tgz#a9ebfe4c316a356be7ca11f753ecb2feda6d6bdf"
-  integrity sha512-VZxPKNNhjKmaC1SUYowuXSRSMGyQGmQjvvA1xE4QZ0xce2kLtEhPDS+kqpCPBZYgqblCLQ2DAjSzmgCM5auvhA==
+  version "18.19.46"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.46.tgz#51801396c01153e0626e36f43386e83bc768b072"
+  integrity sha512-vnRgMS7W6cKa1/0G3/DTtQYpVrZ8c0Xm6UkLaVFrb9jtcVC3okokW09Ki1Qdrj9ISokszD69nY4WDLRlvHlhAA==
   dependencies:
     undici-types "~5.26.4"
 
@@ -4154,10 +4154,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-projen@^0.86.0:
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.86.0.tgz#7141b03ac6837dc7f902ffe08558424f74fefe1c"
-  integrity sha512-7iqeGd2FdTInE/PVuWFZzjOqsQL8dLDdn54H3mK5CIYQqu9EAjrdMqDOHFZjDrNUz2bbau74jWCQW4tasAznOQ==
+projen@^0.86.4:
+  version "0.86.4"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.86.4.tgz#dd4b0af35f04f96fbd8c10c1a70e748e029fb460"
+  integrity sha512-kUKEEhNzCN5ZBkj9xzUzdP9X1TFNlWWRQJTeEeq0nFSaue6StmHyNG2yHvoEO/c2tqz1Sc07+B/dC8VC+19C/Q==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
