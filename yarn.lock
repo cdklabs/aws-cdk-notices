@@ -26,9 +26,9 @@
   integrity sha512-twhuEG+JPOYCYPx/xy5uH2+VUsIEhPTzDY0F1KuB+ocjWWB/KEDiOVL19nHvbPCB6fhWnkykXEMJ4HHcKvjtvg==
 
 "@aws-cdk/cloud-assembly-schema@^36.0.5":
-  version "36.0.20"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-36.0.20.tgz#be803a510a5cabc35348b15c2ac758e6d769f307"
-  integrity sha512-pvuY9V431KwTZJtO/eeH3j34vF2I4VadXHX1RMQcsSFy4a2v2VZyAbXXI6s0Cc7X7bwZDfWdsfjjNhspO0nr2w==
+  version "36.0.21"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-36.0.21.tgz#12cd81a30f14443bbf7e463cc8c6026edddf6f1c"
+  integrity sha512-MuuzRxWfrrIw2D2s5p5axwDiH7BrKsDBCKS8OCmVGe8yKAtF2Y9cNo1Z0q4wySMfbaa6hgqTXnigO6YTzLru1w==
   dependencies:
     jsonschema "^1.4.1"
     semver "^7.6.3"
@@ -1224,9 +1224,9 @@ available-typed-arrays@^1.0.7:
     possible-typed-array-names "^1.0.0"
 
 aws-cdk-lib@^2.82.0:
-  version "2.154.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.154.1.tgz#92888bca6b196ab3ae27adad43e85a14fa81f9c4"
-  integrity sha512-XV04/XyNKJ2yyMfYsiSmWx+rIKwTrcrd87p61t4xhE240Iy6Y6LxXVdvkNEOjjbeXVmOUQ7JBG9cW1BeeFiDgg==
+  version "2.155.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.155.0.tgz#73abc753bf5dc9b5abe7e71aff254b386786a455"
+  integrity sha512-QGzDhLldBXsyOUmhgtZ98PiOUS2g1Mb5MO08FiOvQn3+KSyJjQdq0GoyxtDpCNGLaWmIfcyrtB9aDhod38fl9g==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.202"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -1245,9 +1245,9 @@ aws-cdk-lib@^2.82.0:
     yaml "1.10.2"
 
 aws-cdk@^2.82.0:
-  version "2.154.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.154.1.tgz#0d30d289512243044e4361abc92072f674489d9b"
-  integrity sha512-yJoLTo+fUHRLD4YQMt/QoOPgiT/daci4I5KcaDK8Cx2fWA0Z3h5U9+bWS3ah+8OeZ91fciNCwt6Yt/0p+cp2GQ==
+  version "2.155.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.155.0.tgz#123dd984615d8e36f35eb93a7acea8cebc21ad9c"
+  integrity sha512-AV7Ym/o7/xyDh6sqcGatWD6Bqa7Swe0OWJq+1srVww0MdBiy5yM3zYAA1+ZeqZNjFQThJPA+pYZQFTgojuaVBA==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1447,9 +1447,9 @@ camelcase@^6.0.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001646:
-  version "1.0.30001653"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001653.tgz#b8af452f8f33b1c77f122780a4aecebea0caca56"
-  integrity sha512-XGWQVB8wFQ2+9NZwZ10GxTYC5hk0Fa+q8cSkr0tgvMhYhMHP/QC+WTgrePMDBWiWc/pV+1ik82Al20XOK25Gcw==
+  version "1.0.30001655"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001655.tgz#0ce881f5a19a2dcfda2ecd927df4d5c1684b982f"
+  integrity sha512-jRGVy3iSGO5Uutn2owlb5gR6qsGngTw9ZTb4ali9f3glshcNmJ2noam4Mo9zia5P9Dk3jNNydy7vQjuE5dQmfg==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -4154,10 +4154,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-projen@^0.86.5:
-  version "0.86.5"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.86.5.tgz#86c7a45b4a058ba699111ba88af5bf989c9bdb70"
-  integrity sha512-JVckfyzjFQ46MdHjowslWWNH309A5kxYrpCIkobRTsB1F2KFiiESenjnS+vyWGML9NcfDIw6UIMRNYD6enuTIQ==
+projen@^0.86.6:
+  version "0.86.6"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.86.6.tgz#65943163283a291fedbd61c53a9c3cbd21c109dd"
+  integrity sha512-UBDdUrNku6y4fTx++YXVMi9NqaaWOUzEAzPVSVtUkOdW0itV7YfE9GxXRbVrM8gB+b3doem1o1kdddaEkfsuDw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
