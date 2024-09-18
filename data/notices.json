@@ -503,7 +503,7 @@
       "components": [
         {
           "name": "aws-cdk-lib.aws-ec2.WindowsVersion",
-          "version": "2.135.0 - 2.136.0"
+          "version": ">=2.135.0 <=2.136.0"
         }
       ],
       "schemaVersion": "1"
@@ -515,7 +515,7 @@
       "components": [
         {
           "name": "aws-cdk-lib.aws-lambda.Function",
-          "version": "2.138.0 - 2.139.0"
+          "version": ">=2.138.0 <=2.139.0"
         }
       ],
       "schemaVersion": "1"
@@ -539,7 +539,7 @@
       "components": [
         {
           "name": "aws-cdk-lib.aws-ses-actions.s3",
-          "version": "2.139.0 - 2.142.0"
+          "version": ">=2.139.0 <=2.142.0"
         }
       ],
       "schemaVersion": "1"
@@ -550,8 +550,8 @@
       "overview": "A new Logging class was added for AwsCustomResource in CDK v2.138.0. The logging property defaults to Logging.all() which adds logApiResponseData as true by default to the custom resource properties. As a result, an update is triggered automatically which returns an empty data object if no SDK call was configured. If you are on a CDK version >=2.138.0 or <=2.144.0 and upgrading to a CDK version >=2.145.0 you will need to set the @aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault feature flag to true to keep logApiResponseData as true by default and prevent an update event from being triggered; otherwise, you may encounter a deployment failure when upgrading",
       "components": [
         {
-          "name": "aws-cdk-lib.custom-resources",
-          "version": "2.138.0 - 2.144.0"
+          "name": "aws-cdk-lib.custom-resources.",
+          "version": ">=2.138.0 <=2.144.0"
         }
       ],
       "schemaVersion": "1"
@@ -562,8 +562,8 @@
       "overview": "New validation on CloudFormation Resourses also extended to Conditions. This has caused an issue with cloudformation-include when trying to cfnInclude a cloudformation template that has defined Conditions using non-alphanumeric characters, e.g. snake case my_condition",
       "components": [
         {
-          "name": "aws-cdk-lib.cloudformation-include",
-          "version": "2.147.0 - 2.147.1"
+          "name": "aws-cdk-lib.cloudformation-include.",
+          "version": ">=2.147.0 <=2.147.1"
         }
       ],
       "schemaVersion": "1"
@@ -574,7 +574,7 @@
       "overview": "ESBuild released a breaking change on version 0.22.0 that changed the default bundling behavior. `lambda-nodejs`'s `NodeJsFunction` now to fails to synthesize with the error message `Runtime.ImportModuleError: Cannot find module 'module'`. This issue exists on all CDK versions up to and including `2.147.2`. The workaround is either pin the esbuild version to ~0.21 or add `--packages=bundle` to `bundling.esbuildArgs` property (this option only works for esbuild version >= `0.22.0`).",
       "components": [
         {
-          "name": "aws-cdk-lib.lambda-nodejs",
+          "name": "aws-cdk-lib.lambda-nodejs.",
           "version": ">=2.0.0 <= 2.147.2"
         }
       ],
@@ -586,7 +586,7 @@
       "overview": "A change was added to the ApiGateway Method construct to only allow authorization scopes for cognito authorization type, this change broke the way to set the authorization scopes, and it will be empty if the customer does not explicitly set the `authorizationType` property while defining the API default method options, or while adding a new method. This issue introduced in CDK version `2.142.0`. The workaround is to either pin the `aws-cdk-lib` to version `2.141.0` or, to update the `RestApi` construct initialization to explicitly set the authorizationType in `defaultMethodOptions` property to COGNITO.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-apigateway",
+          "name": "aws-cdk-lib.aws-apigateway.",
           "version": ">=2.142.0 <= 2.148.1"
         }
       ],
@@ -598,7 +598,7 @@
       "overview": "A validation was added to check if the cpu/memory combination is fargate compatible task. The validation doesn't let the tokenized value to pass through. Therefore, when using tokenized values (e.g. CfnParameter) to create Fargate compatible ECS task, the validation will fail with error message `Invalid CPU and memory combinations for FARGATE compatible task definition`. The workaound is pin CDK to an older version 2.150 or before.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-ecs",
+          "name": "aws-cdk-lib.aws-ecs.",
           "version": "2.151.0"
         }
       ],
@@ -610,7 +610,7 @@
       "overview": "An automated CloudFormation schema change was added to Bedrock DataSet L1 Construct and caused DataSourceConfiguration to be removed from the L1 Construct.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-bedrock",
+          "name": "aws-cdk-lib.aws-bedrock.",
           "version": "2.154.0"
         }
       ],
