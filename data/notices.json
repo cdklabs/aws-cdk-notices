@@ -34,7 +34,7 @@
       "overview": "If the custom resource provider Lambda becomes `INACTIVE`, the custom resource provider framework attempts to call `functionActiveV2()` to wait for the function to become active. This throws the error because the SDK installed by Lambda is at version 2.1055.0, but `functionActiveV2` does not exist until 2.1080.0.",
       "components": [
         {
-          "name": "aws-cdk-lib.custom-resources",
+          "name": "aws-cdk-lib.custom_resources.",
           "version": ">=v2.60.0 <v2.76.1"
         }
       ],
@@ -306,7 +306,7 @@
       "overview": "Renaming the 'tag' prop  to 'tagOrDigest' in ContainerImage.fromEcrRepository function introduces a breaking change in Python when using keyword parameters.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-ecs.ContainerImage",
+          "name": "aws-cdk-lib.aws_ecs.ContainerImage",
           "version": "2.96.0"
         }
       ],
@@ -318,15 +318,15 @@
       "overview": "Using the 'Schedule' class in aws-events, aws-autoscaling, aws-applicationautoscaling, aws-backup, aws-scheduler-alpha, aws-synthetics-alpha causes a TypeError for Python users.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-events.Schedule",
+          "name": "aws-cdk-lib.aws_events.Schedule",
           "version": "2.97.0"
         },
         {
-          "name": "aws-cdk-lib.aws-backup.Schedule",
+          "name": "aws-cdk-lib.aws_backup.Schedule",
           "version": "2.97.0"
         },
         {
-          "name": "aws-cdk-lib.aws-autoscaling.Schedule",
+          "name": "aws-cdk-lib.aws_autoscaling.Schedule",
           "version": "2.97.0"
         },
         {
@@ -350,7 +350,7 @@
       "overview": "Using the `grantRead` method on `aws-cdk-lib/aws-s3.Bucket` results in an invalid action attached to the resource policy which can cause unexpected failures when interacting with the bucket.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws-s3.Bucket",
+          "name": "aws-cdk-lib/aws_s3.Bucket",
           "version": "2.101.0"
         }
       ],
@@ -406,7 +406,7 @@
       "overview": "A dependency on the bucket policy when using access logs was added to fix a circular dependency issue, but the bucket policy does not exist for imported buckets resulting in synth-time error.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-elasticloadbalancingv2.ApplicationLoadBalancer",
+          "name": "aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationLoadBalancer",
           "version": ">=2.106.0 <=2.108.0"
         }
       ],
@@ -418,7 +418,7 @@
       "overview": "When changing the zoneName value of the PublicHostedZone the old NS entries in the delegated zone are not removed.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-route53.CrossAccountZoneDelegationRecord",
+          "name": "aws-cdk-lib.aws_route53.CrossAccountZoneDelegationRecord",
           "version": ">=2.0.0 <=2.114.0"
         }
       ],
@@ -430,7 +430,7 @@
       "overview": "All users of `aws-events-targets` who created an `events.Rule` with the `SqsQueue` target and passed an imported (eg, `fromQueueArn` or `fromQueueName`) queue to the `deadLetterQueue` prop would receive an error similar to:  ```Error: Cannot assign Dead Letter Queue in region ${Token[TOKEN.35]} to the rule XYZEventRule89558AAC in region eu-west-1. Both the queue and the rule must be in the same region.```.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws-events-targets.SqsQueue",
+          "name": "aws-cdk-lib/aws_events.Rule",
           "version": ">=2.110.0 <=2.115.0"
         }
       ],
@@ -442,7 +442,7 @@
       "overview": "v2.116.0 introduced the ability to create multiple event bus policies on a single event bus. To facilitate this, the logical Id was changed from \"Policy\" to the statementId. This triggers a replacement, which fails in CloudFormation because the statement ID does not change.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws-events.EventBus",
+          "name": "aws-cdk-lib/aws_events.EventBus",
           "version": ">=2.116.0 <=2.117.0"
         }
       ],
@@ -454,7 +454,7 @@
       "overview": "v2.116.0 introduced the ability to setup logging for a state machine created by the custom resource provider framework. This can lead to a deploy failure because the log group resource policy size can be exceeded.",
       "components": [
         {
-          "name": "aws-cdk-lib/custom-resources.Provider",
+          "name": "aws-cdk-lib/custom_resources.Provider",
           "version": ">=2.116.0 <=2.121.0"
         }
       ],
@@ -490,7 +490,7 @@
       "overview": "Partition in policy statement for `ecs:TagResource` action in `EcsTask` was hardcoded to `aws` instead of being resolved dynamically in v2.132.0, resulting in failure to deploy in any partition except AWS with an IAM validation failure on the partition arn.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws-events-targets.EcsTask",
+          "name": "aws-cdk-lib/aws_events.Rules",
           "version": "2.132.0"
         }
       ],
@@ -502,7 +502,7 @@
       "overview": "The new enums suffixed with dates (i.e. `WINDOWS_SERVER_2022_ENGLISH_FULL_BASE_2024_02_14`) are not found when used in constructs that extend `GenericSSMParameterImage`, such as `WindowsImage`. The working enums were mistakenly deprecated (i.e. `WINDOWS_SERVER_2022_ENGLISH_FULL_BASE`).",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-ec2.WindowsVersion",
+          "name": "aws-cdk-lib.aws_ec2.WindowsVersion",
           "version": ">=2.135.0 <=2.136.0"
         }
       ],
@@ -514,7 +514,7 @@
       "overview": "Logic was added to the static `fromFunctionArn` method that removes any trailing version or alias from the specified function ARN. As a result, the `functionArn` property for `Functions` imported with `fromFunctionArn` will no longer include their version or alias.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-lambda.Function",
+          "name": "aws-cdk-lib.aws_lambda.Function",
           "version": ">=2.138.0 <=2.139.0"
         }
       ],
@@ -538,7 +538,7 @@
       "overview": "A change was made in CDK v2.139.0 to reduce overly broad permissions allocated to SES for the S3 receipt rule action. This resulted in deployment failure where SES is unable to write to s3 bucket",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-ses-actions.s3",
+          "name": "aws-cdk-lib.aws_ses.ReceiptRule",
           "version": ">=2.139.0 <=2.142.0"
         }
       ],
@@ -550,7 +550,7 @@
       "overview": "A new Logging class was added for AwsCustomResource in CDK v2.138.0. The logging property defaults to Logging.all() which adds logApiResponseData as true by default to the custom resource properties. As a result, an update is triggered automatically which returns an empty data object if no SDK call was configured. If you are on a CDK version >=2.138.0 or <=2.144.0 and upgrading to a CDK version >=2.145.0 you will need to set the @aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault feature flag to true to keep logApiResponseData as true by default and prevent an update event from being triggered; otherwise, you may encounter a deployment failure when upgrading",
       "components": [
         {
-          "name": "aws-cdk-lib.custom-resources.",
+          "name": "aws-cdk-lib.custom_resources.",
           "version": ">=2.138.0 <=2.144.0"
         }
       ],
@@ -562,7 +562,7 @@
       "overview": "New validation on CloudFormation Resourses also extended to Conditions. This has caused an issue with cloudformation-include when trying to cfnInclude a cloudformation template that has defined Conditions using non-alphanumeric characters, e.g. snake case my_condition",
       "components": [
         {
-          "name": "aws-cdk-lib.cloudformation-include.",
+          "name": "aws-cdk-lib.cloudformation_include.",
           "version": ">=2.147.0 <=2.147.1"
         }
       ],
@@ -574,7 +574,7 @@
       "overview": "ESBuild released a breaking change on version 0.22.0 that changed the default bundling behavior. `lambda-nodejs`'s `NodeJsFunction` now to fails to synthesize with the error message `Runtime.ImportModuleError: Cannot find module 'module'`. This issue exists on all CDK versions up to and including `2.147.2`. The workaround is either pin the esbuild version to ~0.21 or add `--packages=bundle` to `bundling.esbuildArgs` property (this option only works for esbuild version >= `0.22.0`).",
       "components": [
         {
-          "name": "aws-cdk-lib.lambda-nodejs.",
+          "name": "aws-cdk-lib.aws_lambda_nodejs.",
           "version": ">=2.0.0 <= 2.147.2"
         }
       ],
@@ -586,7 +586,7 @@
       "overview": "A change was added to the ApiGateway Method construct to only allow authorization scopes for cognito authorization type, this change broke the way to set the authorization scopes, and it will be empty if the customer does not explicitly set the `authorizationType` property while defining the API default method options, or while adding a new method. This issue introduced in CDK version `2.142.0`. The workaround is to either pin the `aws-cdk-lib` to version `2.141.0` or, to update the `RestApi` construct initialization to explicitly set the authorizationType in `defaultMethodOptions` property to COGNITO.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-apigateway.",
+          "name": "aws-cdk-lib.aws_apigateway.",
           "version": ">=2.142.0 <= 2.148.1"
         }
       ],
@@ -598,7 +598,7 @@
       "overview": "A validation was added to check if the cpu/memory combination is fargate compatible task. The validation doesn't let the tokenized value to pass through. Therefore, when using tokenized values (e.g. CfnParameter) to create Fargate compatible ECS task, the validation will fail with error message `Invalid CPU and memory combinations for FARGATE compatible task definition`. The workaound is pin CDK to an older version 2.150 or before.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-ecs.",
+          "name": "aws-cdk-lib.aws_ecs.",
           "version": "2.151.0"
         }
       ],
@@ -610,7 +610,7 @@
       "overview": "An automated CloudFormation schema change was added to Bedrock DataSet L1 Construct and caused DataSourceConfiguration to be removed from the L1 Construct.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-bedrock.",
+          "name": "aws-cdk-lib.aws_bedrock.",
           "version": "2.154.0"
         }
       ],
