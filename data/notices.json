@@ -615,6 +615,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(aws-ec2): Resolution error: Cannot find module '../../region-info/build-tools/fact-tables",
+      "issueNumber": 31492,
+      "overview": "A change was added to VPC to create vpc endpoints for ECR based on domain suffix with the help of partition info stored in region lib. This change caused the cdk-lib build failure for aws-ec2 module with resolution error while trying to fetch region info. The workaround is pin CDK to an older version 2.158.0 or before.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws-ec2.",
+          "version": "2.159.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
