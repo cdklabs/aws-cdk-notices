@@ -105,7 +105,7 @@ test('rejects notices with incorrect prefix of construct names', () => {
   })).toThrow(/Invalid prefix of a qualified name/);
 });
 
-test('rejects notices with correct construct names', () => {
+test('accepts notices with correct construct names', () => {
   expect(() => validateNotice({
     title: '(apigateway): breaking change in RestApi instances with CognitoUserPoolsAuthorizer',
     issueNumber: 30444,
