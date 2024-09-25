@@ -35,30 +35,34 @@ export function validateNotice(notice: Notice): void {
     if (!semver.validRange(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);
     }
+
     const names = component.name.split('.');
     const packageName = names[0];
+
     if (names.length === 3) {
-      // A fully qualified name of a stable construct (e.g., `aws-cdk-lib.aws_amplify.CfnBranch`)
+      // Expect fully qualified name of a stable construct (e.g., `aws-cdk-lib.aws_amplify.CfnBranch`)
+      // Expect a prefix of a fully qualified name (e.g., `aws-cdk-lib.aws_amplify.`)
       const module = names.slice(0, 2).join('.');
+
       if (!CONSTRUCT_INFO.includes(module)) {
-        throw new Error(`Invalid fully qualified name of a construct ${component.name}.`);
+        throw new Error(`Invalid fully qualified name of a stable construct ${component.name}.`);
       }
     } else if (names.length === 2 && packageName.includes('aws-cdk-lib')) {
-      // A prefix of a fully qualified name (e.g., `aws-cdk-lib.aws_amplify.`)
+      // This is likely an error case since it require a suffix '.' at the end of the construct name.
       const module = names.slice(0, 2).join('.');
+
       if (!CONSTRUCT_INFO.includes(module)) {
-        throw new Error(`Invalid prefix of a fully qualified name ${component.name}. Missing the '.' at the end`);
+        throw new Error(`Invalid prefix of a qualified name ${component.name}. Missing the '.' at the end`);
       }
     } else if (names.length === 2 && packageName.includes('@aws-cdk')) {
-      // A fully qualified name of an experimental construct (e.g., `@aws-cdk/aws-ecr-assets.CfnBranch`)
+      // Expect a fully qualified name of an experimental construct (e.g., `@aws-cdk/aws-ecr-assets.CfnBranch`)
       const module = names.slice(0, 1).join('.');
+
       if (!CONSTRUCT_INFO.includes(module)) {
-        throw new Error(`Invalid fully qualified name of a construct ${component.name}.`);
+        throw new Error(`Invalid fully qualified name of an experimental construct ${component.name}.`);
       }
-    } else if (names.length == 1) {
-      if (!CONSTRUCT_INFO.includes(names[0])) {
-        throw new Error(`Invalid component name ${component.name}.`);
-      }
+    } else if (names.length == 1 && !CONSTRUCT_INFO.includes(names[0])) {
+      throw new Error(`Invalid component name ${component.name}.`);
     }
   }
 
