@@ -1,4 +1,5 @@
 import * as semver from 'semver';
+import { CONSTRUCT_INFO } from './construct-info';
 
 const MAX_TITLE_LENGTH = 100;
 
@@ -33,6 +34,31 @@ export function validateNotice(notice: Notice): void {
   for (const component of notice.components) {
     if (!semver.validRange(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);
+    }
+    const names = component.name.split('.');
+    const packageName = names[0];
+    if (names.length === 3) {
+      // A fully qualified name of a stable construct (e.g., `aws-cdk-lib.aws_amplify.CfnBranch`)
+      const module = names.slice(0, 2).join('.');
+      if (!CONSTRUCT_INFO.includes(module)) {
+        throw new Error(`Invalid fully qualified name of a construct ${component.name}.`);
+      }
+    } else if (names.length === 2 && packageName.includes('aws-cdk-lib')) {
+      // A prefix of a fully qualified name (e.g., `aws-cdk-lib.aws_amplify.`)
+      const module = names.slice(0, 2).join('.');
+      if (!CONSTRUCT_INFO.includes(module)) {
+        throw new Error(`Invalid prefix of a fully qualified name ${component.name}. Missing the '.' at the end`);
+      }
+    } else if (names.length === 2 && packageName.includes('@aws-cdk')) {
+      // A fully qualified name of an experimental construct (e.g., `@aws-cdk/aws-ecr-assets.CfnBranch`)
+      const module = names.slice(0, 1).join('.');
+      if (!CONSTRUCT_INFO.includes(module)) {
+        throw new Error(`Invalid fully qualified name of a construct ${component.name}.`);
+      }
+    } else if (names.length == 1) {
+      if (!CONSTRUCT_INFO.includes(names[0])) {
+        throw new Error(`Invalid component name ${component.name}.`);
+      }
     }
   }
 
