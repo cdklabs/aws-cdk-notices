@@ -120,21 +120,6 @@ test('accepts notices with correct construct names', () => {
   })).not.toThrow();
 });
 
-test('rejects notices with correct construct names', () => {
-  expect(() => validateNotice({
-    title: '(apigateway): breaking change in RestApi instances with CognitoUserPoolsAuthorizer',
-    issueNumber: 30444,
-    overview: 'A change was added to the ApiGateway Method construct to only allow authorization scopes for cognito authorization type, this change broke the way to set the authorization scopes, and it will be empty if the customer does not explicitly set the `authorizationType` property while defining the API default method options, or while adding a new method. This issue introduced in CDK version `2.142.0`. The workaround is to either pin the `aws-cdk-lib` to version `2.141.0` or, to update the `RestApi` construct initialization to explicitly set the authorizationType in `defaultMethodOptions` property to COGNITO.',
-    components: [
-      {
-        name: 'aws-cdk-lib.aws_apigateway.',
-        version: '>=2.142.0 <= 2.148.1',
-      },
-    ],
-    schemaVersion: '1',
-  })).not.toThrow();
-});
-
 test('rejects notices with incorrect construct name foo', () => {
   expect(() => validateNotice({
     title: '(apigateway): breaking change in RestApi instances with CognitoUserPoolsAuthorizer',

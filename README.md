@@ -51,6 +51,17 @@ Example:
   }
 ```
 
+## FAQ
+
+When adding a new notice to `notices.json`, if you see errors like `Invalid fully qualified name`
+or `Invalid prefix of a qualified name`, it's likely an issue with the format of the construct
+name inputed. Please read the above requirement to determine the correct construct name and
+cross reference with the value defined as `constructInfo.fnq` in `tree.json`.
+
+If the value is correct and the validator fails, it's likely there is a change in the repository,
+i.e. stablizing an experimental module, introducing a new module. In the event of these, you
+need to manually add to the `constrcut-info.ts` file with the correct construct name.
+
 ## License
 
 This project is licensed under the Apache-2.0 License.
