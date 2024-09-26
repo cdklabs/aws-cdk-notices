@@ -6,7 +6,7 @@
       "overview": "Previously, the BedrockInvokeModel outputPath parameter could be used to select a portion of the model output to pass to the next state. Now, the outputPath parameter is assumed to be an S3Uri where the model output should be saved. The parameter can no longer be used to select model output and pass it to the next state.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-step-functions-tasks.BedrockInvokeModel",
+          "name": "aws-cdk-lib.aws_stepfunctions_tasks.BedrockInvokeModel",
           "version": ">=v2.150.0 <=v2.155.0"
         }
       ],
@@ -22,7 +22,7 @@
           "version": "2.116.0"
         },
         {
-          "name": "aws-cdk-lib.CustomResourceProvider",
+          "name": "aws-cdk-lib.custom_resources.Provider",
           "version": "2.116.0"
         }
       ],
@@ -46,7 +46,7 @@
       "overview": "The names of stacks that contain special characters (such as '-') are incorrectly sanitized. This is a breaking change to the names of stacks that have already been deployed.",
       "components": [
         {
-          "name": "aws-cdk-lib/core.Stack",
+          "name": "aws-cdk-lib.core.Stack",
           "version": ">=v2.74.0 <v2.75.1"
         }
       ],
@@ -226,7 +226,7 @@
       "overview": "Starting April 2023, S3 buckets configured with ACLs (used for S3 access logging and CloudFront logging) need additional configuration",
       "components": [
         {
-          "name": "aws-cdk-lib.s3.Bucket",
+          "name": "aws-cdk-lib.aws_s3.Bucket",
           "version": "^2.0.0 <2.60.0"
         },
         {
@@ -330,7 +330,7 @@
           "version": "2.97.0"
         },
         {
-          "name": "aws-cdk-lib.aws-applicationautoscaling.Schedule",
+          "name": "aws-cdk-lib.aws_applicationautoscaling.Schedule",
           "version": "2.97.0"
         },
         {
@@ -350,7 +350,7 @@
       "overview": "Using the `grantRead` method on `aws-cdk-lib/aws-s3.Bucket` results in an invalid action attached to the resource policy which can cause unexpected failures when interacting with the bucket.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws_s3.Bucket",
+          "name": "aws-cdk-lib.aws_s3.Bucket",
           "version": "2.101.0"
         }
       ],
@@ -430,7 +430,7 @@
       "overview": "All users of `aws-events-targets` who created an `events.Rule` with the `SqsQueue` target and passed an imported (eg, `fromQueueArn` or `fromQueueName`) queue to the `deadLetterQueue` prop would receive an error similar to:  ```Error: Cannot assign Dead Letter Queue in region ${Token[TOKEN.35]} to the rule XYZEventRule89558AAC in region eu-west-1. Both the queue and the rule must be in the same region.```.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws_events.Rule",
+          "name": "aws-cdk-lib.aws_events.Rule",
           "version": ">=2.110.0 <=2.115.0"
         }
       ],
@@ -442,7 +442,7 @@
       "overview": "v2.116.0 introduced the ability to create multiple event bus policies on a single event bus. To facilitate this, the logical Id was changed from \"Policy\" to the statementId. This triggers a replacement, which fails in CloudFormation because the statement ID does not change.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws_events.EventBus",
+          "name": "aws-cdk-lib.aws_events.EventBus",
           "version": ">=2.116.0 <=2.117.0"
         }
       ],
@@ -454,7 +454,7 @@
       "overview": "v2.116.0 introduced the ability to setup logging for a state machine created by the custom resource provider framework. This can lead to a deploy failure because the log group resource policy size can be exceeded.",
       "components": [
         {
-          "name": "aws-cdk-lib/custom_resources.Provider",
+          "name": "aws-cdk-lib.custom_resources.Provider",
           "version": ">=2.116.0 <=2.121.0"
         }
       ],
@@ -490,7 +490,7 @@
       "overview": "Partition in policy statement for `ecs:TagResource` action in `EcsTask` was hardcoded to `aws` instead of being resolved dynamically in v2.132.0, resulting in failure to deploy in any partition except AWS with an IAM validation failure on the partition arn.",
       "components": [
         {
-          "name": "aws-cdk-lib/aws_events.Rules",
+          "name": "aws-cdk-lib.aws_events.Rules",
           "version": "2.132.0"
         }
       ],
