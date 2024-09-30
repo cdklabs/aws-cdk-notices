@@ -54,6 +54,15 @@ Example:
   }
 ```
 
+## Dynamic Values
+
+Some notices can include special strings that dynamically resolve to values during CLI execution.
+
+| Key                         | Description                        | component                         | example                                              |  
+| ----------------------------| ---------------------------------- | --------------------------------- |------------------------------------------------------|
+| `{resolve:ENVIRONMENTS}`    | List of bootstrapped environments  | `bootstrap`                       | aws://1234567890/us-east-1,aws://1234567890/us-east-2|
+
+
 ## FAQ
 
 When adding a new notice to `notices.json`, if you see errors like `Invalid fully qualified name`
