@@ -34,7 +34,7 @@ Component structure:
   the notices from the website.
 * The reserved word `framework`. This will match against the
   `@aws-cdk/core`, in case of v1 or `aws-cdk-lib` in case of v2.
-* The reserved work 'bootstrap'. This will match against the bootstrap stack version in each
+* The reserved word 'bootstrap'. This will match against the bootstrap stack version in each
   environment `cdk deploy` runs against. These will only be displayed when running `cdk deploy`.
 
 [semver]: https://www.npmjs.com/package/semver
