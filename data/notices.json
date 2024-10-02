@@ -205,6 +205,22 @@
       "schemaVersion": "1"
     },
     {
+      "title": "(ecs-patterns): unnecessary breaking target group port change introduced after upgrading cdk",
+      "issueNumber": 19411,
+      "overview": "Upgrading to versions >=1.140.0 and <=1.147.0 may cause target groups port changes which cause resource replacements",
+      "components": [
+        {
+          "name": "@aws-cdk/aws-ecs-patterns.NetworkLoadBalancedEc2Service",
+          "version": ">=1.140.0 <=1.147.0"
+        },
+        {
+          "name": "@aws-cdk/aws-ecs-patterns.NetworkLoadBalancedFargateService",
+          "version": ">=1.140.0 <=1.147.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "(pipelines) CDK Pipelines role has overly permissive trust policy",
       "issueNumber": 25356,
       "overview": "A Role that is intended to be used only by the Pipeline can be assumed from other Roles in the same account.",
