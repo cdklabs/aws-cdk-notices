@@ -643,6 +643,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): validation errors detected: Value '' at 'stackName' ",
+      "issueNumber": 31654,
+      "overview": "A change was added to aws-cdk-lib to introduce a new cli command feature `cdk --rollback`. This change caused an issue with nested stacks deployment in CDK app. The workaround is pin CDK to an older version 2.160.0 or before.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.161.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
