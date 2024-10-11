@@ -18,11 +18,16 @@ export interface Notice {
 
 /**
  * Validate the notice structure. Constraints:
+ *   - No empty properties
  *   - Maximum title length: 100
  *   - Valid component names: 'cli', 'framework'
  *   - Versions comply with the semver format
  */
 export function validateNotice(notice: Notice): void {
+  if (notice.title.length == 0 || notice.overview.length == 0 || notice.schemaVersion.length == 0) {
+    throw new Error('Notices should have non-empty properties');
+  }
+
   if (notice.title.length > MAX_TITLE_LENGTH) {
     throw new Error(`Maximum allowed title length is ${MAX_TITLE_LENGTH}. Title ${notice.title} is ${notice.title.length} characters long`);
   }
