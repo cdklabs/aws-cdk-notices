@@ -23,6 +23,9 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   devDeps: [
     '@types/semver',
   ],
+  githubOptions: {
+    mergify: false,
+  },
 });
 
 project.synth();
