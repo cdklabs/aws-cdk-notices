@@ -13,7 +13,7 @@
       "schemaVersion": "1"
     },
     {
-      "title": "",
+      "title": "stepfunctions-tasks: BedrockInvokeModel outputPath no longer passes output to next state",
       "issueNumber": 31302,
       "overview": "Previously, the BedrockInvokeModel outputPath parameter could be used to select a portion of the model output to pass to the next state. Now, the outputPath parameter is assumed to be an S3Uri where the model output should be saved. The parameter can no longer be used to select model output and pass it to the next state.",
       "components": [
