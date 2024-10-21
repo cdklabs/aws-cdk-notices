@@ -25,6 +25,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   ],
   githubOptions: {
     mergify: false,
+    mergeQueue: true,
   },
 });
 
