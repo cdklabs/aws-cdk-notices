@@ -9,14 +9,14 @@ command, or it can be used by a GitHub workflow to update issues.
 
 Notices are declared as JSON objects with the following structure:
 
-| Field           | Description                                                                                          | Format                |
-| :-------------- | :----------------------------------------------------------------------------------------------------| ----------------------|
-| `title`         | The title of the incident (max length: 100)                                                          | Free form text        |
-| `issueNumber`   | The ID of the GitHub issue where we are tracking this event                                          | Number                |
-| `overview`      | A paragraph with more information about the incident                                                 | Free form text        |
-| `severity`      | The severity of the notice. Warnings are printer yellow. Errors are printed red. Default is no color | 'warning' or 'error'  |
-| `components`    | A list of the components affected by the incident                                                    | See table below       |
-| `schemaVersion` | The version of the schema used for this notice                                                       | String                |
+| Field           | Description                                                                                          | Format               |
+| :-------------- | :--------------------------------------------------------------------------------------------------- | -------------------- |
+| `title`         | The title of the incident (max length: 100)                                                          | Free form text       |
+| `issueNumber`   | The ID of the GitHub issue where we are tracking this event                                          | Number               |
+| `overview`      | A paragraph with more information about the incident                                                 | Free form text       |
+| `severity`      | The severity of the notice. Warnings are printer yellow. Errors are printed red. Default is no color | 'warning' or 'error' |
+| `components`    | A list of the components affected by the incident                                                    | See table below      |
+| `schemaVersion` | The version of the schema used for this notice                                                       | String               |
 
 Component structure:
 
@@ -58,10 +58,9 @@ Example:
 
 Some notices can include special strings that dynamically resolve to values during CLI execution.
 
-| Key                         | Description                        | component                         | example                                              |  
-| ----------------------------| ---------------------------------- | --------------------------------- |------------------------------------------------------|
-| `{resolve:ENVIRONMENTS}`    | List of bootstrapped environments  | `bootstrap`                       | aws://1234567890/us-east-1,aws://1234567890/us-east-2|
-
+| Key                      | Description                       | component   | example                                               |
+| ------------------------ | --------------------------------- | ----------- | ----------------------------------------------------- |
+| `{resolve:ENVIRONMENTS}` | List of bootstrapped environments | `bootstrap` | aws://1234567890/us-east-1,aws://1234567890/us-east-2 |
 
 ## FAQ
 

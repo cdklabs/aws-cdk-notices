@@ -1,7 +1,19 @@
 {
   "notices": [
     {
-      "title": "cli: import fails with with 'S3 error: Access Denied",
+      "title": "cli: cross-account deployments are failing with error 'Need to perform AWS calls for account'",
+      "issueNumber": 31845,
+      "overview": "A new check for the bootstrap version used by a stack was introduced. This check runs with incorrect credentials, causing all cross-account deployments to fail.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.163.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "cli: import fails with with 'S3 error: Access Denied'",
       "issueNumber": 31716,
       "overview": "When using cdk import, the command tries to read a template that doesn't exist from the assets bucket.",
       "components": [
