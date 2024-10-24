@@ -3,6 +3,7 @@ import { IncomingMessage } from 'http';
 import https from 'https';
 import * as path from 'path';
 import * as semver from 'semver';
+import { SPECIAL_COMPONENTS } from '../src/construct-info';
 import { Notice, validateNotice } from '../src/notice';
 
 describe('Notices file is valid', () => {
@@ -40,6 +41,8 @@ describe('Notices file is valid', () => {
       test('v2 version ranges must be bounded at the bottom', () => {
         for (const component of notice.components) {
           if (component.version === '1.*') { continue; } // Special range that we allow
+          if (SPECIAL_COMPONENTS.includes(component.name)) { continue; } // Not subject to v1/v2 ranges
+
           if (semver.intersects(component.version, '2', { includePrerelease: true })
           && !semver.subset(component.version, '2', { includePrerelease: true })) {
             throw new Error(`${component.version} should have an upper bound in v1 range, or a lower bound in v2 range (version should look like "^2.3.4 <2.5.6")`);

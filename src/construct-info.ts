@@ -1,3 +1,5 @@
+export const SPECIAL_COMPONENTS = ['bootstrap'];
+
 export const CONSTRUCT_INFO = [
   'aws-cdk-lib.aws_elasticsearch',
   '@aws-cdk/aws-appconfig-alpha',

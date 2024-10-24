@@ -1,5 +1,5 @@
 import * as semver from 'semver';
-import { CONSTRUCT_INFO } from './construct-info';
+import { CONSTRUCT_INFO, SPECIAL_COMPONENTS } from './construct-info';
 
 const MAX_TITLE_LENGTH = 100;
 
@@ -66,7 +66,7 @@ export function validateNotice(notice: Notice): void {
       if (!CONSTRUCT_INFO.includes(module)) {
         throw new Error(`Invalid fully qualified name of an experimental construct ${component.name}.`);
       }
-    } else if (names.length == 1 && !CONSTRUCT_INFO.includes(names[0])) {
+    } else if (names.length == 1 && !CONSTRUCT_INFO.includes(names[0]) && !SPECIAL_COMPONENTS.includes(names[0])) {
       throw new Error(`Invalid component name ${component.name}.`);
     }
   }
