@@ -679,6 +679,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): Bootstrap stack outdated",
+      "issueNumber": 31885,
+      "overview": "The bootstrap stack in {resolve:ENVIRONMENTS} is outdated. We recommend at least version 21, distributed with CDK CLI 2.149.0 or higher. Please rebootstrap your environment by runing 'cdk bootstrap aws://<ACCOUNT>/<REGION>'",
+      "components": [
+        {
+          "name": "bootstrap",
+          "version": "<21"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
