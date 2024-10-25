@@ -1228,9 +1228,9 @@ available-typed-arrays@^1.0.7:
     possible-typed-array-names "^1.0.0"
 
 aws-cdk-lib@^2.82.0:
-  version "2.163.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.163.1.tgz#c8963040767a1bd880141beae878bc63a20dab45"
-  integrity sha512-Vw0fMOW6BsdQqIILFfl5qCcmZAJxuLmh1SMBIoQ34k3rUFUmKwUH7PtRXbcHK3N9Sy0WzmF70ys05YqCDdhTSQ==
+  version "2.164.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.164.0.tgz#8f3c974939486ba2ec7e58b42949e74bc6575843"
+  integrity sha512-BfiQ4hhOw1+y1fqn67UwrmSsjKVIy3BPTQV9etkoFnCofltYpIrPVrLem39TVF+mto1d+xMJ6vEHPzsm2lx1eg==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.202"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -1249,9 +1249,9 @@ aws-cdk-lib@^2.82.0:
     yaml "1.10.2"
 
 aws-cdk@^2.82.0:
-  version "2.163.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.163.1.tgz#68ac95194ce2c342d79ffb12d597df45f1c3792e"
-  integrity sha512-EBkiWBC3MTnkcYRLBaAPXQoZkzPyB97X21PN/YQUdCmNiz7SJT0F5kQdfKtKsY6RnYsj+pufYMb7n+R07i/t1w==
+  version "2.164.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.164.0.tgz#ed05a25079d5fb4b0b318dc56061178e92c9048f"
+  integrity sha512-7+of/m/dGO8rqLAZpH4vMfZV1wFzgZBc21/yqFe4PYZ2Z9NWa98mZ2Dd28I/34CwR/aNWNPwDORiZn3/JPwCEw==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1854,9 +1854,9 @@ domexception@^2.0.1:
     webidl-conversions "^5.0.0"
 
 electron-to-chromium@^1.5.41:
-  version "1.5.44"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.44.tgz#0106d327c7d0e7b7bb66fd2da0aaf084ddf1fda5"
-  integrity sha512-Lz3POUa7wANQA8G+9btKAdH+cqkfWCBdkotvQZJVOqRXMYGm1tTD835Z01iCjWpEBf0RInPBWuPfzhGbxOCULw==
+  version "1.5.45"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.45.tgz#fa592ce6a88b44d23acbc7453a2feab98996e6c9"
+  integrity sha512-vOzZS6uZwhhbkZbcRyiy99Wg+pYFV5hk+5YaECvx0+Z31NR3Tt5zS6dze2OepT6PCTzVzT0dIJItti+uAW5zmw==
 
 emittery@^0.7.1:
   version "0.7.2"
