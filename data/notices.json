@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "cli: commands fail with authentication error 'The security token included in the request is invalid'",
+      "issueNumber": 32120,
+      "overview": "When using IAM user credentials, or when the region is defined in `~/.aws/credentials` but not `~/.aws/config`, the CLI is unable to authenticate and to determine the AWS account and region to be used.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.167.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "cli: cross-account deployments are failing with error 'Need to perform AWS calls for account'",
       "issueNumber": 31845,
       "overview": "A new check for the bootstrap version used by a stack was introduced. This check runs with incorrect credentials, causing all cross-account deployments to fail.",
