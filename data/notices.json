@@ -1,7 +1,7 @@
 {
   "notices": [
     {
-      "title": "cli: all commands fail with authentication error 'The security token included in the request is invalid'",
+      "title": "cli: commands fail with authentication error 'The security token included in the request is invalid'",
       "issueNumber": 32120,
       "overview": "When using IAM user credentials, or when the region is defined in `~/.aws/credentials` but not `~/.aws/config`, the CLI is unable to authenticate and to determine the AWS account and region to be used.",
       "components": [
