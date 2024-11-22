@@ -6,7 +6,7 @@
       "overview": "When using Fn::ImportValue to create a repository URI, the error message 'Template error: Cannot use Fn::ImportValue in Conditions' is thrown.",
       "components": [
         {
-          "name": "aws-cdk-lib.aws-ecr.Repository",
+          "name": "aws-cdk-lib.aws_ecr.Repository",
           "version": ">=2.167.0 <=2.169.0"
         }
       ],
