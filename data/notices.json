@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "ECR: Cannot use Fn::ImportValue to create repository URI.",
+      "issueNumber": 32238,
+      "overview": "When using Fn::ImportValue to create a repository URI, the error message 'Template error: Cannot use Fn::ImportValue in Conditions' is thrown.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.ecr",
+          "version": ">=2.167.0 <=2.169.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "cli: commands fail with authentication error 'The security token included in the request is invalid'",
       "issueNumber": 32120,
       "overview": "When using IAM user credentials, or when the region is defined in `~/.aws/credentials` but not `~/.aws/config`, the CLI is unable to authenticate and to determine the AWS account and region to be used.",
