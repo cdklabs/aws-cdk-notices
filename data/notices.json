@@ -715,6 +715,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): UnauthorizedException: Session token not found or invalid",
+      "issueNumber": 32510,
+      "overview": "The CLI fails when it's configured to get credentials via SSO and the region set in the profile is different from the region where the IAM Identity center was set up.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.172.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
