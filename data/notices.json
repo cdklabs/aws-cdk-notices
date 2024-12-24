@@ -729,7 +729,7 @@
       "schemaVersion": "1"
     },
     {
-      "title": "(credentials): CLI fails to validate initially empty credentials or credentials with null expiration time",
+      "title": "(credentials): CLI fails to validate credentials under certain conditions",
       "issueNumber": 32653,
       "overview": "Credential Providers returning empty credentials, or credentials with null expiration fields, would cause the CLI to throw an exception from CDK versions 2.172.0 until 2.173.1.",
       "components": [
