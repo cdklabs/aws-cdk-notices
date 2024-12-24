@@ -735,7 +735,7 @@
       "components": [
         {
           "name": "cli",
-          "version": ">=2.72.0 <= 2.173.1"
+          "version": ">=2.172.0 <= 2.173.1"
         }
       ],
       "schemaVersion": "1"
