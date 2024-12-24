@@ -731,7 +731,7 @@
     {
       "title": "(cli): may fail on credentials coming from credential provider plugins",
       "issueNumber": 32653,
-      "overview": "Credential Providers returning empty credentials, or credentials with null expiration fields, would cause the CLI to throw an exception from CDK versions 2.172.0 until 2.173.1.",
+      "overview": "Credential Providers returning empty credentials, or credentials with null expiration fields, would cause the CLI to throw an exception. If you encounter this behavior, upgrade to version 2.173.2 or higher",
       "components": [
         {
           "name": "cli",
