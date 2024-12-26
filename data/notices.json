@@ -739,6 +739,17 @@
         }
       ],
       "schemaVersion": "1"
-    }
+    },
+    {
+      "title": "(core): 'localAspects is not iterable' error",
+      "issueNumber": 32470,
+      "overview": "This error is seen by Aspects customers who depend on third-party constructs that use outdated versions (< 2.172.0) of CDK.",
+      "components": [
+        {
+          "name": "framework",
+          "version": ">=2.172.0 <=2.173.2"
+        }
+      ],
+      "schemaVersion": "1"
   ]
 }
