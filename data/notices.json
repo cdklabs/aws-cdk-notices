@@ -739,6 +739,22 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(ecs): Deprecation of canContainersAccessInstanceRole in ECS constructs",
+      "issueNumber": 28518,
+      "overview": "The `canContainersAccessInstanceRole` property used in ECS Cluster.AddCapacity, Cluster.addAutoScalingGroupCapacity APIs, and AsgCapacityProvider construct is being deprecated. This property will be removed from the CDK codebase by December 12, 2025. Users should migrate to using ECS service's recommended configurations to block IMDS on EC2 instances if required. For detailed information on the deprecation, rationale, and recommended approaches, please refer to the GitHub discussion here: https://github.com/aws/aws-cdk/discussions/32609",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_ecs.Cluster",
+          "version": "2.175.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws_ecs.AsgCapacityProvider",
+          "version": "2.175.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
