@@ -52,7 +52,7 @@
     "aws-cdk-lib": "^2.82.0",
     "cdk-pipelines-github": "^0.4.128",
     "constructs": "^10.0.5",
-    "semver": "^7.6.3"
+    "semver": "^7.7.0"
   },
   "license": "Apache-2.0",
   "publishConfig": {
