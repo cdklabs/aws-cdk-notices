@@ -768,5 +768,17 @@
       ],
       "schemaVersion": "1"
     }
+    {
+      "title": "(cli): SDK traces are logged without verbose logging enabled",
+      "issueNumber": 32836,
+      "overview": "Every CLI command is printing a lot of debug traces for AWS SDK calls, irregardless of the selected verbosity.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.178.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
   ]
 }
