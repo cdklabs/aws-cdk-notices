@@ -767,7 +767,7 @@
         }
       ],
       "schemaVersion": "1"
-    }
+    },
     {
       "title": "(cli): SDK traces are logged without verbose logging enabled",
       "issueNumber": 32836,
@@ -779,6 +779,6 @@
         }
       ],
       "schemaVersion": "1"
-    },
+    }
   ]
 }
