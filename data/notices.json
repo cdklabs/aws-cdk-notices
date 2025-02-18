@@ -779,6 +779,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): CLI versions and CDK library versions have diverged",
+      "issueNumber": 32775,
+      "overview": "Starting in CDK 2.179.0, CLI versions will no longer be in lockstep. CLI versions will now start at 2.1000.0, 2.10001.0, etc.",
+      "components": [
+        {
+          "name": "cli",
+          "version": ">=2.179.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
