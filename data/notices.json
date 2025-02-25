@@ -791,6 +791,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(aspects): TagAspect execution order has changed",
+      "issueNumber": 33460,
+      "overview": "Update to priority of Tags may cause Aspects to be executed in different order",
+      "components": [
+        {
+          "name": "aws-cdk-lib.core.Tag",
+          "version": ">=2.181.0 <=2.186.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
