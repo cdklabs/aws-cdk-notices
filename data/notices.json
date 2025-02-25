@@ -6,8 +6,8 @@
       "overview": "We will be moving the Cognito Identity Pools module out of developer preview and into GA some time soon. Before we do, please upgrade to the latest version of CDK to ensure you are using the most stable version of the construct library.",
       "components": [
         {
-          "name": "@aws-cdk.aws_cognito_identitypool_alpha.IdentityPool",
-          "version": ">2.74.0 <=2.179.0"
+          "name": "@aws-cdk/aws-cognito-identitypool-alpha.IdentityPool",
+          "version": ">=2.74.0 <=2.179.0"
         }
       ],
       "schemaVersion": "1"
