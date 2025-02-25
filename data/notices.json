@@ -3,7 +3,7 @@
     {
       "title": "cognito-identitypool-alpha: Stabilizing to GA soon.",
       "issueNumber": 27483,
-      "overview": "We will be moving the Cognito Identity Pools module out of developer preview and into GA some time soon. Before we do, please upgrade to the latest version of CDK to ensure you are using the most stable version of the construct library.",
+      "overview": "We will be moving the Cognito Identity Pools module out of developer preview and into GA some time soon. Please be advised that we have made some breaking changes to the library, such as the removal of the IdentityPoolRoleAttachment L2 construct. Please upgrade to the latest version of CDK and provide feedback if you encounter any issues.",
       "components": [
         {
           "name": "@aws-cdk/aws-cognito-identitypool-alpha.IdentityPool",
