@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "cognito-identitypool-alpha: Stabilizing to GA soon.",
+      "issueNumber": 27483,
+      "overview": "The AWS CDK team is preparing to graduate the Cognito Identity Pools module from Developer Preview to General Availability (GA). To ensure uninterrupted functionality of your applications during this transition, we strongly recommend upgrading to the latest version of AWS CDK before this change takes effect.",
+      "components": [
+        {
+          "name": "@aws-cdk/aws-cognito-identitypool-alpha.IdentityPool",
+          "version": ">=2.74.0 <=2.179.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "ECR: Cannot use Fn::ImportValue to create repository URI.",
       "issueNumber": 32238,
       "overview": "When using Fn::ImportValue to create a repository URI, the error message 'Template error: Cannot use Fn::ImportValue in Conditions' is thrown.",
