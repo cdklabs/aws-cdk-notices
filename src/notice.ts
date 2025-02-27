@@ -40,6 +40,9 @@ export function validateNotice(notice: Notice): void {
     if (!semver.validRange(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);
     }
+    if (!validNoticeSemver(component.version)) {
+      throw new Error(`Component version ${component.version} must include an upper and a lower bound, or none at all.`);
+    }
 
     const names = component.name.split('.');
     const packageName = names[0];
@@ -74,4 +77,24 @@ export function validateNotice(notice: Notice): void {
   if (!semver.validRange(notice.schemaVersion)) {
     throw new Error(`Schema version ${notice.schemaVersion} is not a valid semver range`);
   }
+}
+
+function validNoticeSemver(version: string) {
+  const components = version.split(' ');
+  // A version with just one component should always be valid
+  // A version with mulitple pieces must include a greaterThan and a lessThan symbol
+  if (components.length > 1) {
+    const greaterThan = ['^', '>', '>='];
+    const lessThan = ['<', '<='];
+    const greaterThanCount = components.filter(component =>
+      greaterThan.some(symbol => component.includes(symbol)),
+    ).length;
+
+    const lessThanCount = components.filter(component =>
+      lessThan.some(symbol => component.includes(symbol)),
+    ).length;
+
+    return greaterThanCount === 1 && lessThanCount === 1;
+  }
+  return true;
 }
