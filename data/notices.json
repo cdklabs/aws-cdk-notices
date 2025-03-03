@@ -815,6 +815,30 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "Node.js version not supported",
+      "issueNumber": 33623,
+      "overview": "You are using Node.js version {resolve:node}, which is no longer supported. Please upgrade to a recent LTS version.",
+      "components": [
+        {
+          "name": "node",
+          "version": "< 14.0.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "Support for this Node.js version will end soon",
+      "issueNumber": 33623,
+      "overview": "Support for Node.js v{resolve:node} ends on May 30, 2025. Please upgrade to a recent LTS version.",
+      "components": [
+        {
+          "name": "node",
+          "version": "< 18.0.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
