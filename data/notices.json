@@ -851,6 +851,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(ecs): cpu/memory validation for TaskDefinition failed with valid combinations",
+      "issueNumber": 34157,
+      "overview": "The cpu/memory validation failed for 1 vCPU and 2 GB memory even if they're valid combinations when users use syntax like '1vcpu' for cpu property.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_ecs.TaskDefinition",
+          "version": ">=2.185.0 <= 2.189.1"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
