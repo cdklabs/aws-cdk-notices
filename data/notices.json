@@ -1,6 +1,42 @@
 {
   "notices": [
     {
+      "title": "(iam): OrganizationPrincipal validation error when using token",
+      "issueNumber": 33768,
+      "overview": "A validation logic added to the OrganizationPrincipal class throws error when using token as organization ID.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_iam.OrganizationPrincipal",
+          "version": ">=2.182.0 <=2.184.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "scheduler-alpha and scheduler-targets-alpha: Stabilizing to GA soon.",
+      "issueNumber": 31785,
+      "overview": "The AWS CDK team is preparing to graduate the Scheduler and Scheduler Targets modules from Developer Preview to General Availability (GA). To ensure uninterrupted functionality of your applications during this transition, we strongly recommend upgrading to the latest version of AWS CDK before this change takes effect.",
+      "components": [
+        {
+          "name": "@aws-cdk/aws-scheduler-alpha.Schedule",
+          "version": ">=2.80.0-alpha.0 <=2.181.0-alpha.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "cognito-identitypool-alpha: Stabilizing to GA soon.",
+      "issueNumber": 27483,
+      "overview": "The AWS CDK team is preparing to graduate the Cognito Identity Pools module from Developer Preview to General Availability (GA). To ensure uninterrupted functionality of your applications during this transition, we strongly recommend upgrading to the latest version of AWS CDK before this change takes effect.",
+      "components": [
+        {
+          "name": "@aws-cdk/aws-cognito-identitypool-alpha.IdentityPool",
+          "version": ">=2.74.0-alpha.0 <2.179.0-alpha.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "ECR: Cannot use Fn::ImportValue to create repository URI.",
       "issueNumber": 32238,
       "overview": "When using Fn::ImportValue to create a repository URI, the error message 'Template error: Cannot use Fn::ImportValue in Conditions' is thrown.",
@@ -788,6 +824,42 @@
         {
           "name": "cli",
           "version": ">=2.0.0 <=2.1005.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "Node.js version not supported",
+      "issueNumber": 33623,
+      "overview": "You are using Node.js version {resolve:node}, which is no longer supported. Please upgrade to a recent LTS version.",
+      "components": [
+        {
+          "name": "node",
+          "version": "< 14.0.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "Support for this Node.js version will end soon",
+      "issueNumber": 33623,
+      "overview": "Support for Node.js v{resolve:node} ends on May 30, 2025. Please upgrade to a recent LTS version.",
+      "components": [
+        {
+          "name": "node",
+          "version": "< 18.0.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "(ecs): cpu/memory validation for TaskDefinition failed with valid combinations",
+      "issueNumber": 34157,
+      "overview": "The cpu/memory validation failed for 1 vCPU and 2 GB memory even if they're valid combinations when users use syntax like '1vcpu' for cpu property.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_ecs.TaskDefinition",
+          "version": ">=2.185.0 <= 2.189.1"
         }
       ],
       "schemaVersion": "1"
