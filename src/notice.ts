@@ -77,7 +77,7 @@ export function validateNotice(notice: Notice): void {
 }
 
 function isValidComponentVersion(version: string): boolean {
-  if (semver.validRange(version) == null ) {
+  if (semver.validRange(version) == null) {
     return false;
   }
 
@@ -93,7 +93,7 @@ function isValidComponentVersion(version: string): boolean {
 
       // inner is an array of intersections with ` ` (whitespace)
       for (const comp of inner) {
-        // Every comparator in an intersections with mulitple pieces must be a range, or in other words
+        // Every comparator in an intersection with mulitple pieces must be a range, or in other words
         // explicity disallow any comparators in intersections that do not have an operator.
         if (!(new semver.Comparator(comp)).operator) {
           return false;
