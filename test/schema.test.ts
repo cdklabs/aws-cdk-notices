@@ -18,14 +18,18 @@ describe('Notices file is valid', () => {
         validateNotice(notice);
       });
 
-      test('GitHub issue exists', () => {
+      test('GitHub issue exists', async () => {
         const url = `https://github.com/aws/aws-cdk/issues/${notice.issueNumber}`;
-        https.get(url, (res: IncomingMessage) => {
-          if (res.statusCode !== 200) {
-            fail(`Couldn't find issue ${url}`);
-          }
-        }).on('error', function(e: Error) {
-          fail(e);
+
+        await new Promise<void>(function (resolve, reject) {
+          https.get(url, (res: IncomingMessage) => {
+            if (!res.statusCode || !([200, 302]).includes(res.statusCode)) {
+              return reject(`Couldn't find issue ${url}`);
+            }
+            resolve();
+          }).on('error', function (e: Error) {
+            reject(e);
+          });
         });
       });
 
@@ -44,7 +48,7 @@ describe('Notices file is valid', () => {
           if (SPECIAL_COMPONENTS.includes(component.name)) { continue; } // Not subject to v1/v2 ranges
 
           if (semver.intersects(component.version, '2', { includePrerelease: true })
-          && !semver.subset(component.version, '2', { includePrerelease: true })) {
+            && !semver.subset(component.version, '2', { includePrerelease: true })) {
             throw new Error(`${component.version} should have an upper bound in v1 range, or a lower bound in v2 range (version should look like "^2.3.4 <2.5.6")`);
           }
         }
