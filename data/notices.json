@@ -863,6 +863,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): all commands failing on Node.js < 18.18.0 with error `Symbol.asyncDispose is not defined`",
+      "issueNumber": 34205,
+      "overview": "Versions 2.1008.0 and 2.1009.0 of the AWS CDK CLI are incompatible with any Node.js version that doesn't support the `asyncDispose` Symbol (that is any version < 18.18.0). Under these circumstances, all CLI commands will fail.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "2.1008.0 || 2.1009.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
