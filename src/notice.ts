@@ -37,7 +37,7 @@ export function validateNotice(notice: Notice): void {
   }
 
   for (const component of notice.components) {
-    if (!semver.validRange(component.version)) {
+    if (!isValidComponentVersion(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);
     }
 
@@ -74,4 +74,33 @@ export function validateNotice(notice: Notice): void {
   if (!semver.validRange(notice.schemaVersion)) {
     throw new Error(`Schema version ${notice.schemaVersion} is not a valid semver range`);
   }
+}
+
+function isValidComponentVersion(version: string): boolean {
+  if (semver.validRange(version) == null) {
+    return false;
+  }
+
+  const comparators = semver.toComparators(version);
+
+  // outer array contains the unions with ||
+  // we are not interested in unions, they are additive and therefore okay
+  for (const inner of comparators) {
+
+    // A comparator with just one range should always be valid
+    // But we will do further checks if the intersection containts multiple ranges, e.g. `>1 <3`
+    if (inner.length > 1) {
+
+      // inner is an array of intersections with ` ` (whitespace)
+      for (const comp of inner) {
+        // Every comparator in an intersection with mulitple pieces must be a range, or in other words
+        // explicity disallow any comparators in intersections that do not have an operator.
+        if (!(new semver.Comparator(comp)).operator) {
+          return false;
+        }
+      }
+    }
+  }
+
+  return true;
 }
