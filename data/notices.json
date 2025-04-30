@@ -875,6 +875,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(aws-stepfunctions-tasks): TaskInput.fromObject no longer accepts null values",
+      "issueNumber": 34157,
+      "overview": "Adding a null value property to jsonPath property using TaskInput.fromObject fails validation check for jsonata and cause error while synthesizing the cdk stack.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_stepfunctions.TaskInput",
+          "version": ">=2.178.0 <= 2.193.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
