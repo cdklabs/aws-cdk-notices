@@ -887,6 +887,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(aws-lambda-nodejs): Cannot find defining file",
+      "issueNumber": 34486,
+      "overview": "Instantiation of NodejsFunction fails when the 'entry' property is not passed",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
+          "version": "2.196.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
