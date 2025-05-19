@@ -891,7 +891,7 @@
     {
       "title": "(aws-lambda-nodejs): Cannot find defining file",
       "issueNumber": 34486,
-      "overview": "The addition of the `@propertyInjectable` decorator onto `NodejsFunction` breaks it because it alters the callstack, which is inspected inside the construct to automagically determine the entrypoint of the function.",
+      "overview": "Instantiation of NodejsFunction fails when the 'entry' property is not passed",
       "components": [
         {
           "name": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
