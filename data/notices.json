@@ -899,6 +899,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(custom-resources): Custom resource provider log group duplicates",
+      "issueNumber": 34612,
+      "overview": "cdk managed log group to lambda function breaks any lambda function being deployed(new or existing)",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_lambda.Function",
+          "version": "2.200.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
