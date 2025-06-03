@@ -44,9 +44,9 @@ class StaticWebsite extends Construct {
       domainName,
     });
 
-    const certificate = new acm.DnsValidatedCertificate(this, 'certificate', {
+    const certificate = new acm.Certificate(this, 'certificate', {
       domainName,
-      hostedZone,
+      validation: acm.CertificateValidation.fromDns(hostedZone),
     });
 
     const distribution = new cloudfront.Distribution(this, 'distribution', {
