@@ -853,6 +853,30 @@
       "schemaVersion": "1"
     },
     {
+      "title": "Node.js version not supported",
+      "issueNumber": 34635,
+      "overview": "You are using Node.js version {resolve:node}, which is no longer supported. Please upgrade to a recent LTS version.",
+      "components": [
+        {
+          "name": "node",
+          "version": "< 18.0.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
+      "title": "Support for this Node.js version will end soon",
+      "issueNumber": 34635,
+      "overview": "Support for Node.js v{resolve:node} ends on November 30, 2025. Please upgrade to a recent LTS version.",
+      "components": [
+        {
+          "name": "node",
+          "version": ">=18.0.0 <20.0.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "(ecs): cpu/memory validation for TaskDefinition failed with valid combinations",
       "issueNumber": 34157,
       "overview": "The cpu/memory validation failed for 1 vCPU and 2 GB memory even if they're valid combinations when users use syntax like '1vcpu' for cpu property.",
