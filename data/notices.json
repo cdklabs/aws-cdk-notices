@@ -935,6 +935,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(opensearch): As of CDK release v2.201.0, OpenSearch domain TLSSecurityPolicy defaults to TLS 1.2",
+      "issueNumber": 34739,
+      "overview": "As of CDK release v2.201.0, the default TLSSecurityPolicy for OpenSearch domains is Policy-Min-TLS-1-2-2019-07 (TLS 1.2). The previous default was Policy-Min-TLS-1-0-2019-07 (TLS 1.0).",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_opensearchservice.Domain",
+          "version": ">=2.0.0 <=2.210.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
