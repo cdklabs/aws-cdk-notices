@@ -7,7 +7,7 @@
       "components": [
         {
           "name": "cli",
-          "version": "<=2.1020.1"
+          "version": "*"
         }
       ],
       "schemaVersion": "1"
