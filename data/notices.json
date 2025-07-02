@@ -947,6 +947,18 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "aws-cdk-lib 2.203.0 not compatible with CLI 2.1017.0/2.1018.0",
+      "issueNumber": 34885,
+      "overview": "Upgrade either the lib to 2.203.1 or the CLI to 2.1019.0.",
+      "components": [
+        {
+          "name": "framework",
+          "version": "2.203.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
