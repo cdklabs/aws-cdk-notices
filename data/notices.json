@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "cli: the CDK CLI will begin to collect telemetry data on CLI usage on or after August 8, 2025.",
+      "issueNumber": 34892,
+      "overview": "We do not collect customer content and we anonymize the telemetry we do collect. See the attached issue for more information on what data is collected, why, and how to opt-out.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "^2.0.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },
+    {
       "title": "(iam): OrganizationPrincipal validation error when using token",
       "issueNumber": 33768,
       "overview": "A validation logic added to the OrganizationPrincipal class throws error when using token as organization ID.",
