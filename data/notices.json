@@ -1,7 +1,7 @@
 {
   "notices": [
     {
-      "title": "CDK CLI will collect telemetry data on command usage starting from version 2.1100.0 (unless opted out)",
+      "title": "CDK CLI will collect telemetry data on command usage starting at version 2.1100.0 (unless opted out)",
       "issueNumber": 34892,
       "overview": "We do not collect customer content and we anonymize the telemetry we do collect. See the attached issue for more information on what data is collected, why, and how to opt-out. Telemetry will NOT be collected for any CDK CLI version prior to version 2.1100.0 - regardless of opt-in/out.",
       "components": [
