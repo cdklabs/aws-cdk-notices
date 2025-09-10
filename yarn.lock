@@ -1534,10 +1534,10 @@ case@1.6.3, case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdk-pipelines-github@^0.4.131:
-  version "0.4.131"
-  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.131.tgz#33cd579da2f687706c5f0058130c55c3f96b4b06"
-  integrity sha512-0U1FT+iUL8o0CZ1nMqfaGOhmlL8iLZ8EymZ0LeSIp1v3+6PZ6tZp0Xl+mWR1bqxpOwem/OWynsh4jgph8pFMQA==
+cdk-pipelines-github@^0.4.132:
+  version "0.4.132"
+  resolved "https://registry.yarnpkg.com/cdk-pipelines-github/-/cdk-pipelines-github-0.4.132.tgz#c9b2119755abd9a2d27e84cb67f9f86d6f44d2b4"
+  integrity sha512-LkIzMkAF21GxQLdctvEC64GTFFaiwjs464ptPNeygHbb6CYj/LE5U/GL+UUsL8HxQVgEBAD7K8zVjS+7z/jrzA==
   dependencies:
     decamelize "^5.0.1"
     fast-json-patch "^3.1.1"
@@ -4283,10 +4283,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-projen@^0.95.6:
-  version "0.95.6"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.95.6.tgz#0d8ca52804117dd6b4f95b3fb1f3da49f8eb213b"
-  integrity sha512-LgtNgveF7UyYoFwEFbx0r570R3+jvz9XQRvykijZg+O5y7+h1hF+FzvL2r1i7FZ3RTlqfyJHP+wFXrfA1F+Oxw==
+projen@^0.96.0:
+  version "0.96.0"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.96.0.tgz#233c2b03671c01bcbdae895a19ffa2a0814edb37"
+  integrity sha512-1ZZOsrUorhMTiSjV86aBNmd9a7p/90slsBGed6z8LvHcF8XOkgWMd3r62x6vsd/X2cLnpetwznEpOLYs+vryFQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
