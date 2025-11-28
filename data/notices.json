@@ -978,7 +978,7 @@
       "overview": "For certain configs of ApplicationLoadBalancedService, the target group ID incorrectly changed and can cause replacement. This is fixed after version 2.230.0 but it will cause another replacement during upgrade to that version or later.",
       "components": [
         {
-          "name": "framework",
+          "name": "aws-cdk-lib.aws_ecs_patterns",
           "version": ">=2.221.0 <2.230.0"
         }
       ],
