@@ -975,7 +975,7 @@
     {
       "title": "Private load balancer target group ID incorrectly changed for ApplicationLoadBalancedService",
       "issueNumber": 36239,
-      "overview": "For certain configs of ApplicationLoadBalancedService, the target group ID incorrectly changed and can cause replacement. This is fixed after version 2.230.0 but it will cause another replacemnt during upgrade to that version or later. See notice issue on Github for mitigation steps.",
+      "overview": "For certain configs of ApplicationLoadBalancedService, the target group ID incorrectly changed and can cause replacement. This is fixed after version 2.230.0 but it will cause another replacement during upgrade to that version or later.",
       "components": [
         {
           "name": "framework",
