@@ -971,6 +971,22 @@
         }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(ecs-patterns) Private load balancer target group ID incorrectly changed",
+      "issueNumber": 36239,
+      "overview": "For certain configs of ApplicationLoadBalancedService, the target group ID incorrectly changed and can cause replacement. This is fixed after version 2.230.0 but it will cause another replacement during upgrade to that version or later.",
+      "components": [
+        {
+          "name": "aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedEc2Service",
+          "version": ">=2.221.0 <2.230.0"
+        },
+        {
+          "name": "aws-cdk-lib.aws_ecs_patterns.ApplicationLoadBalancedFargateService",
+          "version": ">=2.221.0 <2.230.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
