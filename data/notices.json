@@ -1,13 +1,25 @@
 {
   "notices": [
     {
+      "title": "CDK CLI collects telemetry data on command usage starting at version 2.1100.0 (unless opted out)",
+      "issueNumber": 34892,
+      "overview": "We do not collect customer content and we anonymize the telemetry we do collect. See the attached issue for more information on what data is collected, why, and how to opt-out. Telemetry will NOT be collected for any CDK CLI version prior to version 2.1100.0 - regardless of opt-in/out. You can also view the telemetry we collect by logging it to a local file, by adding `--telemetry-file=my/local/file` to any `cdk` command.",
+      "components": [
+        {
+          "name": "cli",
+          "version": "^2.1100.0"
+        }
+      ],
+      "schemaVersion": "1"
+    },    
+    {
       "title": "CDK CLI will collect telemetry data on command usage starting at version 2.1100.0 (unless opted out)",
       "issueNumber": 34892,
       "overview": "We do not collect customer content and we anonymize the telemetry we do collect. See the attached issue for more information on what data is collected, why, and how to opt-out. Telemetry will NOT be collected for any CDK CLI version prior to version 2.1100.0 - regardless of opt-in/out. You can also preview the telemetry we will start collecting by logging it to a local file, by adding `--unstable=telemetry --telemetry-file=my/local/file` to any `cdk` command.",
       "components": [
         {
           "name": "cli",
-          "version": "^2.0.0"
+          "version": ">=2.0.0 <2.1100.0"
         }
       ],
       "schemaVersion": "1"
