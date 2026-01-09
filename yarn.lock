@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aws-cdk/asset-awscli-v1@2.2.242":
-  version "2.2.242"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.242.tgz#235cb25b6d1ad26975b0095c0d6ee84309adae5c"
-  integrity sha512-4c1bAy2ISzcdKXYS1k4HYZsNrgiwbiDzj36ybwFVxEWZXVAP0dimQTCaB9fxu7sWzEjw3d+eaw6Fon+QTfTIpQ==
+"@aws-cdk/asset-awscli-v1@2.2.258":
+  version "2.2.258"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/asset-awscli-v1/-/asset-awscli-v1-2.2.258.tgz#638854db7ffe218076091360feb9dcc69e8bedba"
+  integrity sha512-TL3I9cIue0bAsuwrmjgjAQaEH6JL09y49FVQMDhrz4jJ2iPKuHtdrYd7ydm02t1YZdPZE2M0VNj6VD4fGIFpvw==
 
 "@aws-cdk/asset-node-proxy-agent-v6@^2.1.0":
   version "2.1.0"
@@ -1281,16 +1281,16 @@ available-typed-arrays@^1.0.7:
     possible-typed-array-names "^1.0.0"
 
 aws-cdk-lib@^2.82.0:
-  version "2.233.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.233.0.tgz#b68451b3c942c93d61ca8e0a493a3d5babf68046"
-  integrity sha512-rBOzIA8TGC5eB8TyVIvckAVlX7a0/gVPE634FguhSee9RFaovjgc5+IixGyyLJhu3lLsMSjqDoqTJg2ab+p8ng==
+  version "2.234.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.234.0.tgz#85b16906757682da9d0e10fd7bc442ecd8c058fa"
+  integrity sha512-rMALG1b4wqN3fPMjdQ12HZxMN3vA2Er39uFymawMpsiAar+1bxNmFiSPPkW+LY7zQIj1Gha8ZpwAEBNqgTMLwA==
   dependencies:
-    "@aws-cdk/asset-awscli-v1" "2.2.242"
+    "@aws-cdk/asset-awscli-v1" "2.2.258"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.0"
     "@aws-cdk/cloud-assembly-schema" "^48.20.0"
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
-    fs-extra "^11.3.2"
+    fs-extra "^11.3.3"
     ignore "^5.3.2"
     jsonschema "^1.5.0"
     mime-types "^2.1.35"
@@ -1390,9 +1390,9 @@ base@^0.11.1:
     pascalcase "^0.1.1"
 
 baseline-browser-mapping@^2.9.0:
-  version "2.9.12"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.9.12.tgz#fbed5f37edf24b708e6e0b1fb26c70982a577dfc"
-  integrity sha512-Mij6Lij93pTAIsSYy5cyBQ975Qh9uLEc5rwGTpomiZeXZL9yIS6uORJakb3ScHgfs0serMMfIbXzokPMuEiRyw==
+  version "2.9.13"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.9.13.tgz#e1d39147f6a7492438131476026e705d816b10cb"
+  integrity sha512-WhtvB2NG2wjr04+h77sg3klAIwrgOqnjS49GGudnUPGFFgg7G17y7Qecqp+2Dr5kUDxNRBca0SK7cG8JwzkWDQ==
 
 brace-expansion@^1.1.7:
   version "1.1.12"
@@ -1524,9 +1524,9 @@ camelcase@^6.0.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001759:
-  version "1.0.30001762"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001762.tgz#e4dbfeda63d33258cdde93e53af2023a13ba27d4"
-  integrity sha512-PxZwGNvH7Ak8WX5iXzoK1KPZttBXNPuaOvI2ZYU7NrlM+d9Ov+TUvlLOBNGzVXAntMSMMlJPd+jY6ovrVjSmUw==
+  version "1.0.30001763"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001763.tgz#9397446dd110b1aeadb0df249c41b2ece7f90f09"
+  integrity sha512-mh/dGtq56uN98LlNX9qdbKnzINhX0QzhiWBFEkFfsFO4QyCvL8YegrJAazCwXIeqkIob8BlZPGM3xdnY+sgmvQ==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -2468,7 +2468,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-fs-extra@^11.3.2:
+fs-extra@^11.3.3:
   version "11.3.3"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.3.3.tgz#a27da23b72524e81ac6c3815cc0179b8c74c59ee"
   integrity sha512-VWSRii4t0AFm6ixFFmLLx1t7wS1gh+ckoa84aOeapGum0h+EZd1EhEumSB+ZdDLnEPuucsVB9oB7cxJHap6Afg==
@@ -4294,10 +4294,10 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-projen@^0.98.33:
-  version "0.98.33"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.98.33.tgz#fbd37274d057e87b010011fb5c1d56a70ed8c616"
-  integrity sha512-+qVyjSVZLneJHL/FWGjKMe94Yf1IMlZaZsP5AdorybxIv4nT70+m1FqjTaY3k2yjH6RXMa1OZBh4JcBK065wOA==
+projen@^0.99.0:
+  version "0.99.0"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.99.0.tgz#d7b5e5b588c37ec4d6031f74499bf9a434f6d033"
+  integrity sha512-o5U8ivEsYOwgG+3b5J/SyRDm4Ff5aH2hZIT6e5sitaz8aMioxGVovfW5a8+Gbnoqx76wJGYN4nvni88CfiF6WQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
