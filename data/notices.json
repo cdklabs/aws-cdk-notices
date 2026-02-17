@@ -3,7 +3,7 @@
     {
       "title": "(cli) cdk watch triggers deployment unexpectedly or not at all",
       "issueNumber": 37013,
-      "overview": "Do not use 'cdk watch' with this version of the cdk cli. Upgrade to 2.1106.0.",
+      "overview": "Do not use 'cdk watch' with this version of the cdk cli. Upgrade to ^2.1106.0.",
       "components": [
         {
           "name": "cli",
