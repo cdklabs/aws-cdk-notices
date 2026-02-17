@@ -1,6 +1,18 @@
 {
   "notices": [
     {
+      "title": "(cli) cdk watch triggers deployment unexpectedly or not at all",
+      "issueNumber": 37013,
+      "overview": "Do not use 'cdk watch' with this version of the cdk cli. Upgrade to 2.1106.0.",
+      "components": [
+        {
+          "name": "cli",
+          "version": ">=2.1103.0 <2.1106.0"
+        }
+      ],
+      "schemaVersion": "1"
+    }, 
+    {
       "title": "CDK CLI collects telemetry data on command usage starting at version 2.1100.0 (unless opted out)",
       "issueNumber": 34892,
       "overview": "We do not collect customer content and we anonymize the telemetry we do collect. See the attached issue for more information on what data is collected, why, and how to opt-out. Telemetry will NOT be collected for any CDK CLI version prior to version 2.1100.0 - regardless of opt-in/out. You can also view the telemetry we collect by logging it to a local file, by adding `--telemetry-file=my/local/file` to any `cdk` command.",
