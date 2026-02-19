@@ -19,7 +19,7 @@
       "components": [
         {
           "name": "cli",
-          "version": "^2.1100.0"
+          "version": ">=2.1100.0 <2.1106.1"
         }
       ],
       "schemaVersion": "1"
