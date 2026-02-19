@@ -12,11 +12,16 @@ Notices are declared as JSON objects with the following structure:
 | Field           | Description                                                                                          | Format               |
 | :-------------- | :--------------------------------------------------------------------------------------------------- | -------------------- |
 | `title`         | The title of the incident (max length: 100)                                                          | Free form text       |
-| `issueNumber`   | The ID of the GitHub issue where we are tracking this event                                          | Number               |
+| `issueNumber`   | The ID of the aws-cdk GitHub issue where we are tracking this event                                  | Number               |
 | `overview`      | A paragraph with more information about the incident                                                 | Free form text       |
 | `severity`      | The severity of the notice. Warnings are printer yellow. Errors are printed red. Default is no color | 'warning' or 'error' |
 | `components`    | A list of the components affected by the incident                                                    | See table below      |
 | `schemaVersion` | The version of the schema used for this notice                                                       | String               |
+
+Issue Number:
+
+The issue number must come from the `aws-cdk` repo and is reused as an ID for CDK Notices. If you want to reference an issue in the `aws-cdk-cli` repo,
+transfer the issue over to `aws-cdk` and back to `aws-cdk-cli` to generate an `aws-cdk` issue number that permanently redirects to the `aws-cdk-cli` issue.
 
 Component structure:
 
