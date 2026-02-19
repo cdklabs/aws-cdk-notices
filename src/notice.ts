@@ -36,8 +36,23 @@ export function validateNotice(notice: Notice): void {
     throw new Error('Notices should specify at least one affected component');
   }
 
+  // Check language component constraints
+  const languageComponents = notice.components.filter(c => c.name.startsWith('language-'));
+  const nonLanguageComponents = notice.components.filter(c => !c.name.startsWith('language-'));
+
+  if (languageComponents.length > 0 && nonLanguageComponents.length === 0) {
+    throw new Error('Language components cannot be used alone; combine with another component like cli or framework');
+  }
+
+  for (const langComp of languageComponents) {
+    if (langComp.version !== '*') {
+      throw new Error(`Language component ${langComp.name} must use version '*', got '${langComp.version}'`);
+    }
+  }
+
   for (const component of notice.components) {
-    if (!isValidComponentVersion(component.version)) {
+    // Skip semver validation for language components (they use '*')
+    if (!component.name.startsWith('language-') && !isValidComponentVersion(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);
     }
 

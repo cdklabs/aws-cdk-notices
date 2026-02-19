@@ -1,4 +1,4 @@
-export const SPECIAL_COMPONENTS = ['bootstrap', 'node'];
+export const SPECIAL_COMPONENTS = ['bootstrap', 'node', 'language-typescript', 'language-javascript', 'language-python', 'language-java', 'language-dotnet', 'language-go'];
 
 export const CONSTRUCT_INFO = [
   'aws-cdk-lib.aws_elasticsearch',
