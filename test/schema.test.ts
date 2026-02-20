@@ -36,7 +36,7 @@ describe('Notices file is valid', () => {
       test('all version ranges must be bounded at the top', () => {
         for (const component of notice.components) {
           // Language components use '*' which is unbounded by design
-          if (component.name.startsWith('language-')) { continue; }
+          if (component.name.startsWith('language:')) { continue; }
 
           const range = new semver.Range(component.version);
           if (!isBoundedFromAbove(range)) {

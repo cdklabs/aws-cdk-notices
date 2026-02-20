@@ -41,8 +41,8 @@ Component structure:
   `@aws-cdk/core`, in case of v1 or `aws-cdk-lib` in case of v2.
 * The reserved word `bootstrap`. This will match against the bootstrap stack version in each
   environment `cdk deploy` runs against. These will only be displayed when running `cdk deploy`.
-* Language components like `language-typescript`, `language-javascript`, `language-python`,
-  `language-java`, `language-dotnet`, or `language-go`. These match against the detected
+* Language components like `language:typescript`, `language:javascript`, `language:python`,
+  `language:java`, `language:dotnet`, or `language:go`. These match against the detected
   CDK app language. Use version `*` since languages don't have versions.
 
 [semver]: https://www.npmjs.com/package/semver
@@ -69,7 +69,7 @@ Some notices can include special strings that dynamically resolve to values duri
 | Key                      | Description                       | component    | example                                               |
 | ------------------------ | --------------------------------- | ------------ | ----------------------------------------------------- |
 | `{resolve:ENVIRONMENTS}` | List of bootstrapped environments | `bootstrap`  | aws://1234567890/us-east-1,aws://1234567890/us-east-2 |
-| `{resolve:LANGUAGE}`     | Display name of detected language | `language-*` | TypeScript, Java, etc.                                |
+| `{resolve:LANGUAGE}`     | Display name of detected language | `language:*` | TypeScript, Java, etc.                                |
 
 ## FAQ
 
