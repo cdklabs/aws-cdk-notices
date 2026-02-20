@@ -34,7 +34,7 @@ describe('Notices file is valid', () => {
       });
 
       test('all version ranges must be bounded at the top', () => {
-        for (const component of notice.components) {
+        for (const component of notice.components.flat()) {
           // Language components use '*' which is unbounded by design
           if (component.name.startsWith('language:')) { continue; }
 
@@ -46,7 +46,7 @@ describe('Notices file is valid', () => {
       });
 
       test('v2 version ranges must be bounded at the bottom', () => {
-        for (const component of notice.components) {
+        for (const component of notice.components.flat()) {
           if (component.version === '1.*') { continue; } // Special range that we allow
           if (SPECIAL_COMPONENTS.includes(component.name)) { continue; } // Not subject to v1/v2 ranges
 
