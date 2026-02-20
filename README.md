@@ -39,8 +39,11 @@ Component structure:
   the notices from the website.
 * The reserved word `framework`. This will match against the
   `@aws-cdk/core`, in case of v1 or `aws-cdk-lib` in case of v2.
-* The reserved word 'bootstrap'. This will match against the bootstrap stack version in each
+* The reserved word `bootstrap`. This will match against the bootstrap stack version in each
   environment `cdk deploy` runs against. These will only be displayed when running `cdk deploy`.
+* Language components like `language:typescript`, `language:javascript`, `language:python`,
+  `language:java`, `language:dotnet`, or `language:go`. These match against the detected
+  CDK app language. Use version `*` since languages don't have versions.
 
 [semver]: https://www.npmjs.com/package/semver
 
@@ -63,9 +66,10 @@ Example:
 
 Some notices can include special strings that dynamically resolve to values during CLI execution.
 
-| Key                      | Description                       | component   | example                                               |
-| ------------------------ | --------------------------------- | ----------- | ----------------------------------------------------- |
-| `{resolve:ENVIRONMENTS}` | List of bootstrapped environments | `bootstrap` | aws://1234567890/us-east-1,aws://1234567890/us-east-2 |
+| Key                      | Description                       | component    | example                                               |
+| ------------------------ | --------------------------------- | ------------ | ----------------------------------------------------- |
+| `{resolve:ENVIRONMENTS}` | List of bootstrapped environments | `bootstrap`  | aws://1234567890/us-east-1,aws://1234567890/us-east-2 |
+| `{resolve:LANGUAGE}`     | Display name of detected language | `language:*` | TypeScript, Java, etc.                                |
 
 ## FAQ
 
@@ -76,7 +80,7 @@ cross reference with the value defined as `constructInfo.fnq` in `tree.json`.
 
 If the value is correct and the validator fails, it's likely there is a change in the repository,
 i.e. stablizing an experimental module, introducing a new module. In the event of these, you
-need to manually add to the `constrcut-info.ts` file with the correct construct name.
+need to manually add to the `construct-info.ts` file with the correct construct name.
 
 ## License
 

@@ -35,6 +35,9 @@ describe('Notices file is valid', () => {
 
       test('all version ranges must be bounded at the top', () => {
         for (const component of notice.components) {
+          // Language components use '*' which is unbounded by design
+          if (component.name.startsWith('language:')) { continue; }
+
           const range = new semver.Range(component.version);
           if (!isBoundedFromAbove(range)) {
             throw new Error(`${component.version} should contain an upper bound (version should look like "^2.3.4 <2.5.6")`);
