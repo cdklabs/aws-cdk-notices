@@ -7,30 +7,13 @@ import { SPECIAL_COMPONENTS } from '../src/construct-info';
 import { Notice, validateNotice } from '../src/notice';
 
 describe('Notices file is valid', () => {
-  let notices: Notice[];
-
   const content = fs.readFileSync(path.join(__dirname, '../data/notices.json'), 'utf8');
-  notices = JSON.parse(content).notices;
+  const notices: Notice[] = JSON.parse(content).notices;
 
   notices.forEach(notice => {
     describe(`notice ${notice.issueNumber}`, () => {
       test('Validates', () => {
         validateNotice(notice);
-      });
-
-      test('GitHub issue exists', async () => {
-        const url = `https://github.com/aws/aws-cdk/issues/${notice.issueNumber}`;
-
-        await new Promise<void>(function (resolve, reject) {
-          https.get(url, (res: IncomingMessage) => {
-            if (!res.statusCode || !([200, 302]).includes(res.statusCode)) {
-              return reject(`Couldn't find issue ${url}`);
-            }
-            resolve();
-          }).on('error', function (e: Error) {
-            reject(e);
-          });
-        });
       });
 
       test('all version ranges must be bounded at the top', () => {
@@ -58,6 +41,27 @@ describe('Notices file is valid', () => {
       });
     });
   });
+
+  test('all GitHub issues exist', async () => {
+    const uniqueIssueNumbers = [...new Set(notices.map(n => n.issueNumber))];
+    const results = await Promise.all(uniqueIssueNumbers.map(issueNumber => {
+      const url = `https://github.com/aws/aws-cdk/issues/${issueNumber}`;
+      return new Promise<{ issueNumber: number; ok: boolean }>(resolve => {
+        const req = https.request(url, { method: 'HEAD', headers: { 'User-Agent': 'aws-cdk-notices' } }, (res: IncomingMessage) => {
+          res.resume();
+          resolve({ issueNumber, ok: Boolean(res.statusCode && [200, 301, 302].includes(res.statusCode)) });
+        }).on('error', () => {
+          resolve({ issueNumber, ok: false });
+        });
+        req.end();
+      });
+    }));
+
+    const failures = results.filter(r => !r.ok);
+    if (failures.length > 0) {
+      throw new Error(`GitHub issues not found: ${failures.map(f => f.issueNumber).join(', ')}`);
+    }
+  }, 60_000);
 });
 
 function isBoundedFromAbove(range: semver.Range) {
