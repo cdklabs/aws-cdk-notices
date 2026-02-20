@@ -47,7 +47,32 @@ Component structure:
 
 [semver]: https://www.npmjs.com/package/semver
 
-Example:
+### Combining components
+
+The `components` field is evaluated in [Disjunctive Normal Form][dnf] (an OR of ANDs):
+
+* A flat list of components is treated as **OR** — the notice matches if *any* component matches.
+* A nested array of components is treated as **AND** — all components in the inner array must match.
+* Multiple nested arrays are combined with **OR** — at least one group must fully match.
+
+For example, to match (.NET AND framework ≤2.238.0) OR (Go AND framework ≤2.238.0):s
+
+```json
+"components": [
+  [
+    { "name": "language:dotnet", "version": "*" },
+    { "name": "framework", "version": "<=2.238.0" }
+  ],
+  [
+    { "name": "language:go", "version": "*" },
+    { "name": "framework", "version": "<=2.238.0" }
+  ]
+]
+```
+
+[dnf]: https://en.wikipedia.org/wiki/Disjunctive_normal_form
+
+### Simple example
 
 ```json
 {
