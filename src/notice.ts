@@ -13,6 +13,7 @@ export interface Notice {
   issueNumber: number;
   overview: string;
   components: Component[];
+  componentsV2?: Array<Component | Component[]>;
   schemaVersion: string;
 }
 
@@ -32,13 +33,33 @@ export function validateNotice(notice: Notice): void {
     throw new Error(`Maximum allowed title length is ${MAX_TITLE_LENGTH}. Title ${notice.title} is ${notice.title.length} characters long`);
   }
 
-  if (notice.components.length === 0) {
-    throw new Error('Notices should specify at least one affected component');
+  // Schema version 2: components must be empty, componentsV2 carries DNF data
+  if (notice.schemaVersion === '2') {
+    if (!notice.components || notice.components.length !== 0) {
+      throw new Error('Schema version 2 notices must have an empty components array');
+    }
+    if (!notice.componentsV2 || notice.componentsV2.length === 0) {
+      throw new Error('Schema version 2 notices must specify componentsV2');
+    }
+  } else {
+    if (!notice.components || notice.components.length === 0) {
+      throw new Error('Notices should specify at least one affected component');
+    }
+    if (notice.componentsV2) {
+      throw new Error('componentsV2 can only be used with schemaVersion 2');
+    }
+    // Schema version 1 must not use nested arrays (DNF)
+    if (notice.components.some(c => Array.isArray(c))) {
+      throw new Error('Nested component arrays (DNF) require schemaVersion 2; use a flat components array with schemaVersion 1');
+    }
   }
 
+  const allComponents = notice.schemaVersion === '2' ? notice.componentsV2! : notice.components;
+  const flatComponents = allComponents.flat();
+
   // Check language component constraints
-  const languageComponents = notice.components.filter(c => c.name.startsWith('language:'));
-  const nonLanguageComponents = notice.components.filter(c => !c.name.startsWith('language:'));
+  const languageComponents = flatComponents.filter(c => c.name.startsWith('language:'));
+  const nonLanguageComponents = flatComponents.filter(c => !c.name.startsWith('language:'));
 
   if (languageComponents.length > 0 && nonLanguageComponents.length === 0) {
     throw new Error('Language components cannot be used alone; combine with another component like cli or framework');
@@ -50,7 +71,7 @@ export function validateNotice(notice: Notice): void {
     }
   }
 
-  for (const component of notice.components) {
+  for (const component of flatComponents) {
     // Skip semver validation for language components (they use '*')
     if (!component.name.startsWith('language:') && !isValidComponentVersion(component.version)) {
       throw new Error(`Component version ${component.version} is not a valid semver range`);

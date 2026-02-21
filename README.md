@@ -15,8 +15,9 @@ Notices are declared as JSON objects with the following structure:
 | `issueNumber`   | The ID of the aws-cdk GitHub issue where we are tracking this event                                  | Number               |
 | `overview`      | A paragraph with more information about the incident                                                 | Free form text       |
 | `severity`      | The severity of the notice. Warnings are printer yellow. Errors are printed red. Default is no color | 'warning' or 'error' |
+| `schemaVersion` | The version of the schema used for this notice (`"1"` or `"2"`)                                      | String               |
 | `components`    | A list of the components affected by the incident                                                    | See table below      |
-| `schemaVersion` | The version of the schema used for this notice                                                       | String               |
+| `componentsV2`  | Components in DNF format (only with `schemaVersion` `"2"`)                                           | See table below      |
 
 Issue Number:
 
@@ -47,7 +48,7 @@ Component structure:
 
 [semver]: https://www.npmjs.com/package/semver
 
-Example:
+### Standard example
 
 ```json
 {
@@ -61,6 +62,38 @@ Example:
     "schemaVersion": "1"
   }
 ```
+
+### Combining components (schemaVersion 2)
+
+To combine components using [Disjunctive Normal Form][dnf] (an OR of ANDs), use
+`schemaVersion` `"2"` with the `componentsV2` field. The `components` field must
+be an empty array `[]` so that older CLI versions that don't understand
+`componentsV2` will safely skip the notice.
+
+* A flat list of components in `componentsV2` is treated as **OR** — the notice matches if *any* component matches.
+* A nested array of components is treated as **AND** — all components in the inner array must match.
+* Multiple nested arrays are combined with **OR** — at least one group must fully match.
+
+For example, to match (.NET AND framework ≤2.238.0) OR (Go AND framework ≤2.238.0):
+
+```json
+{
+  "components": [],
+  "componentsV2": [
+    [
+      { "name": "language:dotnet", "version": "*" },
+      { "name": "framework", "version": "<=2.238.0" }
+    ],
+    [
+      { "name": "language:go", "version": "*" },
+      { "name": "framework", "version": "<=2.238.0" }
+    ]
+  ],
+  "schemaVersion": "2"
+}
+```
+
+[dnf]: https://en.wikipedia.org/wiki/Disjunctive_normal_form
 
 ## Dynamic Values
 
