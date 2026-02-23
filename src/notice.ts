@@ -36,6 +36,7 @@ export function validateNotice(notice: Notice): void {
   // Schema version 2: components must be empty, componentsV2 carries DNF data
   if (notice.schemaVersion === '2') {
     if (!notice.components || notice.components.length !== 0) {
+      // notices must have a components field that is an array - else older versions of the CLI will crash
       throw new Error('Schema version 2 notices must have an empty components array');
     }
     if (!notice.componentsV2 || notice.componentsV2.length === 0) {
