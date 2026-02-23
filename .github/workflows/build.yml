@@ -6,7 +6,85 @@ on:
   workflow_dispatch: {}
   merge_group: {}
 jobs:
-  build:
+  self-mutation:
+    needs:
+      - unit-test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: always() && needs.unit-test.outputs.self_mutation_happened && !(github.event.pull_request.head.repo.full_name != github.repository)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+      - name: Download patch
+        uses: actions/download-artifact@v5
+        with:
+          name: repo.patch
+          path: ${{ runner.temp }}
+      - name: Apply patch
+        run: '[ -s ${{ runner.temp }}/repo.patch ] && git apply ${{ runner.temp }}/repo.patch || echo "Empty patch. Skipping."'
+      - name: Set git identity
+        run: |-
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Push changes
+        env:
+          PULL_REQUEST_REF: ${{ github.event.pull_request.head.ref }}
+        run: |-
+          git add .
+          git commit -s -m "chore: self mutation"
+          git push origin "HEAD:$PULL_REQUEST_REF"
+  integ-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Install CDK CLI
+        run: npm install -g aws-cdk@${{ matrix.cdkVersion }}
+      - name: Create test fixture
+        run: |-
+          mkdir -p /tmp/integ-test
+          cd /tmp/integ-test
+          npx aws-cdk@${{ matrix.cdkVersion }} init app --language=javascript
+          npx aws-cdk@${{ matrix.cdkVersion }} synth -q
+      - name: Prepare notices cache
+        run: |-
+          mkdir -p ~/.cdk/cache
+          EXPIRY=$(( $(date +%s) * 1000 + 86400000 ))
+          cat data/notices.json | jq --arg exp "$EXPIRY" '.expiration = ($exp | tonumber)' > /tmp/notices.json
+          cp /tmp/notices.json ~/.cdk/cache/notices.json
+      - name: Test - cdk doctor loads notices without error
+        run: npx aws-cdk@${{ matrix.cdkVersion }} doctor
+        working-directory: /tmp/integ-test
+      - name: Inject fake notice
+        run: |-
+          cat /tmp/notices.json | jq '.notices += [{"title":"Integration test notice","issueNumber":99999,"overview":"This is a fake notice for integration testing.","components":[{"name":"cli","version":"*"}],"schemaVersion":"1"}]' > /tmp/notices_with_fake.json
+          cp /tmp/notices_with_fake.json ~/.cdk/cache/notices.json
+      - name: Test - cdk doctor shows fake notice
+        run: npx aws-cdk@${{ matrix.cdkVersion }} doctor 2>&1 | tee /tmp/doctor_output.txt && grep -q "99999" /tmp/doctor_output.txt && grep -q "Integration test notice" /tmp/doctor_output.txt
+        working-directory: /tmp/integ-test
+    strategy:
+      fail-fast: false
+      matrix:
+        cdkVersion:
+          - 1.203.0
+          - 2.14.0
+          - 2.50.0
+          - 2.100.0
+          - 2.150.0
+          - 2.179.0
+          - 2.1000.0
+          - 2.1001.0
+          - 2.1034.0
+          - 2.1100.1
+          - latest
+  unit-test:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -44,34 +122,18 @@ jobs:
           echo "::error::Files were changed during build (see build log). If this was triggered from a fork, you will need to update your branch."
           cat repo.patch
           exit 1
-  self-mutation:
-    needs: build
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    if: always() && needs.build.outputs.self_mutation_happened && !(github.event.pull_request.head.repo.full_name != github.repository)
+    if: always()
+    needs:
+      - unit-test
+      - integ-test
+    permissions: {}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-        with:
-          token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-      - name: Download patch
-        uses: actions/download-artifact@v5
-        with:
-          name: repo.patch
-          path: ${{ runner.temp }}
-      - name: Apply patch
-        run: '[ -s ${{ runner.temp }}/repo.patch ] && git apply ${{ runner.temp }}/repo.patch || echo "Empty patch. Skipping."'
-      - name: Set git identity
-        run: |-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - name: Push changes
-        env:
-          PULL_REQUEST_REF: ${{ github.event.pull_request.head.ref }}
-        run: |-
-          git add .
-          git commit -s -m "chore: self mutation"
-          git push origin "HEAD:$PULL_REQUEST_REF"
+      - name: unit-test result
+        run: echo ${{ needs.unit-test.result }}
+      - name: integ-test result
+        run: echo ${{ needs.integ-test.result }}
+      - if: ${{ !(contains(fromJSON('["success", "skipped"]'), needs.unit-test.result) && contains(fromJSON('["success", "skipped"]'), needs.integ-test.result)) }}
+        name: Set status based on test results
+        run: exit 1
