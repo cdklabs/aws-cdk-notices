@@ -1310,9 +1310,9 @@ aws-cdk-lib@^2.82.0:
     yaml "1.10.2"
 
 aws-cdk@^2:
-  version "2.1108.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.1108.0.tgz#9a757552e2c5adf2711af6968349e5746974eef9"
-  integrity sha512-FHnyhnYZoRc2W0C9mNzhNn6fO2vH4xNINsKfJaA7AFDuymgQ39JhEnrM4AHaoikIBqXYeNLWElvvkusY9l3ulw==
+  version "2.1109.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.1109.0.tgz#ce96af9eb9d5b7b45d5946cafb0f2a1be2ebcc42"
+  integrity sha512-K0jvr5ne9kvDrFfdzbPee/s2rH/iXdGoMHTp/0jaj1qFMOh49RkLWTnURa0sBpJJ0uB2sMzIx7YRmAn55wAy1Q==
 
 babel-jest@^26.6.3:
   version "26.6.3"
@@ -3996,9 +3996,9 @@ node-notifier@^8.0.0:
     which "^2.0.2"
 
 node-releases@^2.0.27:
-  version "2.0.27"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.27.tgz#eedca519205cf20f650f61d56b070db111231e4e"
-  integrity sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==
+  version "2.0.36"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.36.tgz#99fd6552aaeda9e17c4713b57a63964a2e325e9d"
+  integrity sha512-TdC8FSgHz8Mwtw9g5L4gR/Sh9XhSP/0DEkQxfEFXOpiul5IiHgHan2VhYYb6agDSfp4KuvltmGApc8HMgUrIkA==
 
 normalize-package-data@^2.5.0:
   version "2.5.0"
