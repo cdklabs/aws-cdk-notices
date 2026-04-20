@@ -30,6 +30,9 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   devDeps: [
     '@types/semver',
   ],
+  depsUpgradeOptions: {
+    cooldown: 3,
+  },
   githubOptions: {
     mergify: false,
     mergeQueue: true,
