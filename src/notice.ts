@@ -8,6 +8,22 @@ export interface Component {
   version: string;
 }
 
+/**
+ * Per-dynamic-value rendering options.
+ *
+ * Fields are optional and purely additive. Unknown fields MUST be ignored by
+ * consumers so new capabilities (prefix, suffix, limit, ...) can be added later
+ * without breaking older CLIs.
+ */
+export interface DynamicValueSpec {
+  /**
+   * String used to join multiple values for the same dynamic name.
+   *
+   * @default ","
+   */
+  readonly separator?: string;
+}
+
 export interface Notice {
   title: string;
   issueNumber: number;
@@ -15,6 +31,17 @@ export interface Notice {
   components: Component[];
   componentsV2?: Array<Component | Component[]>;
   schemaVersion: string;
+
+  /**
+   * Per-placeholder rendering options, keyed by the dynamic name used in
+   * `{resolve:NAME}` placeholders within `overview`.
+   *
+   * Unknown by older CLIs (<= current); they will ignore the field and fall
+   * back to the default separator (`,`).
+   *
+   * @default - no overrides; all placeholders render with default settings
+   */
+  dynamicValues?: Record<string, DynamicValueSpec>;
 }
 
 /**
@@ -110,6 +137,17 @@ export function validateNotice(notice: Notice): void {
 
   if (!semver.validRange(notice.schemaVersion)) {
     throw new Error(`Schema version ${notice.schemaVersion} is not a valid semver range`);
+  }
+
+  if (notice.dynamicValues) {
+    for (const [name, spec] of Object.entries(notice.dynamicValues)) {
+      if (!notice.overview.includes(`{resolve:${name}}`)) {
+        throw new Error(`dynamicValues entry '${name}' has no matching {resolve:${name}} placeholder in overview`);
+      }
+      if (spec.separator !== undefined && typeof spec.separator !== 'string') {
+        throw new Error(`dynamicValues['${name}'].separator must be a string`);
+      }
+    }
   }
 }
 
