@@ -10,7 +10,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   yarnBerryOptions: {
     yarnRcOptions: {
       nodeLinker: javascript.YarnNodeLinker.NODE_MODULES,
-    }
+    },
   },
 
   authorName: 'Amazon Web Services',
