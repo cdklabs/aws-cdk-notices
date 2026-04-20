@@ -137,3 +137,26 @@ test('rejects notices with incorrect construct name foo', () => {
     schemaVersion: '1',
   })).toThrow(/Invalid component name foo/);
 });
+
+
+test('accepts dynamicValues with separator for matching placeholder', () => {
+  expect(() => validateNotice({
+    title: 'Bootstrap stack outdated',
+    issueNumber: 31885,
+    overview: 'Rebootstrap by running cdk bootstrap {resolve:ENVIRONMENTS}',
+    components: [{ name: 'bootstrap', version: '<21' }],
+    schemaVersion: '1',
+    dynamicValues: { ENVIRONMENTS: { separator: ' ' } },
+  })).not.toThrow();
+});
+
+test('rejects dynamicValues entry without matching placeholder', () => {
+  expect(() => validateNotice({
+    title: 'Bootstrap stack outdated',
+    issueNumber: 31885,
+    overview: 'No placeholder here',
+    components: [{ name: 'bootstrap', version: '<21' }],
+    schemaVersion: '1',
+    dynamicValues: { ENVIRONMENTS: { separator: ' ' } },
+  })).toThrow(/no matching \{resolve:ENVIRONMENTS\} placeholder/);
+});

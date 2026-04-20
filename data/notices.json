@@ -786,7 +786,10 @@
           "version": "<21"
         }
       ],
-      "schemaVersion": "1"
+      "schemaVersion": "1",
+      "dynamicValues": {
+        "ENVIRONMENTS": { "separator": " " }
+      }
     },
     {
       "title": "(cli): UnauthorizedException: Session token not found or invalid",
