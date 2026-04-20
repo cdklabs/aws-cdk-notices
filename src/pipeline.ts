@@ -21,6 +21,7 @@ export class PipelineStack extends Stack {
           'yarn build',
         ],
       }),
+      preBuildSteps: [{ name: 'Enable corepack', run: 'corepack enable' }],
       gitHubActionRoleArn: `arn:aws:iam::${BACKEND_ENV.account}:role/GitHubActionRole`,
     });
 
