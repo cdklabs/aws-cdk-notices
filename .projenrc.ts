@@ -1,4 +1,4 @@
-import { awscdk } from 'projen';
+import { awscdk, javascript } from 'projen';
 import { IntegrationTests } from './projenrc/integ-tests';
 
 const project = new awscdk.AwsCdkTypeScriptApp({
@@ -6,6 +6,12 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   cdkVersion: '2.82.0',
   defaultReleaseBranch: 'main',
   name: 'aws-cdk-notices',
+  packageManager: javascript.NodePackageManager.YARN_BERRY,
+  yarnBerryOptions: {
+    yarnRcOptions: {
+      nodeLinker: javascript.YarnNodeLinker.NODE_MODULES,
+    },
+  },
 
   authorName: 'Amazon Web Services',
   authorUrl: 'https://aws.amazon.com/',
@@ -24,6 +30,9 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   devDeps: [
     '@types/semver',
   ],
+  depsUpgradeOptions: {
+    cooldown: 3,
+  },
   githubOptions: {
     mergify: false,
     mergeQueue: true,
