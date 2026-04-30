@@ -50,7 +50,7 @@ jobs:
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -79,7 +79,7 @@ jobs:
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -108,7 +108,7 @@ jobs:
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -137,7 +137,7 @@ jobs:
       - name: Install
         run: npm install --no-save cdk-assets
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: us-west-2
           role-duration-seconds: 1800
@@ -161,14 +161,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Authenticate Via OIDC Role
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: us-east-1
           role-duration-seconds: 1800
           role-skip-session-tagging: true
           role-to-assume: arn:aws:iam::458101988253:role/GitHubActionRole
       - name: Assume CDK Deploy Role
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-region: us-east-1
           role-duration-seconds: 1800
@@ -184,5 +184,5 @@ jobs:
           name: prod-WebsiteStack
           template: https://cdk-hnb659fds-assets-458101988253-us-east-1.s3.us-east-1.amazonaws.com/${{
             needs.Assets-FileAsset1.outputs.asset-hash }}.json
-          no-fail-on-empty-changeset: "1"
+          fail-on-empty-changeset: false
           role-arn: arn:aws:iam::458101988253:role/cdk-hnb659fds-cfn-exec-role-458101988253-us-east-1
