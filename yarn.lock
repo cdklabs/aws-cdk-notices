@@ -19,25 +19,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/cloud-assembly-api@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "@aws-cdk/cloud-assembly-api@npm:2.2.2"
+"@aws-cdk/cloud-assembly-api@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@aws-cdk/cloud-assembly-api@npm:2.2.3"
   dependencies:
     jsonschema: "npm:~1.4.1"
     semver: "npm:^7.7.4"
   peerDependencies:
-    "@aws-cdk/cloud-assembly-schema": ">=53.15.0"
-  checksum: 10c0/cc5e7edd13d9d7e4ad7878c16f85a1a15c68e9ec51b71ad4a4c884ef0b3ed28fc25dc0627f0c226d65615cc6011ca02de94401862b650a996f8ccdff651e4d44
+    "@aws-cdk/cloud-assembly-schema": ">=53.21.0"
+  checksum: 10c0/3f9309a28ef6e7ba62ed83925d8471b3141e991ec895f7b0340a5baa6a57cab1408e6876203cea2f8e6db75cf9785248e4015b4dca8c941b0c0ea2fc7900b8ea
   languageName: node
   linkType: hard
 
-"@aws-cdk/cloud-assembly-schema@npm:^53.18.0":
-  version: 53.20.0
-  resolution: "@aws-cdk/cloud-assembly-schema@npm:53.20.0"
+"@aws-cdk/cloud-assembly-schema@npm:^53.21.0":
+  version: 53.23.0
+  resolution: "@aws-cdk/cloud-assembly-schema@npm:53.23.0"
   dependencies:
     jsonschema: "npm:~1.4.1"
     semver: "npm:^7.7.4"
-  checksum: 10c0/6c0e8702acce984e05b0a1ec1422325a71ff79408833777442b33dc83ae0f2b4346430356b983ee2a5029cdcc90cf7ca9e854050b630c50e1b853482012bd041
+  checksum: 10c0/1fae7ecb9c1a4ee8030d1a7314aae95d010e295b9dc9e6c74d65794c4ca43b8b85899d5509af02fbf34abeaaae46d02542ba00612f6f319e83abea44fcb2eb90
   languageName: node
   linkType: hard
 
@@ -1851,13 +1851,13 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.82.0":
-  version: 2.253.1
-  resolution: "aws-cdk-lib@npm:2.253.1"
+  version: 2.254.0
+  resolution: "aws-cdk-lib@npm:2.254.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.273"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.1"
-    "@aws-cdk/cloud-assembly-api": "npm:^2.2.2"
-    "@aws-cdk/cloud-assembly-schema": "npm:^53.18.0"
+    "@aws-cdk/cloud-assembly-api": "npm:^2.2.3"
+    "@aws-cdk/cloud-assembly-schema": "npm:^53.21.0"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
     fs-extra: "npm:^11.3.3"
@@ -1871,7 +1871,7 @@ __metadata:
     yaml: "npm:1.10.3"
   peerDependencies:
     constructs: ^10.5.0
-  checksum: 10c0/dd0924791c8c1b22f85d46b662b04a38a6f586ce2f6c17158855256265fedf163be794ee7aa30594d3476187a4896c1f5106a1a85332ea87e917a2cc3f1736c9
+  checksum: 10c0/409b13db9f1e74980daf442ca8d9da946ff2cfd3065acda8645a103c8194a6037e4fd2d818faf1cc793671a542deb3bd4b814237f50db808727a0f888a382cdd
   languageName: node
   linkType: hard
 
@@ -1895,7 +1895,7 @@ __metadata:
     eslint-plugin-import: "npm:^2.32.0"
     jest: "npm:^26.6.3"
     jest-junit: "npm:^17"
-    projen: "npm:^0.99.60"
+    projen: "npm:^0.99.61"
     semver: "npm:^7.8.0"
     ts-jest: "npm:^26.5.6"
     ts-node: "npm:^9"
@@ -6124,9 +6124,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"projen@npm:^0.99.60":
-  version: 0.99.60
-  resolution: "projen@npm:0.99.60"
+"projen@npm:^0.99.61":
+  version: 0.99.61
+  resolution: "projen@npm:0.99.61"
   dependencies:
     "@iarna/toml": "npm:^2.2.5"
     case: "npm:^1.6.3"
@@ -6147,7 +6147,7 @@ __metadata:
     constructs: ^10.0.0
   bin:
     projen: bin/projen
-  checksum: 10c0/34ea9116e22cddaaf699133afbd2a1cbbe820ff5ecb42a595a099b1fa37b96dbb554ae50e8343f3cc1a653c9b225951d66ef002b4a06e17b3a06d48cd2cdf33c
+  checksum: 10c0/01fd17e631c16b7233eec6c360e6f3235bedba8c9856267ea2fd634bd64ba434af9ea706447da97c2c8afc7694f9a3b9a3692336f73fbd29e0c3d29fd3fac1df
   languageName: node
   linkType: hard
 
