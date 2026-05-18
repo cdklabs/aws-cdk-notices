@@ -1244,11 +1244,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.7.0
-  resolution: "@types/node@npm:25.7.0"
+  version: 25.8.0
+  resolution: "@types/node@npm:25.8.0"
   dependencies:
-    undici-types: "npm:~7.21.0"
-  checksum: 10c0/47ec7eaca154c36ad6d1ac0270e6e254eedf20b9dc49afe3bc76e4f7eba29ceac705f8903b162aeaf40e3941101ffe76ffb374989359ea3ef8c8509d8b443f55
+    undici-types: "npm:>=7.24.0 <7.24.7"
+  checksum: 10c0/ff53e5428309d2e6060190ec5e02afd0e4a7369456b16130a7f5898f12a6ad0efd62d752830f2f7355d714ae429bc0acbb2dc0cbf761cadb03e88c4996cdf1dc
   languageName: node
   linkType: hard
 
@@ -1887,7 +1887,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8"
     aws-cdk: "npm:^2"
     aws-cdk-lib: "npm:^2.82.0"
-    cdk-pipelines-github: "npm:^0.4.137"
+    cdk-pipelines-github: "npm:^0.4.138"
     constructs: "npm:^10.5.1"
     esbuild: "npm:^0.28.0"
     eslint: "npm:^9"
@@ -1904,11 +1904,11 @@ __metadata:
   linkType: soft
 
 "aws-cdk@npm:^2":
-  version: 2.1121.0
-  resolution: "aws-cdk@npm:2.1121.0"
+  version: 2.1122.0
+  resolution: "aws-cdk@npm:2.1122.0"
   bin:
     cdk: bin/cdk
-  checksum: 10c0/28049cfca72e9e0279be8102709634aefc07578a1392aa7217922bdafb311a37b5ef2ce0f0c1712d0083f467dfd87200b9b53815d74e4b6fcebcf12448107c1c
+  checksum: 10c0/16ff9e9a78055d29c124a4c1ddcec1368b2e056ac9c8e53269f34899f340c79c493fab8d46a6de358e6c224e0175c12fd7e1b08f4a6148f11a126697231c9804
   languageName: node
   linkType: hard
 
@@ -2234,17 +2234,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cdk-pipelines-github@npm:^0.4.137":
-  version: 0.4.137
-  resolution: "cdk-pipelines-github@npm:0.4.137"
+"cdk-pipelines-github@npm:^0.4.138":
+  version: 0.4.138
+  resolution: "cdk-pipelines-github@npm:0.4.138"
   dependencies:
     decamelize: "npm:^5.0.1"
     fast-json-patch: "npm:^3.1.1"
-    yaml: "npm:^2.8.3"
+    yaml: "npm:^2.8.4"
   peerDependencies:
     aws-cdk-lib: ^2.80.0
     constructs: ^10.0.46
-  checksum: 10c0/c16396a5567fcfd7a4198fe723faada037d89dfe0084861ace7bc54253e693f38f6c1fe04021d0af723ef1854c79cda17cafe918a77d4f2da206cf5f537379fb
+  checksum: 10c0/d41742d01c2287381b2c17e49f1a5125be363dc306fbe6471c76982d4f5440474d8c02d38d9593b09aedbc8cae89b92e55558d07e1d360fadb338222eca7ca22
   languageName: node
   linkType: hard
 
@@ -7431,17 +7431,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici-types@npm:>=7.24.0 <7.24.7":
+  version: 7.24.6
+  resolution: "undici-types@npm:7.24.6"
+  checksum: 10c0/d9cd8befb643ac904615c280a095ba4240531f6bb4a5e75a22a7483630ca8d3f1016d2ab6ace6ceda1f63b3a2db2fe037fafe121d6917a0187573aa548ff78ca
+  languageName: node
+  linkType: hard
+
 "undici-types@npm:~5.26.4":
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~7.21.0":
-  version: 7.21.0
-  resolution: "undici-types@npm:7.21.0"
-  checksum: 10c0/c3b4ae5f066c398acb1962505b56214ecd72843f7d7827fcc2df7a48a63d1639d3608c580ac09f836253d21fa7ba8f1a04440569ed9d332474ad01b8a010db87
   languageName: node
   linkType: hard
 
@@ -7874,12 +7874,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:^2.2.2, yaml@npm:^2.8.3":
+"yaml@npm:^2.2.2":
   version: 2.8.3
   resolution: "yaml@npm:2.8.3"
   bin:
     yaml: bin.mjs
   checksum: 10c0/ddff0e11c1b467728d7eb4633db61c5f5de3d8e9373cf84d08fb0cdee03e1f58f02b9f1c51a4a8a865751695addbd465a77f73f1079be91fe5493b29c305fd77
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.8.4":
+  version: 2.9.0
+  resolution: "yaml@npm:2.9.0"
+  bin:
+    yaml: bin.mjs
+  checksum: 10c0/f340718df45e97a9551b9bf9dac61c80050bc464513b710debfb5067c380c8472e3b67809cffacb4ab5ffb5e66ef9310816c88b05f371cec60abfedd8c88e0a2
   languageName: node
   linkType: hard
 
