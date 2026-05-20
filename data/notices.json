@@ -1033,6 +1033,18 @@
         ]
       ],
       "schemaVersion": "2"
+    },
+    {
+      "title": "aws-cdk-lib: npm ci fails with invalid lock file on versions 2.254.0 <= 2.256.0",
+      "issueNumber": 37949,
+      "overview": "Running the npm ci command in a CDK application will fail with invalid lock file errors. We recommend users to upgrade to v2.256.1",
+      "components": [
+          {
+            "name": "framework",
+            "version": ">=2.254.0 <2.256.1"
+          }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
