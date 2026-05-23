@@ -1244,11 +1244,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.9.0
-  resolution: "@types/node@npm:25.9.0"
+  version: 25.9.1
+  resolution: "@types/node@npm:25.9.1"
   dependencies:
     undici-types: "npm:>=7.24.0 <7.24.7"
-  checksum: 10c0/1845f0ce5471213a4f0c887845c50993968ea863c03bb355282b59bdcc877d009a2785f0f506cfc40b8ce7548a21e33ac826e998be62d42b000bfd9ccdc6c910
+  checksum: 10c0/9a04682842bebbcf21a1779dfeab9aa733d7bd7bbc0a0edb641ab3a9a3d43eac543225acf669c334f458f1956443ebc072bc3c72840c543b8b356cab5c82d456
   languageName: node
   linkType: hard
 
@@ -1851,8 +1851,8 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.82.0":
-  version: 2.254.0
-  resolution: "aws-cdk-lib@npm:2.254.0"
+  version: 2.255.0
+  resolution: "aws-cdk-lib@npm:2.255.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.273"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.1"
@@ -1871,7 +1871,7 @@ __metadata:
     yaml: "npm:1.10.3"
   peerDependencies:
     constructs: ^10.5.0
-  checksum: 10c0/409b13db9f1e74980daf442ca8d9da946ff2cfd3065acda8645a103c8194a6037e4fd2d818faf1cc793671a542deb3bd4b814237f50db808727a0f888a382cdd
+  checksum: 10c0/e5cda182db132707fbcc04caf2d2a226f1200b5929f1d13224c337852bd4d9e4fbdcabb28a468002d3004421697d011e84fb1374032ba4f139a5d0a242223b5d
   languageName: node
   linkType: hard
 
@@ -1904,11 +1904,11 @@ __metadata:
   linkType: soft
 
 "aws-cdk@npm:^2":
-  version: 2.1122.0
-  resolution: "aws-cdk@npm:2.1122.0"
+  version: 2.1123.0
+  resolution: "aws-cdk@npm:2.1123.0"
   bin:
     cdk: bin/cdk
-  checksum: 10c0/16ff9e9a78055d29c124a4c1ddcec1368b2e056ac9c8e53269f34899f340c79c493fab8d46a6de358e6c224e0175c12fd7e1b08f4a6148f11a126697231c9804
+  checksum: 10c0/13e1d3f2fc3eb48e0c666f08d7298a0827c2b741d1f0531f149410a70c45ea3fefcaf0bd2e7a0833ce549ab477e6879ddeb60d8393263a433dd64d78c576e2a4
   languageName: node
   linkType: hard
 
