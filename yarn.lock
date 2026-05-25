@@ -1851,8 +1851,8 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.82.0":
-  version: 2.256.1
-  resolution: "aws-cdk-lib@npm:2.256.1"
+  version: 2.257.0
+  resolution: "aws-cdk-lib@npm:2.257.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.273"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.1"
@@ -1871,7 +1871,7 @@ __metadata:
     yaml: "npm:1.10.3"
   peerDependencies:
     constructs: ^10.5.0
-  checksum: 10c0/ee0b97dba887512829c33771498d97f612135771d0cf3c44624d77ecaedc8846651c2077212a83696597aa05d5d22287d109d590f1b14c2062a88e4f7ad2fb5d
+  checksum: 10c0/878e552b3c7a3095adbe90a00f938c70df50a2935804edcb3ad32d84df5b90983fa55e7a98807aae48d77deec4f7e33e6b2f95f19bf0bcfd368166ef348b764c
   languageName: node
   linkType: hard
 
@@ -1896,7 +1896,7 @@ __metadata:
     jest: "npm:^26.6.3"
     jest-junit: "npm:^17"
     projen: "npm:^0.99.63"
-    semver: "npm:^7.8.0"
+    semver: "npm:^7.8.1"
     ts-jest: "npm:^26.5.6"
     ts-node: "npm:^9"
     typescript: "npm:~5.9.3"
@@ -6538,12 +6538,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.x, semver@npm:^7.3.2, semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.7.3, semver@npm:^7.7.4, semver@npm:^7.8.0":
-  version: 7.8.0
-  resolution: "semver@npm:7.8.0"
+"semver@npm:7.x, semver@npm:^7.3.2, semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.7.3, semver@npm:^7.7.4, semver@npm:^7.8.0, semver@npm:^7.8.1":
+  version: 7.8.1
+  resolution: "semver@npm:7.8.1"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/8f096ca9b80ffd47b308d03f9ce8c873e27e2983f36023c559cdc92c51e8433fc23ebbfe57ec9623fc155636a6961ee989501099841ae4bb1babc8d2b3f048cd
+  checksum: 10c0/92d6871d6347e1f99d0ba396a70f2545ccf2a032cda3d378fa0699edf7506b5c6d266aed55c8b88e72bd91a30d2351e4f39db479375374430fcdc4b58f4e3c1a
   languageName: node
   linkType: hard
 
