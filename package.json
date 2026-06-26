@@ -37,13 +37,13 @@
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
     "aws-cdk": "^2",
-    "esbuild": "^0.28.0",
+    "esbuild": "^0.28.1",
     "eslint": "^9",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.32.0",
     "jest": "^26.6.3",
     "jest-junit": "^17",
-    "projen": "^0.99.70",
+    "projen": "^0.100.4",
     "ts-jest": "^26.5.6",
     "ts-node": "^9",
     "typescript": "~5.9.3"
@@ -52,7 +52,7 @@
     "aws-cdk-lib": "^2.82.0",
     "cdk-pipelines-github": "^0.4.139",
     "constructs": "^10.5.1",
-    "semver": "^7.8.1"
+    "semver": "^7.8.5"
   },
   "devEngines": {
     "packageManager": {
@@ -106,7 +106,7 @@
     "preset": "ts-jest",
     "globals": {
       "ts-jest": {
-        "tsconfig": "tsconfig.dev.json"
+        "tsconfig": "test/tsconfig.json"
       }
     }
   },
