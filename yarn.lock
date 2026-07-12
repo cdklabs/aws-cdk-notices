@@ -1244,11 +1244,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 26.1.0
-  resolution: "@types/node@npm:26.1.0"
+  version: 26.1.1
+  resolution: "@types/node@npm:26.1.1"
   dependencies:
     undici-types: "npm:~8.3.0"
-  checksum: 10c0/61c22ad1ef215e24138cb8b7368fb68bab9de4c123b3f23d411749b015ba1b7d22f878ad54add26a0b69068d7e07c04af665069d8571b6c6c3b9b2fb73b7bd91
+  checksum: 10c0/25ac5093195736dd074d5027adbba85617bc951d5a41506ebd3b9073048acb7233613f3822d5f9b9447f9c0841c91f6387c46283916767e3ef79f23917452c46
   languageName: node
   linkType: hard
 
@@ -1875,7 +1875,7 @@ __metadata:
     eslint-plugin-import: "npm:^2.32.0"
     jest: "npm:^26.6.3"
     jest-junit: "npm:^17"
-    projen: "npm:^0.101.4"
+    projen: "npm:^0.101.6"
     semver: "npm:^7.8.5"
     ts-jest: "npm:^26.5.6"
     ts-node: "npm:^9"
@@ -2516,12 +2516,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dax@npm:^0.48.3":
-  version: 0.48.3
-  resolution: "dax@npm:0.48.3"
+"dax@npm:^0.48.6":
+  version: 0.48.6
+  resolution: "dax@npm:0.48.6"
   dependencies:
     undici-types: "npm:^5.26"
-  checksum: 10c0/6db49de2d94c5951050175035141a5a53288d5b2526f4c6a143fa5c981feb0b85194d12d66636b977d8676d8764d2674e4029a454d4cf12f3d2b031332763eae
+  checksum: 10c0/e89cbbac36f17f6420251c49a93d43db9b716c50c0d6d7d140b5951b6f773b8d5373172ad8b7518a1aa8fbe842af4eace86eefe28375d529227c17c7fb2fc4aa
   languageName: node
   linkType: hard
 
@@ -6078,9 +6078,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"projen@npm:^0.101.4":
-  version: 0.101.4
-  resolution: "projen@npm:0.101.4"
+"projen@npm:^0.101.6":
+  version: 0.101.6
+  resolution: "projen@npm:0.101.6"
   dependencies:
     "@iarna/toml": "npm:^2.2.5"
     case: "npm:^1.6.3"
@@ -6088,7 +6088,7 @@ __metadata:
     comment-json: "npm:4.2.2"
     constructs: "npm:^10.5.0"
     conventional-changelog-config-spec: "npm:^2.1.0"
-    dax: "npm:^0.48.3"
+    dax: "npm:^0.48.6"
     fast-glob: "npm:^3.3.3"
     fast-json-patch: "npm:^3.1.1"
     ini: "npm:^2.0.0"
@@ -6101,7 +6101,7 @@ __metadata:
     constructs: ^10.5.0
   bin:
     projen: bin/projen
-  checksum: 10c0/2156bba79e5573f80a75c4a7080fb6b9d0cef4783dd3bfdfc7ff18678184ab32ec49fe13e3e18f9f5d8bc2a8c795b1b81f521e18368ae85664f3d5b7388dd4d4
+  checksum: 10c0/4907cef14094cb096e645947ad63774adfe939c92b7813caf4e934e7097db9772fba29e906d0089b2ebc621460217969bf5505eaf2fef8bc00d28f99ee3726a8
   languageName: node
   linkType: hard
 
