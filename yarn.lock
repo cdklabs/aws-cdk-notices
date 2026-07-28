@@ -42,10 +42,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws/cloudformation-validate@npm:1.5.0-beta":
-  version: 1.5.0-beta
-  resolution: "@aws/cloudformation-validate@npm:1.5.0-beta"
-  checksum: 10c0/3a7c118f3f5f4111ff262d8cba92aca8e19fdad62bc84529744a13602059e3fe949a923739531e4c06d27feb5a2a10344948e1443f73ea34005e8b4f28a57595
+"@aws/cloudformation-validate@npm:1.5.1-beta":
+  version: 1.5.1-beta
+  resolution: "@aws/cloudformation-validate@npm:1.5.1-beta"
+  checksum: 10c0/aebf7c2922f1ddc8afb74e9aae4e9f101869325153cfc25fcdea6b94bce755c9e8712cdae5fd2c8502caa707a82a32c6c08128b03eb60dcb0f35ffe3d7224fcd
   languageName: node
   linkType: hard
 
@@ -1840,14 +1840,14 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.82.0":
-  version: 2.262.0
-  resolution: "aws-cdk-lib@npm:2.262.0"
+  version: 2.262.1
+  resolution: "aws-cdk-lib@npm:2.262.1"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.282"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.2"
     "@aws-cdk/cloud-assembly-api": "npm:^2.2.6"
     "@aws-cdk/cloud-assembly-schema": "npm:^54.11.0"
-    "@aws/cloudformation-validate": "npm:1.5.0-beta"
+    "@aws/cloudformation-validate": "npm:1.5.1-beta"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
     fs-extra: "npm:^11.3.6"
@@ -1860,7 +1860,7 @@ __metadata:
     yaml: "npm:1.10.3"
   peerDependencies:
     constructs: ^10.5.0
-  checksum: 10c0/ff2c65607e743d279b5b1a8e6733081d9703d9e45bb513551a2ca378435f940ce6c1fafaa29bb49ca12e9d10247067acacf1140d260532fdf67510dc0a72fcc4
+  checksum: 10c0/3e50e4c8dc7213fb1288a7e9633f045f995e048a4654dc1b6d44358259e5fb1dde3b8738845e5a69bf5b57232150fc8dcb9b3690ee74166cc13cc0a21ef7d6f3
   languageName: node
   linkType: hard
 
@@ -1884,7 +1884,7 @@ __metadata:
     eslint-plugin-import: "npm:^2.32.0"
     jest: "npm:^26.6.3"
     jest-junit: "npm:^17"
-    projen: "npm:^0.101.17"
+    projen: "npm:^0.101.20"
     semver: "npm:^7.8.5"
     ts-jest: "npm:^26.5.6"
     ts-node: "npm:^9"
@@ -6105,9 +6105,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"projen@npm:^0.101.17":
-  version: 0.101.17
-  resolution: "projen@npm:0.101.17"
+"projen@npm:^0.101.20":
+  version: 0.101.20
+  resolution: "projen@npm:0.101.20"
   dependencies:
     "@iarna/toml": "npm:^2.2.5"
     case: "npm:^1.6.3"
@@ -6128,7 +6128,7 @@ __metadata:
     constructs: ^10.5.0
   bin:
     projen: bin/projen
-  checksum: 10c0/ed75996c523d3ac5650b50cd4494d4914e3ffd235d65cd8d37574fbc9ce00da5e3099fa53182c4c0cab2c5639665123e067ad472faf25da73f875d96f2686c66
+  checksum: 10c0/b54fb6931e2c8e60b247385b3b0615a5e57c0ae81119af3da9a8385c3199ef3f830e183dac5782ca6f79a44911e07507de934863994b5eeafd9c860c7d00972c
   languageName: node
   linkType: hard
 
