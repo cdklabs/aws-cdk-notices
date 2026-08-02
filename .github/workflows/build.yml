@@ -15,23 +15,28 @@ jobs:
     if: always() && needs.unit-test.outputs.self_mutation_happened && !(github.event.pull_request.head.repo.full_name != github.repository)
     steps:
       - name: Checkout
+        id: checkout
         uses: actions/checkout@v6
         with:
           token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
       - name: Download patch
+        id: download_patch
         uses: actions/download-artifact@v8
         with:
           name: repo.patch
           path: ${{ runner.temp }}
       - name: Apply patch
+        id: apply_patch
         run: '[ -s ${{ runner.temp }}/repo.patch ] && git apply ${{ runner.temp }}/repo.patch || echo "Empty patch. Skipping."'
       - name: Set git identity
+        id: set_git_identity
         run: |-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Push changes
+        id: push_changes
         env:
           PULL_REQUEST_REF: ${{ github.event.pull_request.head.ref }}
         run: |-
@@ -44,29 +49,36 @@ jobs:
       contents: read
     steps:
       - name: Checkout
+        id: checkout
         uses: actions/checkout@v5
       - name: Install CDK CLI
+        id: install_cdk_cli
         run: npm install -g aws-cdk@${{ matrix.cdkVersion }}
       - name: Create test fixture
+        id: create_test_fixture
         run: |-
           mkdir -p /tmp/integ-test
           cd /tmp/integ-test
           npx aws-cdk@${{ matrix.cdkVersion }} init app --language=javascript
           npx aws-cdk@${{ matrix.cdkVersion }} synth -q
       - name: Prepare notices cache
+        id: prepare_notices_cache
         run: |-
           mkdir -p ~/.cdk/cache
           EXPIRY=$(( $(date +%s) * 1000 + 86400000 ))
           cat data/notices.json | jq --arg exp "$EXPIRY" '.expiration = ($exp | tonumber)' > /tmp/notices.json
           cp /tmp/notices.json ~/.cdk/cache/notices.json
       - name: Test - cdk doctor loads notices without error
+        id: test_-_cdk_doctor_loads_notices_without_error
         run: npx aws-cdk@${{ matrix.cdkVersion }} doctor
         working-directory: /tmp/integ-test
       - name: Inject fake notice
+        id: inject_fake_notice
         run: |-
           cat /tmp/notices.json | jq '.notices += [{"title":"Integration test notice","issueNumber":99999,"overview":"This is a fake notice for integration testing.","components":[{"name":"cli","version":"*"}],"schemaVersion":"1"}]' > /tmp/notices_with_fake.json
           cp /tmp/notices_with_fake.json ~/.cdk/cache/notices.json
       - name: Test - cdk doctor shows fake notice
+        id: test_-_cdk_doctor_shows_fake_notice
         run: npx aws-cdk@${{ matrix.cdkVersion }} doctor 2>&1 | tee /tmp/doctor_output.txt && grep -q "99999" /tmp/doctor_output.txt && grep -q "Integration test notice" /tmp/doctor_output.txt
         working-directory: /tmp/integ-test
     strategy:
