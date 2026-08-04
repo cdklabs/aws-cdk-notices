@@ -42,10 +42,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws/cloudformation-validate@npm:1.5.1-beta":
-  version: 1.5.1-beta
-  resolution: "@aws/cloudformation-validate@npm:1.5.1-beta"
-  checksum: 10c0/aebf7c2922f1ddc8afb74e9aae4e9f101869325153cfc25fcdea6b94bce755c9e8712cdae5fd2c8502caa707a82a32c6c08128b03eb60dcb0f35ffe3d7224fcd
+"@aws/cloudformation-validate@npm:1.6.0-beta":
+  version: 1.6.0-beta
+  resolution: "@aws/cloudformation-validate@npm:1.6.0-beta"
+  checksum: 10c0/73444c7f69ac93943cab27e3d1f92d2eb655fe8165ec14e785e27fcb44ecc7d61a52a82b3e60b7858fe301cb36518881331cfd00d0e18deb141d020f6497d761
   languageName: node
   linkType: hard
 
@@ -1840,14 +1840,14 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.82.0":
-  version: 2.262.2
-  resolution: "aws-cdk-lib@npm:2.262.2"
+  version: 2.263.0
+  resolution: "aws-cdk-lib@npm:2.263.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.282"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.2"
     "@aws-cdk/cloud-assembly-api": "npm:^2.2.6"
     "@aws-cdk/cloud-assembly-schema": "npm:^54.11.0"
-    "@aws/cloudformation-validate": "npm:1.5.1-beta"
+    "@aws/cloudformation-validate": "npm:1.6.0-beta"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
     fs-extra: "npm:^11.3.6"
@@ -1860,7 +1860,7 @@ __metadata:
     yaml: "npm:1.10.3"
   peerDependencies:
     constructs: ^10.5.0
-  checksum: 10c0/428cff3c14f912c2b9732262bcef5f77a1a41d1ab50cf2d0dc4af28fcf490c7767abe1e3e3d0d53edc1b9d5b3b642e3e2ae6f92b3acc595ec01d5a6fa0b9f908
+  checksum: 10c0/9411cde753dc0d8929d043fef0332c2c18d1d66efb5f9f252d69f25d3672b3c611b52c349fdaf6fe02a947634d20d80cac64a123d80d89128f7f668b3d2dc2ba
   languageName: node
   linkType: hard
 
@@ -2386,9 +2386,9 @@ __metadata:
   linkType: hard
 
 "constructs@npm:^10.5.0, constructs@npm:^10.5.1":
-  version: 10.8.0
-  resolution: "constructs@npm:10.8.0"
-  checksum: 10c0/443fef28746ec9901efadf047564298d7d7d7e66fad1a9c7bd0b271bbb270a3144bb9e16ab757cc2812fbd78374db17b820b5d4887407b23e30191af42109b0c
+  version: 10.7.2
+  resolution: "constructs@npm:10.7.2"
+  checksum: 10c0/b96b0d9926cbf86198e12cf5a6ab44eb971654bec77d6ab46068d47ea1481759b88f177b4199dba241679f6d311784b077e1734398e8f83ee1ccf71665adc5a1
   languageName: node
   linkType: hard
 
