@@ -1884,7 +1884,7 @@ __metadata:
     eslint-plugin-import: "npm:^2.32.0"
     jest: "npm:^26.6.3"
     jest-junit: "npm:^17"
-    projen: "npm:^0.103.23"
+    projen: "npm:^0.103.24"
     semver: "npm:^7.8.5"
     ts-jest: "npm:^26.5.6"
     ts-node: "npm:^9"
@@ -1893,11 +1893,11 @@ __metadata:
   linkType: soft
 
 "aws-cdk@npm:^2":
-  version: 2.1141.0
-  resolution: "aws-cdk@npm:2.1141.0"
+  version: 2.1142.0
+  resolution: "aws-cdk@npm:2.1142.0"
   bin:
     cdk: bin/cdk
-  checksum: 10c0/3842489bfb84b00445c1339c2b1169b42873fb2504f4fb07c4138a6782ebb49f19247b2993db726fe29fcc2f54bac87cdbe72ef5ef5a9f13d1f1e51256eeb598
+  checksum: 10c0/bc2ea7c1a37f3670571a3a52be219b902134186ded82a1cc26001559e93312216e0d1933102ec5187f15b4727ab5cc6471712c1212c8009e5adaef284f941e2f
   languageName: node
   linkType: hard
 
@@ -6105,9 +6105,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"projen@npm:^0.103.23":
-  version: 0.103.23
-  resolution: "projen@npm:0.103.23"
+"projen@npm:^0.103.24":
+  version: 0.103.24
+  resolution: "projen@npm:0.103.24"
   dependencies:
     "@iarna/toml": "npm:^2.2.5"
     case: "npm:^1.6.3"
@@ -6129,7 +6129,7 @@ __metadata:
     constructs: ^10.5.0
   bin:
     projen: bin/projen
-  checksum: 10c0/dea0d8cce50d9dbb8e76b184c71e584b4781420c8e8116cbac58d38b8ea3143915d8f2421af8f8dcfd2197f00c1563b225618a315c413d6a8a0698ec79338df0
+  checksum: 10c0/4f58b2eb63d1a74bc1355491416413b2a8efd2dc8f25c18179d71eac310bbd1e9131a496ad76d5b425427170ab04055dbc1bdf9efae6efe92ceb76eddc1b3e7e
   languageName: node
   linkType: hard
 
