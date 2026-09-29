@@ -32,20 +32,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/cloud-assembly-schema@npm:^54.11.0":
-  version: 54.13.0
-  resolution: "@aws-cdk/cloud-assembly-schema@npm:54.13.0"
+"@aws-cdk/cloud-assembly-schema@npm:^54.24.0":
+  version: 54.25.0
+  resolution: "@aws-cdk/cloud-assembly-schema@npm:54.25.0"
   dependencies:
     jsonschema: "npm:^1.5.0"
     semver: "npm:^7.8.5"
-  checksum: 10c0/55d777cdb4c4e00709ed1b1bf12283889022b12ef1ec46bc8a1a90b6f6c5ddd52f26ecd64a45772f52c9b183bdf1b49e48d132bb60c66cd78bc8f9f0d641062a
+  checksum: 10c0/aa51b0571ba038dff4f835d80b75ad275702f7a2a76ff7ec924743973de3586d8f09c6b9c8be23ad2d9ff2539cc3b40d4c313a33223de7a498f7f3cbf86f16f3
   languageName: node
   linkType: hard
 
-"@aws/cloudformation-validate@npm:1.9.0-beta":
-  version: 1.9.0-beta
-  resolution: "@aws/cloudformation-validate@npm:1.9.0-beta"
-  checksum: 10c0/3cd6be12cd1895ea67de23564711c5ffc58b179c0c9f7250498317ddb18d72caa6f48c8f95ded0f2a0f3fdb9ed65af0392b2788fb6fe112fee6a5b0ac0948ad4
+"@aws/cloudformation-validate@npm:1.12.1":
+  version: 1.12.1
+  resolution: "@aws/cloudformation-validate@npm:1.12.1"
+  checksum: 10c0/3d6b07f4c4bbbd1991b9e6fde6dd73769c0238c8b317106e5a2bc632855f2b333ec74e408355c6e442aac63e97c3c1bcb22927f0ed658712c5b7de79d21e02c1
   languageName: node
   linkType: hard
 
@@ -1252,11 +1252,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 26.6.2
-  resolution: "@types/node@npm:26.6.2"
+  version: 26.6.3
+  resolution: "@types/node@npm:26.6.3"
   dependencies:
     undici-types: "npm:~8.9.0"
-  checksum: 10c0/bb411ff5863a79a28ffa4ebadf2499d44046aa114d25a7a6c78f57def118123a0a7dea99e8fe38849099e9dba2b41b8853a7a282037618559f58653c35e7c5c5
+  checksum: 10c0/51070287167d157d246a5ad83e6ead93aa310bbd9cc880ecd1f244a00c2a31491620f997fbbb6ba4ce164388694827999ec68c1d16c3fb64c1037056e64613c7
   languageName: node
   linkType: hard
 
@@ -1840,14 +1840,14 @@ __metadata:
   linkType: hard
 
 "aws-cdk-lib@npm:^2.82.0":
-  version: 2.270.0
-  resolution: "aws-cdk-lib@npm:2.270.0"
+  version: 2.271.0
+  resolution: "aws-cdk-lib@npm:2.271.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:2.2.292"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.2"
     "@aws-cdk/cloud-assembly-api": "npm:^2.2.6"
-    "@aws-cdk/cloud-assembly-schema": "npm:^54.11.0"
-    "@aws/cloudformation-validate": "npm:1.9.0-beta"
+    "@aws-cdk/cloud-assembly-schema": "npm:^54.24.0"
+    "@aws/cloudformation-validate": "npm:1.12.1"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
     fs-extra: "npm:^11.3.6"
@@ -1860,7 +1860,7 @@ __metadata:
     yaml: "npm:1.10.3"
   peerDependencies:
     constructs: ^10.5.0
-  checksum: 10c0/fab5ab82062b4b790a5a2cc689dcaf3f823b1bdd36a8cd01aab27c440cfb91fe8d1e292b2de04cb9e1cd2afd481386e209543f682da42c1fbd701835931db231
+  checksum: 10c0/8684928f41bd398a17cf134584c05d202dd4cda7169deeaa0ad1c0e77b8855993ad31df7f3b1507c21fb76d0fa0109cbca5b05144345b03496e26c6e3f42ace1
   languageName: node
   linkType: hard
 
