@@ -1252,11 +1252,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 26.6.3
-  resolution: "@types/node@npm:26.6.3"
+  version: 26.6.4
+  resolution: "@types/node@npm:26.6.4"
   dependencies:
     undici-types: "npm:~8.9.0"
-  checksum: 10c0/51070287167d157d246a5ad83e6ead93aa310bbd9cc880ecd1f244a00c2a31491620f997fbbb6ba4ce164388694827999ec68c1d16c3fb64c1037056e64613c7
+  checksum: 10c0/094e7362df9200ba4c2da09131ca3b5d1aa51535a268a24e4ee2546d9c5a323d1d30cbdaaaa3db7ef8b2387572d1f9edabb11538ab7a09d3bca33ae5cddc2b1b
   languageName: node
   linkType: hard
 
@@ -1893,11 +1893,11 @@ __metadata:
   linkType: soft
 
 "aws-cdk@npm:^2":
-  version: 2.1143.0
-  resolution: "aws-cdk@npm:2.1143.0"
+  version: 2.1144.0
+  resolution: "aws-cdk@npm:2.1144.0"
   bin:
     cdk: bin/cdk
-  checksum: 10c0/cf543203ae45c6bff2eee519be3d40e87b8e6ec8bccefaaaf6e26b2390255f30b98ac1e5c58bbd952d15982207877bdb95456b0fc7c18723b4893e8b389c88f5
+  checksum: 10c0/62213899f31c1dfece493082e0f76811633a51fe10488cda19ae5a8e568654ce4eb7f8e17c68a49544d82d90a0ef6f787a56fb7cb57f57d457e7e7039deebfc0
   languageName: node
   linkType: hard
 
