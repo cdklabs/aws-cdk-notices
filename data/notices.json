@@ -1045,6 +1045,18 @@
           }
       ],
       "schemaVersion": "1"
+    },
+    {
+      "title": "(cli): cdk deploy --express fails on resource replacements unless --rollback is passed",
+      "issueNumber": 1931,
+      "overview": "Add `--rollback` when your change replaces a resource: `cdk deploy --express --rollback`. Without it, express mode leaves rollback disabled and CloudFormation rejects the replacement with 'Replacement type updates not supported on stack with disable-rollback.', leaving the stack in UPDATE_FAILED. See the linked issue to unwedge a stack already in that state.",
+      "components": [
+        {
+          "name": "cli",
+          "version": ">=2.1133.0 <2.1200.0"
+        }
+      ],
+      "schemaVersion": "1"
     }
   ]
 }
