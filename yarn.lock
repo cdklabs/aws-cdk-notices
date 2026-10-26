@@ -1893,11 +1893,11 @@ __metadata:
   linkType: soft
 
 "aws-cdk@npm:^2":
-  version: 2.1146.0
-  resolution: "aws-cdk@npm:2.1146.0"
+  version: 2.1146.1
+  resolution: "aws-cdk@npm:2.1146.1"
   bin:
     cdk: bin/cdk
-  checksum: 10c0/5cd185104a61d3ac141336d1dd8bf4754e73ac3775df0ae7af2f34bd940e749542fc520a848e3498ac4e1cf4a34c58b51418bdf167000f8e67b8f4924ce4c886
+  checksum: 10c0/36470dc5a42167f086b5064ac00b2082985d0b8833ca818070d3136b0a4de15f5a4260ac2f6ee06029f1ebafa78d7d1fc64f23f895d70521e7d7f270e9e4f418
   languageName: node
   linkType: hard
 
