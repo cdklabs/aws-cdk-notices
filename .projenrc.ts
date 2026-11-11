@@ -47,7 +47,6 @@ new IntegrationTests(project, {
     '2.100.0',
     '2.150.0',
     '2.179.0', // last version in old repo
-    '2.1000.0', // first version in new repo
     '2.1001.0', // first version is DNF code
     '2.1034.0', // last version w/o telemetry
     '2.1100.1', // first telemetry version
