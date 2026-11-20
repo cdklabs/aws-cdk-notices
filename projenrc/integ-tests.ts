@@ -22,7 +22,7 @@ export class IntegrationTests extends Component {
     // Use JSON patches to rename build job
     buildWorkflow.file!.patch(
       JsonPatch.move('/jobs/build', '/jobs/unit-test'),
-      JsonPatch.replace('/jobs/self-mutation/needs', ['unit-test']),
+      JsonPatch.add('/jobs/self-mutation/needs', ['unit-test']),
       JsonPatch.replace('/jobs/self-mutation/if', 'always() && needs.unit-test.outputs.self_mutation_happened && !(github.event.pull_request.head.repo.full_name != github.repository)'),
     );
 
