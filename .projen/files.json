@@ -7,6 +7,7 @@
     ".github/workflows/auto-queue.yml",
     ".github/workflows/build.yml",
     ".github/workflows/pull-request-lint.yml",
+    ".github/workflows/self-mutation.yml",
     ".github/workflows/upgrade.yml",
     ".gitignore",
     ".npmignore",

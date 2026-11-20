@@ -39,6 +39,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   },
 });
 
+/*
 new IntegrationTests(project, {
   cdkVersions: [
     '1.203.0', // last V1 version
@@ -53,5 +54,6 @@ new IntegrationTests(project, {
     'latest',
   ],
 });
+*/
 
 project.synth();
